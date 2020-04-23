@@ -1,0 +1,40 @@
+Source-Makefile: feeds/x/natflow/Makefile
+
+Package: kmod-natflow
+Submenu: Fast Forward Stacks
+Version: <LINUX_VERSION>+1.0.2-ab5ba9c045201a811d0806c62e55e2474d977d28
+Depends: +kmod-ipt-conntrack +kmod-ipt-nat +kmod-ipt-ipset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: X
+Title: natflow kernel driver
+Maintainer: Chen Minqiang <ptpt52@gmail.com>
+Source: natflow-1.0.2-ab5ba9c045201a811d0806c62e55e2474d977d28.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description:   fast nat forward kmod
+Chen Minqiang <ptpt52@gmail.com>
+@@
+
+Package: natflow-boot
+Submenu: Fast Forward Stacks
+Version: 1.0.2-ab5ba9c045201a811d0806c62e55e2474d977d28
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-natflow
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: X
+Repository: base
+Title: natflow boot init script
+Maintainer: Chen Minqiang <ptpt52@gmail.com>
+Source: natflow-1.0.2-ab5ba9c045201a811d0806c62e55e2474d977d28.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description: natflow boot init script
+Chen Minqiang <ptpt52@gmail.com>
+@@
+
+

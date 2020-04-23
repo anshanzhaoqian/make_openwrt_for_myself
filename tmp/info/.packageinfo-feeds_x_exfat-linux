@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/x/exfat-linux/Makefile
+
+Package: kmod-exfat-linux
+Submenu: Filesystems
+Version: <LINUX_VERSION>+2020-04-05-8c63f89809c48c7fa102d52cb424f52b856d20a2-1
+Depends: +kmod-nls-base @!LINUX_5_4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Applications
+Category: X
+Title: ExFAT Kernel driver
+Maintainer: Chen Minqiang <ptpt52@gmail.com>
+Source: exfat-linux-2020-04-05-8c63f89809c48c7fa102d52cb424f52b856d20a2.tar.xz
+License: GPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	Kernel module for ExFAT Filesytems
+Chen Minqiang <ptpt52@gmail.com>
+@@
+
+

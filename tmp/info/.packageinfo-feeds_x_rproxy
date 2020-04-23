@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/x/rproxy/Makefile
+
+Package: kmod-rproxy
+Submenu: Mentohust
+Version: <LINUX_VERSION>+0.0.1-31154aa7f507d5a5e816748caeece602da80d348
+Depends: +kmod-ipt-conntrack
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: X
+Title: rproxy kernel driver
+Maintainer: Chen Minqiang <ptpt52@gmail.com>
+Source: rproxy-0.0.1-31154aa7f507d5a5e816748caeece602da80d348.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description:   a kmod to replace user-agent for HTTP flow
+Chen Minqiang <ptpt52@gmail.com>
+@@
+
+

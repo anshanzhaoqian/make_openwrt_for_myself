@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/x/mentohust/Makefile
+
+Package: mentohust
+Submenu: Mentohust
+Version: 4.0.0-2f9ef2d6df5d95c0faa2e542f1cb77114824e697
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: X
+Repository: x
+Title: Mentohust v4 support
+Maintainer: Chen Minqiang <ptpt52@gmail.com>
+Source: mentohust-4.0.0-2f9ef2d6df5d95c0faa2e542f1cb77114824e697.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description:  Mentohust v4 support
+Chen Minqiang <ptpt52@gmail.com>
+@@
+
+

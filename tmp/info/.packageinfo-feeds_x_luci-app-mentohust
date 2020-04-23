@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/x/luci-app-mentohust/Makefile
+
+Package: luci-app-mentohust
+Submenu: Mentohust
+Version: 4.0.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +mentohust
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: X
+Repository: x
+Title: LuCI Support for mentohust
+Maintainer: Chen Minqiang <ptpt52@gmail.com>
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for mentohust.
+Chen Minqiang <ptpt52@gmail.com>
+@@
+
+
