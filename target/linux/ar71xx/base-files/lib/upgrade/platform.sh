@@ -6,8 +6,8 @@
 . /lib/ar71xx.sh
 
 PART_NAME=firmware
-RAMFS_COPY_DATA=/lib/ar71xx.sh
-RAMFS_COPY_BIN='nandwrite'
+RAMFS_COPY_DATA='/lib/ar71xx.sh /etc/fw_env.config /var/lock/fw_printenv.lock'
+RAMFS_COPY_BIN='nandwrite fw_printenv fw_setenv'
 
 CI_BLKSZ=65536
 CI_LDADR=0x80060000
@@ -342,6 +342,9 @@ platform_check_image() {
 	ap136-010|\
 	ap136-020|\
 	ap147-010|\
+	ac9531-010|\
+	ac9531-020|\
+	ap143|\
 	ap152|\
 	ap91-5g|\
 	ap96|\
@@ -355,7 +358,7 @@ platform_check_image() {
 	hornet-ub|\
 	mr12|\
 	mr16|\
-	sgr-w500-n85b-v2|\
+	x-ap1200|\
 	zbt-we1526|\
 	zcn-1523h-2|\
 	zcn-1523h-5)
@@ -415,8 +418,8 @@ platform_check_image() {
 	gl-inet|\
 	lan-turtle|\
 	mc-mac1200r|\
-	mc-mw4530r | \
 	minibox-v1|\
+	minibox-v3.2|\
 	omy-g1|\
 	omy-x1|\
 	onion-omega|\
@@ -458,20 +461,17 @@ platform_check_image() {
 	tl-wa901nd-v3|\
 	tl-wa901nd-v4|\
 	tl-wa901nd-v5|\
-	tl-wdr3227-v2|\
 	tl-wdr3320-v2|\
 	tl-wdr3500|\
 	tl-wdr4300|\
 	tl-wdr4900-v2|\
+	tl-wdx6501-v7|\
 	tl-wdr6500-v2|\
-	tl-wdr6500-v6|\
 	tl-wpa8630|\
 	tl-wr1041n-v2|\
 	tl-wr1043nd|\
 	tl-wr1043nd-v2|\
 	tl-wr1043nd-v4|\
-	tl-wr2041n-v1|\
-	tl-wr2041n-v2|\
 	tl-wr2543n|\
 	tl-wr703n|\
 	tl-wr710n|\
@@ -492,23 +492,19 @@ platform_check_image() {
 	tl-wr841n-v11|\
 	tl-wr842n-v2|\
 	tl-wr842n-v3|\
-	tl-wr880n-v1|\
-	tl-wr881n-v1|\
-	tl-wr885n-v1|\
 	tl-wr902ac-v1|\
 	tl-wr940n-v4|\
 	tl-wr940n-v6|\
 	tl-wr941nd|\
 	tl-wr941nd-v5|\
 	tl-wr941nd-v6|\
-	tl-wr941n-v7|\
 	ts-d084|\
 	wifi-pineapple-nano)
 		local magic_ver="0100"
 
 		case "$board" in
-		tl-wdr6500-v2|\
-		tl-wdr6500-v6)
+		tl-wdx6501-v7|\
+		tl-wdr6500-v2)
 			magic_ver="0200"
 			;;
 		esac
@@ -581,6 +577,7 @@ platform_check_image() {
 		nand_do_platform_check routerboard $1
 		return $?
 		;;
+	arris-sbr-ac1750|\
 	c-60|\
 	hiveap-121|\
 	nbg6716|\
@@ -588,7 +585,6 @@ platform_check_image() {
 	rambutan|\
 	wi2a-ac200i|\
 	wndr3700v4|\
-	sbr-ac1750|\
 	wndr4300)
 		nand_do_platform_check $board $1
 		return $?
@@ -908,13 +904,16 @@ platform_do_upgrade() {
 	rb-sxt5n|\
 	wi2a-ac200i|\
 	wndr3700v4|\
-	sbr-ac1750|\
 	wndr4300)
 		nand_do_upgrade "$1"
 		;;
 	mr18|\
 	z1)
 		merakinand_do_upgrade "$1"
+		;;
+	arris-sbr-ac1750)
+		CI_KERNPART_EXT="kernel2"
+		nand_do_upgrade "$1"
 		;;
 	uap-pro|\
 	unifi-outdoor-plus)

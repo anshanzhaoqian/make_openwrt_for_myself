@@ -140,7 +140,7 @@ ifneq ($(CONFIG_GRUB_IMAGES)$(CONFIG_EFI_IMAGES),)
 		"$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img"
 
 	# Convert the MBR partition to GPT and set EFI ROOTFS signature
-	dd if=/dev/zero of="$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img" bs=512 count=34 conv=notrunc oflag=append
+	dd if=/dev/zero of="$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img" bs=512 count=33 conv=notrunc oflag=append
 	sgdisk -g "$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img"
 	sgdisk -t 2:EF00 "$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img"
 	sgdisk -t 3:EF02 "$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img"
@@ -153,6 +153,7 @@ ifneq ($(CONFIG_GRUB_IMAGES)$(CONFIG_EFI_IMAGES),)
 		-d "$(KDIR)/grub2" \
 		-r "hd0,gpt1" \
 		"$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img"
+	md5sum "$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img" | head -c32 >>"$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img"
   endef
   endif
 
@@ -189,6 +190,7 @@ ifneq ($(CONFIG_GRUB_IMAGES)$(CONFIG_EFI_IMAGES),)
 		-d "$(KDIR)/grub2" \
 		-r "hd0,msdos1" \
 		"$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).img"
+	md5sum "$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).img" | head -c32 >>"$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).img"
   endef
   endif
 
@@ -246,45 +248,15 @@ endif
 ifneq ($(CONFIG_VMDK_IMAGES),)
   define Image/Build/vmdk
 	rm $(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).vmdk || true
-	/usr/bin/qemu-img convert -f raw -O vmdk -o adapter_type=lsilogic \
+	qemu-img convert -f raw -O vmdk \
 		$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).img \
 		$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).vmdk
   endef
   define Image/Build/vmdk_efi
 	rm $(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).vmdk || true
-	/usr/bin/qemu-img convert -f raw -O vmdk -o adapter_type=lsilogic \
+	qemu-img convert -f raw -O vmdk \
 		$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img \
 		$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).vmdk
-  endef
-endif
-
-ifneq ($(CONFIG_VHD_IMAGES),)
-  define Image/Build/vhd
-	rm $(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).vhdx || true
-	/usr/bin/qemu-img convert -O vhdx \
-		$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).img \
-		$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).vhdx
-  endef
-  define Image/Build/vhd_efi
-	rm $(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).vhdx || true
-	/usr/bin/qemu-img convert -O vhdx \
-		$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img \
-		$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).vhdx
-  endef
-endif
-
-ifneq ($(CONFIG_QCOW2_IMAGES),)
-  define Image/Build/qcow2
-	rm $(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).qcow2 || true
-	/usr/bin/qemu-img convert -f raw -O qcow2 \
-		$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).img \
-		$(BIN_DIR)/$(IMG_PREFIX)-combined-$(1).qcow2
-  endef
-  define Image/Build/qcow2_efi
-	rm $(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).qcow2 || true
-	/usr/bin/qemu-img convert -f raw -O qcow2 \
-		$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).img \
-		$(BIN_DIR)/$(IMG_PREFIX)-uefi-gpt-$(1).qcow2
   endef
 endif
 
@@ -327,14 +299,10 @@ define Image/Build
 ifneq ($(CONFIG_GRUB_IMAGES),)
 	$(call Image/Build/vdi,$(1))
 	$(call Image/Build/vmdk,$(1))
-	$(call Image/Build/vhd,$(1))
-	$(call Image/Build/qcow2,$(1))
 endif
 ifneq ($(CONFIG_EFI_IMAGES),)
 	$(call Image/Build/vdi_efi,$(1))
 	$(call Image/Build/vmdk_efi,$(1))
-	$(call Image/Build/vhd_efi,$(1))
-	$(call Image/Build/qcow2_efi,$(1))
 endif
 	$(CP) $(KDIR)/root.$(1) $(BIN_DIR)/$(IMG_PREFIX)-rootfs-$(1).img
   else

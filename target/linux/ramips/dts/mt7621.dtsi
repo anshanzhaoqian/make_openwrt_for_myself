@@ -49,6 +49,8 @@
 		clock-frequency = <50000000>;
 	};
 
+
+
 	palmbus: palmbus@1E000000 {
 		compatible = "palmbus";
 		reg = <0x1E000000 0x100000>;
@@ -73,9 +75,6 @@
 
 			compatible = "mtk,mt7621-gpio";
 			reg = <0x600 0x100>;
-
-			interrupt-parent = <&gic>;
-			interrupts = <GIC_SHARED 12 IRQ_TYPE_LEVEL_HIGH>;
 
 			gpio0: bank@0 {
 				reg = <0>;

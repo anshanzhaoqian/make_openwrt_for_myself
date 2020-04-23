@@ -48,13 +48,7 @@ if [ "$ACTION" = "pressed" -a "$BUTTON" = "wps" ]; then
 	wps_done=0
 	ubusobjs="$( ubus -S list wpa_supplicant.* )"
 	for ubusobj in $ubusobjs; do
-		ifname="$(echo $ubusobj | cut -d'.' -f2 )"
-		multi_ap=""
-		if [ -e "/var/run/wpa_supplicant-${ifname}.conf.is_multiap" ]; then
-			ubus -S call $ubusobj wps_start '{ "multi_ap": true }' && wps_done=1
-		else
-			ubus -S call $ubusobj wps_start && wps_done=1
-		fi
+		ubus -S call $ubusobj wps_start && wps_done=1
 	done
 	[ $wps_done = 0 ] || wps_catch_credentials &
 fi

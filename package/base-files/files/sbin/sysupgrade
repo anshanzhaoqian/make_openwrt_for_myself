@@ -2,7 +2,6 @@
 
 . /lib/functions.sh
 . /lib/functions/system.sh
-. /usr/share/libubox/jshn.sh
 
 # initialize defaults
 export MTD_CONFIG_ARGS=""
@@ -250,7 +249,7 @@ do_save_conffiles() {
 
 	v "Saving config files..."
 	[ "$VERBOSE" -gt 1 ] && TAR_V="v" || TAR_V=""
-	tar c${TAR_V}zpf "$conf_tar" -T "$CONFFILES" 2>/dev/null
+	tar c${TAR_V}zf "$conf_tar" -T "$CONFFILES" 2>/dev/null
 	if [ "$?" -ne 0 ]; then
 		echo "Failed to create the configuration backup."
 		rm -f "$conf_tar"
@@ -369,15 +368,9 @@ if [ -n "$FAILSAFE" ]; then
 	printf '%s\x00%s\x00%s' "$RAM_ROOT" "$IMAGE" "$COMMAND" >/tmp/sysupgrade
 	lock -u /tmp/.failsafe
 else
-	json_init
-	json_add_string prefix "$RAM_ROOT"
-	json_add_string path "$IMAGE"
-	[ $FORCE -eq 1 ] && json_add_boolean force 1
-	[ $SAVE_CONFIG -eq 1 ] && json_add_string backup "$CONF_TAR"
-	json_add_string command "$COMMAND"
-	json_add_object options
-	json_add_int save_partitions "$SAVE_PARTITIONS"
-	json_close_object
-
-	ubus call system sysupgrade "$(json_dump)"
+	ubus call system sysupgrade "{
+		\"prefix\": $(json_string "$RAM_ROOT"),
+		\"path\": $(json_string "$IMAGE"),
+		\"command\": $(json_string "$COMMAND")
+	}"
 fi

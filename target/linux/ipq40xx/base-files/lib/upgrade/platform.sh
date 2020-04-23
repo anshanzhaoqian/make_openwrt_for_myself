@@ -162,18 +162,8 @@ platform_do_upgrade() {
 	8dev,jalapeno)
 		nand_do_upgrade "$ARGV"
 		;;
-	mobipromo,cm520-79f |\
-	p2w,r619ac|\
-	p2w,r619ac-128m)
-		nand_do_upgrade "$1"
-		;;
-	asus,map-ac2200)
-		CI_KERNPART="linux"
-		nand_do_upgrade "$1"
-		;;
 	asus,rt-acrh17|\
-	asus,rt-ac58u|\
-	asus,rt-ac1300uhp)
+	asus,rt-ac58u)
 		local magic=$(get_magic_long "$1")
 		CI_UBIPART="UBI_DEV"
 		CI_KERNPART="linux"
@@ -183,9 +173,6 @@ platform_do_upgrade() {
 		else
 			asus_nand_upgrade_tar 20951040 "$1"
 		fi
-		;;
-	linksys,ea6350v3)
-		platform_do_upgrade_linksys "$ARGV"
 		;;
 	openmesh,a42 |\
 	openmesh,a62)

@@ -11,10 +11,6 @@ define rootfs_align
 $(patsubst %-256k,0x40000,$(patsubst %-128k,0x20000,$(patsubst %-64k,0x10000,$(patsubst squashfs%,0x4,$(patsubst root.%,%,$(1))))))
 endef
 
-define Build/copy-file
-	cat "$(1)" > "$@"
-endef
-
 # combine kernel and rootfs into one image
 # mktplinkfw <type> <optional extra arguments to mktplinkfw binary>
 # <type> is "sysupgrade" or "factory"
@@ -48,19 +44,15 @@ ifeq ($(SUBTARGET),generic)
 
 define Device/tl-wdr4900-v1
   DEVICE_TITLE := TP-Link TL-WDR4900
+  DEVICE_PACKAGES := kmod-ath9k wpad-basic
   TPLINK_HWID := 0x49000001
   TPLINK_HWREV := 1
   TPLINK_FLASHLAYOUT := 16Mppc
-  KERNEL_SIZE := 2684k
-  KERNEL_NAME := simpleImage.tl-wdr4900-v1
+  KERNEL_NAME := cuImage.tl-wdr4900-v1
   KERNEL_INITRAMFS :=
-  KERNEL := kernel-bin | uImage none
-  KERNEL_ENTRY := 0x1000000
-  KERNEL_LOADADDR := 0x1000000
   SUPPORTED_DEVICES:=tl-wdr4900-v1 tplink,tl-wdr4900-v1
-  ARTIFACTS := fdt.bin
-  ARTIFACT/fdt.bin := append-dtb
   IMAGES := fdt.bin factory.bin sysupgrade.bin
+  IMAGE/fdt.bin := append-dtb
   IMAGE/sysupgrade.bin := append-rootfs | mktplinkfw sysupgrade | append-metadata
   IMAGE/factory.bin := append-rootfs | mktplinkfw factory
 endef
@@ -68,6 +60,7 @@ TARGET_DEVICES += tl-wdr4900-v1
 
 define Device/red-15w-rev1
   DEVICE_TITLE := Sophos RED 15w Rev.1
+  DEVICE_PACKAGES := kmod-usb2
   # Original firmware uses a dedicated DTB-partition.
   # The bootloader however supports FIT-images.
   KERNEL = kernel-bin | gzip | fit gzip $(KDIR)/image-$$(DEVICE_DTS).dtb
@@ -83,11 +76,10 @@ ifeq ($(SUBTARGET),p1020)
 
 define Device/hiveap-330
   DEVICE_TITLE := Aerohive HiveAP-330
-  DEVICE_PACKAGES := kmod-tpm-i2c-atmel
+  DEVICE_PACKAGES := kmod-ath9k wpad-basic kmod-tpm-i2c-atmel
   BLOCKSIZE := 128k
-  KERNEL := kernel-bin | gzip | uImage gzip
+  KERNEL_NAME := zImage
   KERNEL_SIZE := 8m
-  KERNEL_INITRAMFS := copy-file $(KDIR)/vmlinux-initramfs | uImage none
   SUPPORTED_DEVICES := aerohive,hiveap-330
   IMAGES := fdt.bin sysupgrade.bin
   IMAGE/fdt.bin := append-dtb
@@ -97,20 +89,6 @@ define Device/hiveap-330
 	append-kernel | append-metadata
 endef
 TARGET_DEVICES += hiveap-330
-
-define Device/panda
-  DEVICE_TITLE := OCEDO Panda
-  DEVICE_PACKAGES := kmod-rtc-ds1307 uboot-envtools
-  KERNEL = kernel-bin | gzip | fit gzip $(KDIR)/image-$$(DEVICE_DTS).dtb
-  PAGESIZE := 2048
-  SUBPAGESIZE := 512
-  BLOCKSIZE := 128k
-  SUPPORTED_DEVICES := ocedo,panda
-  IMAGES := fdt.bin sysupgrade.bin
-  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
-  IMAGE/fdt.bin := append-dtb
-endef
-TARGET_DEVICES += panda
 
 endif
 

@@ -8,19 +8,17 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mbedtls
-PKG_VERSION:=2.16.3
+PKG_VERSION:=2.14.1
 PKG_RELEASE:=2
 PKG_USE_MIPS16:=0
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-gpl.tgz
 PKG_SOURCE_URL:=https://tls.mbed.org/download/
-PKG_HASH:=fd01fe4b289116df7781d05e1ef712b6c98823c5334f4a27404f13a8d066ef6a
+PKG_HASH:=baa1121952786f5b2c66c52226a8ca0e05126de920d1756266551df677915b7e
 
 PKG_BUILD_PARALLEL:=1
 PKG_LICENSE:=GPL-2.0+
 PKG_CPE_ID:=cpe:/a:arm:mbed_tls
-
-PKG_CONFIG_DEPENDS:=CONFIG_LIBMBEDTLS_HAVE_SSE2
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/cmake.mk
@@ -42,22 +40,6 @@ $(call Package/mbedtls/Default)
   SUBMENU:=SSL
   TITLE+= (library)
   ABI_VERSION:=12
-endef
-
-define Package/libmbedtls/config
-config LIBMBEDTLS_HAVE_SSE2
-	depends on PACKAGE_libmbedtls
-	bool
-	default y if !TARGET_x86_legacy && !TARGET_x86_geode
-	prompt "Enable use of x86 SSE2 instructions"
-	depends on x86_64 || i386
-	help
-		Use of SSE2 instructions greatly increase performance (up to
-		3x faster) with a minimum (~0.2%, or 23KB) increase in package
-		size, but it will bring no benefit if your hardware does not
-		support them, such as Geode GX and LX.  In this case you may
-		save 23KB by saying yes here.  AMD Geode NX, and Intel
-		Pentium 4 and above support SSE2.
 endef
 
 define Package/mbedtls-util
@@ -88,17 +70,6 @@ CMAKE_OPTIONS += \
 	-DUSE_SHARED_MBEDTLS_LIBRARY:Bool=ON \
 	-DENABLE_TESTING:Bool=OFF \
 	-DENABLE_PROGRAMS:Bool=ON
-
-define Build/Configure
-	$(Build/Configure/Default)
-
-	awk 'BEGIN { rc = 1 } \
-	     /#define MBEDTLS_HAVE_SSE2/ { $$$$0 = "$(if $(CONFIG_LIBMBEDTLS_HAVE_SSE2),,// )#define MBEDTLS_HAVE_SSE2"; rc = 0 } \
-	     { print } \
-	     END { exit(rc) }' $(PKG_BUILD_DIR)/include/mbedtls/config.h \
-	     >$(PKG_BUILD_DIR)/include/mbedtls/config.h.new && \
-	mv $(PKG_BUILD_DIR)/include/mbedtls/config.h.new $(PKG_BUILD_DIR)/include/mbedtls/config.h
-endef
 
 define Build/InstallDev
 	$(INSTALL_DIR) $(1)/usr/include

@@ -105,17 +105,6 @@ config ATH79_MACH_SC450
 	select ATH79_DEV_M25P80
 	select ATH79_DEV_USB
 	select ATH79_DEV_WMAC
-	
-config ATH79_MACH_SGR_W500_N85B_V2
-	bool "GRENTECH SGR-W500-N85b v2.0 support"
-	select SOC_AR934X
-	select ATH79_DEV_AP9X_PCI if PCI
-	select ATH79_DEV_ETH
-	select ATH79_DEV_GPIO_BUTTONS
-	select ATH79_DEV_LEDS_GPIO
-	select ATH79_DEV_M25P80
-	select ATH79_DEV_WMAC
-	select ATH79_DEV_USB
 
 config ATH79_MACH_ALL0258N
 	bool "Allnet ALL0258N support"
@@ -175,6 +164,16 @@ config ATH79_MACH_ARDUINO_YUN
 	select ATH79_DEV_USB
 	select ATH79_DEV_WMAC
 
+config ATH79_MACH_ARRIS_SBR_AC1750
+	bool "ARRIS SBR-AC1750/TR3300 Router"
+	select SOC_QCA955X
+	select ATH79_DEV_ETH
+	select ATH79_DEV_GPIO_BUTTONS
+	select ATH79_DEV_LEDS_GPIO
+	select ATH79_DEV_NFC
+	select ATH79_DEV_USB
+	select ATH79_DEV_WMAC
+
 config ATH79_MACH_AP132
 	bool "Atheros AP132 reference board"
 	select SOC_QCA955X
@@ -197,6 +196,16 @@ config ATH79_MACH_AP143
 
 config ATH79_MACH_AP147
 	bool "Atheros AP147 reference board"
+	select SOC_QCA953X
+	select ATH79_DEV_GPIO_BUTTONS
+	select ATH79_DEV_LEDS_GPIO
+	select ATH79_DEV_M25P80
+	select ATH79_DEV_USB
+	select ATH79_DEV_WMAC
+	select ATH79_DEV_AP9X_PCI if PCI
+
+config ATH79_MACH_AC9531
+	bool "Atheros AC9531 reference board"
 	select SOC_QCA953X
 	select ATH79_DEV_GPIO_BUTTONS
 	select ATH79_DEV_LEDS_GPIO
@@ -521,6 +530,15 @@ config ATH79_MACH_XD3200
 	select ATH79_DEV_M25P80
 	select ATH79_DEV_WMAC
 
+config ATH79_MACH_X_AP1200
+	bool "X AP1200 board"
+	select SOC_QCA953X
+	select ATH79_DEV_GPIO_BUTTONS
+	select ATH79_DEV_LEDS_GPIO
+	select ATH79_DEV_M25P80
+	select ATH79_DEV_WMAC
+	select ATH79_DEV_AP9X_PCI if PCI
+
 config ATH79_MACH_DGL_5500_A1
 	bool "D-Link DGL-5500 A1 support"
 	select SOC_QCA955X
@@ -648,18 +666,6 @@ config ATH79_MACH_DLAN_PRO_1200_AC
 
 config ATH79_MACH_DOMYWIFI_DW33D
 	bool "DomyWifi DW33D support"
-	select SOC_QCA955X
-	select ATH79_DEV_AP9X_PCI if PCI
-	select ATH79_DEV_ETH
-	select ATH79_DEV_GPIO_BUTTONS
-	select ATH79_DEV_LEDS_GPIO
-	select ATH79_DEV_M25P80
-	select ATH79_DEV_NFC
-	select ATH79_DEV_WMAC
-	select ATH79_DEV_USB
-	
-config ATH79_MACH_ARRIS_SBR_AC1750
-	bool "Arris SBR-AC1750 support"
 	select SOC_QCA955X
 	select ATH79_DEV_AP9X_PCI if PCI
 	select ATH79_DEV_ETH
@@ -946,6 +952,18 @@ config ATH79_MACH_EAP300V2
 	select ATH79_DEV_LEDS_GPIO
 	select ATH79_DEV_M25P80
 	select ATH79_DEV_WMAC
+
+config ATH79_MACH_GS_MINIBOX_V32
+	bool "Gainstrong Minibox V3.2 support"
+	select SOC_QCA953X
+	select ATH79_DEV_AP9X_PCI if PCI
+	select ATH79_DEV_GPIO_BUTTONS
+	select ATH79_DEV_LEDS_GPIO
+	select ATH79_DEV_SPI
+	select ATH79_DEV_USB
+	select ATH79_DEV_WMAC
+	select ATH79_DEV_ETH
+	select ATH79_DEV_M25P80
 
 config ATH79_MACH_GS_OOLITE_V1
 	bool "GainStrong Oolite/Minibox V1.0 support"
@@ -1830,17 +1848,6 @@ config ATH79_MACH_TL_WA901ND_V4
 	select ATH79_DEV_M25P80
 	select ATH79_DEV_WMAC
 
-config ATH79_MACH_TL_WDR3227_V2
-	bool "TP-LINK TL-WDR3227 v2 board support"
-	select SOC_AR934X
-	select ATH79_DEV_AP9X_PCI if PCI
-	select ATH79_DEV_ETH
-	select ATH79_DEV_GPIO_BUTTONS
-	select ATH79_DEV_LEDS_GPIO
-	select ATH79_DEV_M25P80
-	select ATH79_DEV_USB
-	select ATH79_DEV_WMAC
-
 config ATH79_MACH_TL_WDR3320_V2
 	bool "TP-LINK TL-WDR3320 v2 board support"
 	select SOC_AR934X
@@ -1874,8 +1881,8 @@ config ATH79_MACH_TL_WDR4300
 	select ATH79_DEV_USB
 	select ATH79_DEV_WMAC
 
-config ATH79_MACH_TL_WDR6500_V2
-	bool "TP-LINK TL-WDR6500 v2 board support"
+config ATH79_MACH_TL_WDX6501_V7
+	bool "TP-LINK TL-WDX6501 v7 board support"
 	select SOC_QCA956X
 	select ATH79_DEV_AP9X_PCI if PCI
 	select ATH79_DEV_ETH
@@ -1885,8 +1892,8 @@ config ATH79_MACH_TL_WDR6500_V2
 	select ATH79_DEV_USB
 	select ATH79_DEV_WMAC
 
-config ATH79_MACH_TL_WDR6500_V6
-	bool "TP-LINK TL-WDR6500 v6 board support"
+config ATH79_MACH_TL_WDR6500_V2
+	bool "TP-LINK TL-WDR6500 v2 board support"
 	select SOC_QCA956X
 	select ATH79_DEV_AP9X_PCI if PCI
 	select ATH79_DEV_ETH
@@ -2032,15 +2039,6 @@ config ATH79_MACH_TL_WR941ND
 config ATH79_MACH_TL_WR941ND_V6
 	bool "TP-LINK TL-WR941ND v6 support"
 	select SOC_QCA956X
-	select ATH79_DEV_ETH
-	select ATH79_DEV_GPIO_BUTTONS
-	select ATH79_DEV_LEDS_GPIO
-	select ATH79_DEV_M25P80
-	select ATH79_DEV_WMAC
-
-config ATH79_MACH_TL_WR941N_V7
-	bool "TP-LINK TL-WR941N v7 support"
-	select SOC_QCA955X
 	select ATH79_DEV_ETH
 	select ATH79_DEV_GPIO_BUTTONS
 	select ATH79_DEV_LEDS_GPIO
@@ -2196,7 +2194,7 @@ config ATH79_MACH_UBNT
 	select ATH79_DEV_USB
 
 config ATH79_MACH_UBNT_UNIFIAC
-	bool "Ubiquiti UniFi AC (LITE/LR/MESH/PRO) support"
+	bool "Ubiquiti UniFi AC (LITE/LR/MESH/PRO/MESH-PRO) support"
 	select SOC_QCA956X
 	select ATH79_DEV_AP9X_PCI if PCI
 	select ATH79_DEV_ETH

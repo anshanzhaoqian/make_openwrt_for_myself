@@ -98,21 +98,27 @@ ubnt_xm_board_detect() {
 	[ -z "$model" ] || AR71XX_MODEL="${model}${magic:3:1}"
 }
 
-ubnt_ac_lite_get_mtd_part_magic() {
+ubnt_unifi_ac_get_mtd_part_magic() {
 	ar71xx_get_mtd_offset_size_format EEPROM 12 2 %02x
 }
 
-ubnt_ac_lite_board_detect() {
+ubnt_unifi_ac_board_detect() {
 	local model
 	local magic
 
-	magic="$(ubnt_ac_lite_get_mtd_part_magic)"
+	magic="$(ubnt_unifi_ac_get_mtd_part_magic)"
 	case ${magic:0:4} in
 	"e517")
 		model="Ubiquiti UniFi-AC-LITE"
 		;;
+	"e537")
+		model="Ubiquiti UniFi-AC-PRO"
+		;;
 	"e557")
 		model="Ubiquiti UniFi-AC-MESH"
+		;;
+	"e567")
+		model="Ubiquiti UniFi-AC-MESH-PRO"
 		;;
 	esac
 
@@ -270,9 +276,6 @@ tplink_board_detect() {
 	"094000"*)
 		model="TP-Link TL-WR940N"
 		;;
-	"088500"*)
-		model="TP-Link TL-WR885N"
-		;;
 	"094100"*)
 		model="TP-Link TL-WR941N/ND"
 
@@ -328,13 +331,16 @@ tplink_board_detect() {
 		model="ANTROUTER-R1"
 		;;
 	"453000"*)
-		model="MerCury MW4530R"
+		model="Mercury MW4530R"
 		;;
 	"49000002")
 		model="TP-Link TL-WDR4900"
 		;;
 	"640000"*)
 		model="TP-Link TL-MR6400"
+		;;
+	"65010007")
+		model="TP-Link TL-WDX6501"
 		;;
 	"65000002")
 		model="TP-Link TL-WDR6500"
@@ -351,9 +357,6 @@ tplink_board_detect() {
 		;;
 	"934100"*)
 		model="NC-LINK SMART-300"
-		;;
-	"322700"*)
-		model="TP-Link TL-WDR3227"
 		;;
 	"c50000"*)
 		model="TP-Link Archer C5"
@@ -466,8 +469,14 @@ ar71xx_board_detect() {
 	*"AP143 reference board")
 		name="ap143"
 		;;
-	*"Letv SuperRouter")
+	*"AP147-010 reference board")
 		name="ap147-010"
+		;;
+	*"AC9531-010 reference board")
+		name="ac9531-010"
+		;;
+	*"AC9531-020 reference board")
+		name="ac9531-020"
 		;;
 	*"AP152 reference board")
 		name="ap152"
@@ -480,6 +489,9 @@ ar71xx_board_detect() {
 		;;
 	*"AP91-5G")
 		name="ap91-5g"
+		;;
+	*"ARRIS SBR-AC1750/TR3300 Router")
+		name="arris-sbr-ac1750"
 		;;
 	*"Archer C25 v1")
 		name="archer-c25-v1"
@@ -685,9 +697,6 @@ ar71xx_board_detect() {
 	*"DW33D")
 		name="dw33d"
 		;;
-	*"SBR-AC1750")
-		name="sbr-ac1750"
-		;;
 	*"E1700AC v2")
 		name="e1700ac-v2"
 		;;
@@ -790,9 +799,6 @@ ar71xx_board_detect() {
 	*"GL-USB150")
 		name="gl-usb150"
 		;;
-	"GRENTECH SGR-W500-N85b v2.0")
-		name="sgr-w500-n85b-v2"
-		;;
 	*"HiveAP-121")
 		name="hiveap-121"
 		;;
@@ -843,11 +849,11 @@ ar71xx_board_detect() {
 	*"MAC1200R")
 		name="mc-mac1200r"
 		;;
-	*"MW4530R")
-		name="mc-mw4530r"
-		;;
 	*"MiniBox V1.0")
 		name="minibox-v1"
+		;;
+	*"Minibox V3.2")
+		name="minibox-v3.2"
 		;;
 	*"MR12")
 		name="mr12"
@@ -1280,9 +1286,6 @@ ar71xx_board_detect() {
 	*"TL-WA901ND v5")
 		name="tl-wa901nd-v5"
 		;;
-	*"TL-WDR3227 v2")
-		name="tl-wdr3227-v2"
-		;;
 	*"TL-WDR3320 v2")
 		name="tl-wdr3320-v2"
 		;;
@@ -1295,11 +1298,11 @@ ar71xx_board_detect() {
 	*"TL-WDR4900 v2")
 		name="tl-wdr4900-v2"
 		;;
+	*"TL-WDX6501 v7")
+		name="tl-wdx6501-v7"
+		;;
 	*"TL-WDR6500 v2")
 		name="tl-wdr6500-v2"
-		;;
-	*"TL-WDR6500 v6")
-		name="tl-wdr6500-v6"
 		;;
 	*"TL-WPA8630")
 		name="tl-wpa8630"
@@ -1318,12 +1321,6 @@ ar71xx_board_detect() {
 		;;
 	*"TL-WR1043ND v4")
 		name="tl-wr1043nd-v4"
-		;;
-	*"TL-WR2041N v1")
-		name="tl-wr2041n-v1"
-		;;
-	*"TL-WR2041N v2")
-		name="tl-wr2041n-v2"
 		;;
 	*"TL-WR2543N"*)
 		name="tl-wr2543n"
@@ -1385,15 +1382,6 @@ ar71xx_board_detect() {
 	*"TL-WR842N/ND v3")
 		name="tl-wr842n-v3"
 		;;
-	*"TL-WR880N v1")
-		name="tl-wr880n-v1"
-		;;
-	*"TL-WR881N v1")
-		name="tl-wr881n-v1"
-		;;
-	*"TL-WR885N v1")
-		name="tl-wr885n-v1"
-		;;
 	*"TL-WR902AC v1")
 		name="tl-wr902ac-v1"
 		;;
@@ -1408,9 +1396,6 @@ ar71xx_board_detect() {
 		;;
 	*"TL-WR941N/ND v6")
 		name="tl-wr941nd-v6"
-		;;
-	*"TL-WR941N v7")
-		name="tl-wr941n-v7"
 		;;
 	*"TL-WR941ND")
 		name="tl-wr941nd"
@@ -1432,10 +1417,11 @@ ar71xx_board_detect() {
 		;;
 	*"UniFi-AC-LITE/MESH")
 		name="unifiac-lite"
-		ubnt_ac_lite_board_detect
+		ubnt_unifi_ac_board_detect
 		;;
-	*"UniFi-AC-PRO")
+	*"UniFi-AC-PRO/MESH-PRO")
 		name="unifiac-pro"
+		ubnt_unifi_ac_board_detect
 		;;
 	*"UniFiAP Outdoor")
 		name="unifi-outdoor"
@@ -1558,6 +1544,9 @@ ar71xx_board_detect() {
 		;;
 	*"XD3200")
 		name="xd3200"
+		;;
+	*"X AP1200 board")
+		name="x-ap1200"
 		;;
 	*"Z1")
 		name="z1"

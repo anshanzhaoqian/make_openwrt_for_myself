@@ -40,6 +40,11 @@ stop_service() {
 	sleep 1
 }
 
+service_running() {
+	ubus -t 30 wait_for network.interface
+	/sbin/wifi reload_legacy
+}
+
 validate_atm_bridge_section()
 {
 	uci_validate_section network "atm-bridge" "${1}" \
@@ -110,9 +115,7 @@ validate_switch_section()
 		'name:string' \
 		'enable:bool' \
 		'enable_vlan:bool' \
-		'reset:bool' \
-		'ar8xxx_mib_poll_interval:uinteger' \
-		'ar8xxx_mib_type:range(0,1)'
+		'reset:bool'
 }
 
 validate_switch_vlan()

@@ -139,7 +139,7 @@ ar8327_phy_rgmii_set(struct ar8xxx_priv *priv, struct phy_device *phydev)
 
 	if (!of_property_read_bool(np, "qca,phy-rgmii-en")) {
 		pr_err("ar8327: qca,phy-rgmii-en is not specified\n");
-		return -EINVAL;
+		return;
 	}
 	ar8xxx_phy_dbg_read(priv, phyaddr,
 				AR8327_PHY_MODE_SEL, &phy_val);
@@ -150,7 +150,7 @@ ar8327_phy_rgmii_set(struct ar8xxx_priv *priv, struct phy_device *phydev)
 	/* set rgmii tx clock delay if needed */
 	if (!of_property_read_bool(np, "qca,txclk-delay-en")) {
 		pr_err("ar8327: qca,txclk-delay-en is not specified\n");
-		return -EINVAL;
+		return;
 	}
 	ar8xxx_phy_dbg_read(priv, phyaddr,
 				AR8327_PHY_SYS_CTRL, &phy_val);
@@ -161,7 +161,7 @@ ar8327_phy_rgmii_set(struct ar8xxx_priv *priv, struct phy_device *phydev)
 	/* set rgmii rx clock delay if needed */
 	if (!of_property_read_bool(np, "qca,rxclk-delay-en")) {
 		pr_err("ar8327: qca,rxclk-delay-en is not specified\n");
-		return -EINVAL;
+		return;
 	}
 	ar8xxx_phy_dbg_read(priv, phyaddr,
 				AR8327_PHY_TEST_CTRL, &phy_val);
@@ -1476,7 +1476,7 @@ const struct ar8xxx_chip ar8327_chip = {
 
 	.name = "Atheros AR8327",
 	.ports = AR8327_NUM_PORTS,
-	.vlans = AR83X7_MAX_VLANS,
+	.vlans = AR8X16_MAX_VLANS,
 	.swops = &ar8327_sw_ops,
 
 	.reg_port_stats_start = 0x1000,
@@ -1511,7 +1511,7 @@ const struct ar8xxx_chip ar8337_chip = {
 
 	.name = "Atheros AR8337",
 	.ports = AR8327_NUM_PORTS,
-	.vlans = AR83X7_MAX_VLANS,
+	.vlans = AR8X16_MAX_VLANS,
 	.swops = &ar8327_sw_ops,
 
 	.reg_port_stats_start = 0x1000,

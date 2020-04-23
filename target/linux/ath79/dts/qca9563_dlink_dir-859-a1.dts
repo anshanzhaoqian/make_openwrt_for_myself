@@ -11,10 +11,10 @@
 	compatible = "dlink,dir-859-a1", "qca,qca9563";
 
 	aliases {
-		led-boot = &led_power;
-		led-failsafe = &led_power;
-		led-running = &led_power;
-		led-upgrade = &led_power;
+		led-boot = &power;
+		led-failsafe = &power;
+		led-running = &power;
+		led-upgrade = &power;
 	};
 
 	chosen {
@@ -29,7 +29,7 @@
 			gpios = <&gpio 8 GPIO_ACTIVE_LOW>;
 		};
 
-		led_power: power {
+		power: power {
 			label = "dir-859-a1:green:power";
 			gpios = <&gpio 15 GPIO_ACTIVE_LOW>;
 		};
@@ -47,10 +47,11 @@
 	};
 
 	keys {
-		compatible = "gpio-keys";
+		compatible = "gpio-keys-polled";
+		poll-interval = <20>;
 
 		wps {
-			linux,code = <KEY_WPS_BUTTON>;
+			linux,code = <KEY_RESTART>;
 			gpios = <&gpio 1 GPIO_ACTIVE_LOW>;
 			debounce-interval = <60>;
 		};
@@ -87,9 +88,9 @@
 };
 
 &spi {
-	status = "okay";
-
 	num-cs = <1>;
+
+	status = "okay";
 
 	flash@0 {
 		compatible = "jedec,spi-nor";
@@ -148,7 +149,6 @@
 	phy0: ethernet-phy@0 {
 		reg = <0>;
 		phy-mode = "sgmii";
-		qca,mib-poll-interval = <500>;
 
 		qca,ar8327-initvals = <
 			0x04 0x00080080 /* PORT0 PAD MODE CTRL */
@@ -173,6 +173,5 @@
 
 &wmac {
 	status = "okay";
-
 	qca,no-eeprom;
 };

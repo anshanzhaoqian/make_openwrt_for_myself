@@ -15,7 +15,6 @@ MAINTAINER:=Imre Kaloz <kaloz@openwrt.org>
 SUBTARGETS:=generic p1020 p2020
 
 KERNEL_PATCHVER:=4.14
-KERNEL_TESTING_PATCHVER := 4.19
 
 KERNELNAME:=zImage
 
@@ -23,6 +22,6 @@ include $(INCLUDE_DIR)/target.mk
 
 DEFAULT_PACKAGES += \
 	kmod-input-core kmod-input-gpio-keys kmod-button-hotplug \
-	kmod-leds-gpio swconfig kmod-ath9k wpad-basic kmod-usb2
+	kmod-leds-gpio swconfig kmod-ath9k wpad-basic
 
 $(eval $(call BuildTarget))

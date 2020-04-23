@@ -30,6 +30,7 @@ get_status_led() {
 	e750g-v8|\
 	eap120|\
 	minibox-v1|\
+	minibox-v3.2|\
 	packet-squirrel|\
 	som9331|\
 	sr3200|\
@@ -50,6 +51,7 @@ get_status_led() {
 	tew-632brp|\
 	tl-wr942n-v1|\
 	wpj344|\
+	x-ap1200|\
 	zbt-we1526)
 		status_led="$board:green:status"
 		;;
@@ -59,6 +61,10 @@ get_status_led() {
 		;;
 	ap147-010)
 		status_led="ap147:green:status"
+		;;
+	ac9531-020|\
+	ac9531-010)
+		status_led="ac9531:green:status"
 		;;
 	ap135-020)
 		status_led="ap135:green:status"
@@ -210,7 +216,6 @@ get_status_led() {
 		status_led="$board:red:system"
 		;;
 	dw33d|\
-	sbr-ac1750|\
 	r36a)
 		status_led="$board:blue:status"
 		;;
@@ -284,9 +289,6 @@ get_status_led() {
 		status_led="ubnt:green:d22"
 		;;
 	mc-mac1200r)
-		status_led="mercury:green:system"
-		;;
-	mc-mw4530r)
 		status_led="mercury:green:system"
 		;;
 	mr18|\
@@ -419,9 +421,6 @@ get_status_led() {
 	smart-300)
 		status_led="nc-link:green:system"
 		;;
-	sgr-w500-n85b-v2)
-		status_led="grentech:green:status"
-		;;
 	qihoo-c301)
 		status_led="qihoo:green:status"
 		;;
@@ -470,7 +469,6 @@ get_status_led() {
 	tl-wa901nd-v3|\
 	tl-wa901nd-v4|\
 	tl-wa901nd-v5|\
-	tl-wdr3227-v2|\
 	tl-wdr3320-v2|\
 	tl-wdr3500|\
 	tl-wr1041n-v2|\
@@ -478,8 +476,6 @@ get_status_led() {
 	tl-wr1043nd|\
 	tl-wr1043nd-v2|\
 	tl-wr1043nd-v4|\
-	tl-wr2041n-v1|\
-	tl-wr2041n-v2|\
 	tl-wr740n-v6|\
 	tl-wr741nd|\
 	tl-wr741nd-v4|\
@@ -491,11 +487,7 @@ get_status_led() {
 	tl-wr841n-v11|\
 	tl-wr842n-v2|\
 	tl-wr842n-v3|\
-	tl-wr880n-v1|\
-	tl-wr881n-v1|\
-	tl-wr885n-v1|\
 	tl-wr941nd|\
-	tl-wr941n-v7|\
 	tl-wr941nd-v5)
 		status_led="tp-link:green:system"
 		;;
@@ -505,8 +497,7 @@ get_status_led() {
 	tl-wr940n-v6)
 		status_led="tp-link:orange:diag"
 		;;
-	tl-wdr6500-v2|\
-	tl-wdr6500-v6)
+	tl-wdr6500-v2)
 		status_led="tp-link:white:system"
 		;;
 	tube2h)
@@ -588,9 +579,6 @@ set_state() {
 		status_led_blink_failsafe
 		;;
 	preinit_regular)
-		status_led_blink_preinit_regular
-		;;
-	upgrade)
 		status_led_blink_preinit_regular
 		;;
 	done)

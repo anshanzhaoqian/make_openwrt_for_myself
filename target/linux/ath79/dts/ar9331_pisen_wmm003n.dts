@@ -18,8 +18,9 @@
 		led-upgrade = &led_system;
 	};
 
-	keys {
-		compatible = "gpio-keys";
+	gpio-keys-polled {
+		compatible = "gpio-keys-polled";
+		poll-interval = <20>;
 
 		reset {
 			label = "reset";
@@ -29,7 +30,7 @@
 		};
 	};
 
-	leds {
+	gpio-leds {
 		compatible = "gpio-leds";
 
 		led_system: system {

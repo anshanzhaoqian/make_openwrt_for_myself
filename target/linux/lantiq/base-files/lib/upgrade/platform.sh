@@ -11,8 +11,6 @@ platform_do_upgrade() {
 	case "$board" in
 	avm,fritz3370-rev2-hynix|\
 	avm,fritz3370-rev2-micron|\
-	avm,fritz7362sl|\
-	avm,fritz7412|\
 	bt,homehub-v2b|\
 	bt,homehub-v3a|\
 	bt,homehub-v5a|\
@@ -21,7 +19,7 @@ platform_do_upgrade() {
 		nand_do_upgrade $1
 		;;
 	*)
-		default_do_upgrade "$1"
+		default_do_upgrade "$ARGV"
 		;;
 	esac
 }

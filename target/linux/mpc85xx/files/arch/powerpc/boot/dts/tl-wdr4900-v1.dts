@@ -24,10 +24,6 @@
 
 	aliases {
 		spi0 = &spi0;
-		led-boot = &system_green;
-		led-failsafe = &system_green;
-		led-running = &system_green;
-		led-upgrade = &system_green;
 	};
 
 	memory {
@@ -196,7 +192,7 @@
 	leds {
 		compatible = "gpio-leds";
 
-		system_green: system {
+		system {
 			gpios = <&gpio0 2 1>; /* active low */
 			label = "tp-link:blue:system";
 		};
@@ -235,36 +231,6 @@
 };
 
 /include/ "fsl/p1010si-post.dtsi"
-
-/ {
-	cpus {
-		PowerPC,P1010@0 {
-			bus-frequency = <399999996>;
-			timebase-frequency = <49999999>;
-			clock-frequency = <799999992>;
-		};
-	};
-
-	memory {
-		reg = <0x0 0x0 0x0 0x8000000>;
-	};
-
-	soc@ffe00000 {
-		bus-frequency = <399999996>;
-
-		serial@4600 {
-			clock-frequency = <399999996>;
-		};
-
-		serial@4500 {
-			clock-frequency = <399999996>;
-		};
-
-		pic@40000 {
-			clock-frequency = <399999996>;
-		};
-	};
-};
 
 /*
  * The TL-WDR4900 v1 uses the NXP (Freescale) P1014 SoC which is closely

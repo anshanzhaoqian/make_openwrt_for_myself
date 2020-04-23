@@ -188,7 +188,6 @@ struct ag71xx {
 	struct timer_list	oom_timer;
 
 	struct reset_control *mac_reset;
-	struct reset_control *mdio_reset;
 
 	u32			fifodata[3];
 	u32			plldata[3];

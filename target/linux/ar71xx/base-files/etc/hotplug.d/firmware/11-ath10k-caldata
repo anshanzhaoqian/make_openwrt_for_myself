@@ -109,12 +109,24 @@ case "$FIRMWARE" in
 		ath10kcal_extract "art" 20480 2116
 		ath10kcal_patch_mac $(macaddr_add $(cat /sys/class/net/eth0/address) -1)
 		;;
+	arris-sbr-ac1750)
+		ath10kcal_extract "caldata" 20480 2116
+		ath10kcal_patch_mac_crc $(macaddr_add $(cat /sys/class/net/eth0/address) +2)
+		;;
+	ap147-010|\
+	ac9531-010|\
+	ac9531-020|\
+	ap152)
+		ath10kcal_extract "art" 20480 2116
+		ath10kcal_patch_mac $(macaddr_add $(cat /sys/class/net/eth0/address) -2)
+		;;
 	cf-e355ac-v1|\
 	cf-e380ac-v1|\
 	cf-e380ac-v2|\
 	dlan-pro-1200-ac|\
 	e1700ac-v2|\
 	e600gac-v2|\
+	minibox-v3.2|\
 	oolite-v5.2|\
 	oolite-v5.2-dev|\
 	sr3200|\
@@ -133,10 +145,6 @@ case "$FIRMWARE" in
 	dw33d)
 		ath10kcal_extract "art" 20480 2116
 		ath10kcal_patch_mac $(mtd_get_mac_binary art 18)
-		;;
-	sbr-ac1750)
-		ath10kcal_extract "art" 20480 2116
-		ath10kcal_patch_mac_crc $(macaddr_add $(cat /sys/class/net/eth1/address) +1)
 		;;
 	epg5000|\
 	esr1750)
@@ -209,6 +217,7 @@ case "$FIRMWARE" in
 	;;
 "ath10k/pre-cal-pci-0000:00:00.0.bin")
 	case $board in
+	tl-wdx6501-v7|\
 	archer-c58-v1|\
 	archer-c59-v1|\
 	archer-c59-v2|\
@@ -229,8 +238,9 @@ case "$FIRMWARE" in
 		ln -sf /lib/firmware/ath10k/pre-cal-pci-0000\:00\:00.0.bin \
 			/lib/firmware/ath10k/QCA9888/hw2.0/board.bin
 		;;
-	tl-wdr6500-v6)
-		ath10kcal_extract "art" 8192 12064
+	x-ap1200)
+		ath10kcal_extract "art" 20480 12064
+		ath10kcal_patch_mac_crc $(macaddr_add $(cat /sys/class/net/eth0/address) +3)
 		ln -sf /lib/firmware/ath10k/pre-cal-pci-0000\:00\:00.0.bin \
 			/lib/firmware/ath10k/QCA9888/hw2.0/board.bin
 		;;

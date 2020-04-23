@@ -6,13 +6,6 @@
 #include "qca956x.dtsi"
 
 / {
-	aliases {
-		led-boot = &led_white;
-		led-failsafe = &led_white;
-		led-running = &led_blue;
-		led-upgrade = &led_blue;
-	};
-
 	chosen {
 		bootargs = "console=ttyS0,115200n8";
 	};
@@ -20,15 +13,18 @@
 	leds {
 		compatible = "gpio-leds";
 
-		led_white: led_white {
+		wifi_ac {
 			label = "ubnt:white:dome";
 			gpios = <&gpio 7 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "phy0tpt";
 		};
 
-		led_blue: led_blue {
+		wifi_n {
 			label = "ubnt:blue:dome";
 			gpios = <&gpio 8 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "phy1tpt";
 		};
+
 	};
 
 	keys {
@@ -104,8 +100,8 @@
 				read-only;
 			};
 
-			art: partition@ff0000 {
-				label = "art";
+			eeprom: partition@ff0000 {
+				label = "EEPROM";
 				reg = <0xff0000 0x010000>;
 				read-only;
 			};
@@ -115,6 +111,6 @@
 
 &wmac {
 	status = "okay";
-
-	mtd-cal-data = <&art 0x1000>;
+	mtd-cal-data = <&eeprom 0x1000>;
+	mtd-mac-address = <&eeprom 0x0>;
 };
