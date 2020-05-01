@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/mpd/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: mpd-full
-Version: 0.21.22-1
+Version: 0.21.23-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +libexpat +libflac +libfaad2 +USE_UCLIBC:icu +libffmpeg +libid3tag +libvorbis +libmms +libupnp +libshout +pulseaudio-daemon +yajl
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Sound
 Repository: packages
 Title: Music Player Daemon (full)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mpd-0.21.22.tar.xz
+Source: mpd-0.21.23.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -28,7 +28,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mpd-mini
-Version: 0.21.22-1
+Version: 0.21.23-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +libexpat +libflac +libfaad2 +USE_UCLIBC:icu +libmad +libvorbisidec
 Conflicts: 
 Menu-Depends: 
@@ -39,7 +39,7 @@ Category: Sound
 Repository: packages
 Title: Music Player Daemon (mini)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mpd-0.21.22.tar.xz
+Source: mpd-0.21.23.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -55,7 +55,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mpd-avahi-service
-Version: 0.21.22-1
+Version: 0.21.23-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +libexpat +libflac +libfaad2 +USE_UCLIBC:icu +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -65,7 +65,7 @@ Category: Sound
 Repository: packages
 Title: Music Player Daemon (Avahi service)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mpd-0.21.22.tar.xz
+Source: mpd-0.21.23.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

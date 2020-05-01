@@ -38,6 +38,25 @@ Description:     Translation for luci-app-lxc - български (Bulgarian)
 Petar Koretic <petar.koretic@sartura.hr>
 @@
 
+Package: luci-i18n-lxc-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-lxc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-lxc - bn translation
+Maintainer: Petar Koretic <petar.koretic@sartura.hr>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-lxc - বাংলা (Bengali)
+Petar Koretic <petar.koretic@sartura.hr>
+@@
+
 Package: luci-i18n-lxc-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

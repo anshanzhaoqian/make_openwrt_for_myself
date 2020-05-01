@@ -40,6 +40,26 @@ Description:     Translation for luci-app-fwknopd - български (Bulgaria
 Jonathan Bennett <JBennett@incomsystems.biz>
 @@
 
+Package: luci-i18n-fwknopd-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-fwknopd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-fwknopd - bn translation
+Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
+Source: 
+License: GPLv2
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-fwknopd - বাংলা (Bengali)
+Jonathan Bennett <JBennett@incomsystems.biz>
+@@
+
 Package: luci-i18n-fwknopd-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

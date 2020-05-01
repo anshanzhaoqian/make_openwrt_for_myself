@@ -40,6 +40,26 @@ Description:     Translation for luci-app-omcproxy - български (Bulgari
 Shun Li <riverscn@gmail.com>
 @@
 
+Package: luci-i18n-omcproxy-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-omcproxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-omcproxy - bn translation
+Maintainer: Shun Li <riverscn@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-omcproxy - বাংলা (Bengali)
+Shun Li <riverscn@gmail.com>
+@@
+
 Package: luci-i18n-omcproxy-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

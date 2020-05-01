@@ -38,6 +38,25 @@ Description:     Translation for luci-app-nft-qos - български (Bulgaria
 
 @@
 
+Package: luci-i18n-nft-qos-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-nft-qos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-nft-qos - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-nft-qos - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-nft-qos-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

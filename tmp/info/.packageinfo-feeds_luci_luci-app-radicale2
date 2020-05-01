@@ -40,6 +40,26 @@ Description:     Translation for luci-app-radicale2 - български (Bulgar
 
 @@
 
+Package: luci-i18n-radicale2-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-radicale2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-radicale2 - bn translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-radicale2 - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-radicale2-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

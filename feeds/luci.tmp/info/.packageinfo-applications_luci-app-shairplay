@@ -38,6 +38,25 @@ Description:     Translation for luci-app-shairplay - български (Bulgar
 
 @@
 
+Package: luci-i18n-shairplay-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-shairplay
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-shairplay - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-shairplay - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-shairplay-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

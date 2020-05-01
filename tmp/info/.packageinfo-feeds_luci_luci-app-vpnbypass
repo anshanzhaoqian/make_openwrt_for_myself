@@ -40,6 +40,26 @@ Description:     Translation for luci-app-vpnbypass - български (Bulgar
 Stan Grishin <stangri@melmac.net>
 @@
 
+Package: luci-i18n-vpnbypass-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-vpnbypass - bn translation
+Maintainer: Stan Grishin <stangri@melmac.net>
+Source: 
+License: GPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-vpnbypass - বাংলা (Bengali)
+Stan Grishin <stangri@melmac.net>
+@@
+
 Package: luci-i18n-vpnbypass-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

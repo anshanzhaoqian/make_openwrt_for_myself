@@ -40,6 +40,26 @@ Description:     Translation for luci-app-commands - български (Bulgari
 
 @@
 
+Package: luci-i18n-commands-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-commands
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-commands - bn translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-commands - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-commands-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

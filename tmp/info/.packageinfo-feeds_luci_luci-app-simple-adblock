@@ -40,6 +40,26 @@ Description:     Translation for luci-app-simple-adblock - български (B
 Stan Grishin <stangri@melmac.net>
 @@
 
+Package: luci-i18n-simple-adblock-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-simple-adblock - bn translation
+Maintainer: Stan Grishin <stangri@melmac.net>
+Source: 
+License: GPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-simple-adblock - বাংলা (Bengali)
+Stan Grishin <stangri@melmac.net>
+@@
+
 Package: luci-i18n-simple-adblock-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

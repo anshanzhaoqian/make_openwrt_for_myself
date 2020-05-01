@@ -40,6 +40,26 @@ Description:     Translation for luci-app-aria2 - български (Bulgarian)
 Xingwang Liao <kuoruan@gmail.com>
 @@
 
+Package: luci-i18n-aria2-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-aria2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-aria2 - bn translation
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: 
+License: MIT
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-aria2 - বাংলা (Bengali)
+Xingwang Liao <kuoruan@gmail.com>
+@@
+
 Package: luci-i18n-aria2-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

@@ -40,6 +40,26 @@ Description:     Translation for luci-app-dynapoint - български (Bulgar
 Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
 @@
 
+Package: luci-i18n-dynapoint-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dynapoint
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-dynapoint - bn translation
+Maintainer: Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
+Source: 
+License: GPL-3.0+
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-dynapoint - বাংলা (Bengali)
+Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
+@@
+
 Package: luci-i18n-dynapoint-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

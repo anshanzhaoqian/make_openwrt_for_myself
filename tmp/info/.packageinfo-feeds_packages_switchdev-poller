@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/switchdev-poller/Makefile
 
 Package: switchdev-poller
-Version: 1.0.1-1
+Version: 1.1.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +swconfig
 Conflicts: 
 Menu-Depends: 

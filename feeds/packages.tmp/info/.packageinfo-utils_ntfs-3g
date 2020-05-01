@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/ntfs-3g/Makefile
 
 Package: ntfs-3g
 Submenu: Filesystem
-Version: 2017.3.23-2-fuseint
+Version: 2017.3.23-3-fuseint
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fuse +PACKAGE_NTFS-3G_USE_LIBFUSE:libfuse +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: base
 Title: Stable Read/Write NTFS Driver
 Maintainer: Ted Hess <thess@kitschensync.net>
 Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
-License: GPL-2.0 LGPL-2.0
+License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
 Description:   Ntfs-3g is a NTFS driver, which can create, remove, rename,
@@ -27,7 +27,7 @@ Description:   Ntfs-3g is a NTFS driver, which can create, remove, rename,
    - ntfs-3g.probe
    - mount.ntfs-3g (symlink to ntfs-3g)
 
-http://www.tuxera.com
+https://www.tuxera.com
 Ted Hess <thess@kitschensync.net>
 @@
 Config:
@@ -48,7 +48,7 @@ config PACKAGE_NTFS-3G_HAS_PROBE
 
 Package: ntfs-3g-low
 Submenu: Filesystem
-Version: 2017.3.23-2-fuseint
+Version: 2017.3.23-3-fuseint
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ntfs-3g
 Conflicts: 
 Menu-Depends: 
@@ -59,7 +59,7 @@ Repository: base
 Title: lowntfs-3g (alternative using the fuse low-level interface)
 Maintainer: Ted Hess <thess@kitschensync.net>
 Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
-License: GPL-2.0 LGPL-2.0
+License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
 Description:   Contains:
@@ -70,13 +70,13 @@ Description:   Contains:
   enhanced functionality for streams or the like. You might want to check:
   http://www.tuxera.com/community/ntfs-3g-manual/
 
-http://www.tuxera.com
+https://www.tuxera.com
 Ted Hess <thess@kitschensync.net>
 @@
 
 Package: ntfs-3g-utils
 Submenu: Filesystem
-Version: 2017.3.23-2-fuseint
+Version: 2017.3.23-3-fuseint
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ntfs-3g +libgcrypt +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -87,7 +87,7 @@ Repository: base
 Title: ntfs-3g utilities
 Maintainer: Ted Hess <thess@kitschensync.net>
 Source: ntfs-3g_ntfsprogs-2017.3.23.tgz
-License: GPL-2.0 LGPL-2.0
+License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
 Description:   Suite of NTFS utilities for doing neat things with NTFS.
@@ -106,7 +106,7 @@ Description:   Suite of NTFS utilities for doing neat things with NTFS.
    - ntfsresize - Resize NTFS without losing data.
    - ntfsundelete - Recover deleted files from NTFS.
    - ntfsusermap - Define mapping of Windows accounts to Linux logins
-http://www.tuxera.com
+https://www.tuxera.com
 Ted Hess <thess@kitschensync.net>
 @@
 

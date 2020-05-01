@@ -40,6 +40,26 @@ Description:     Translation for luci-app-uhttpd - български (Bulgarian
 Daniel Dickinson <openwrt@daniel.thecshore.com>
 @@
 
+Package: luci-i18n-uhttpd-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-uhttpd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-uhttpd - bn translation
+Maintainer: Daniel Dickinson <openwrt@daniel.thecshore.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-uhttpd - বাংলা (Bengali)
+Daniel Dickinson <openwrt@daniel.thecshore.com>
+@@
+
 Package: luci-i18n-uhttpd-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

@@ -38,6 +38,25 @@ Description:     Translation for luci-app-yggdrasil - български (Bulgar
 
 @@
 
+Package: luci-i18n-yggdrasil-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-yggdrasil
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-yggdrasil - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-yggdrasil - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-yggdrasil-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

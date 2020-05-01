@@ -38,6 +38,25 @@ Description:     Translation for luci-app-samba4 - български (Bulgarian
 
 @@
 
+Package: luci-i18n-samba4-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-samba4-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

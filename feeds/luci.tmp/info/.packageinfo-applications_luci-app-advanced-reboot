@@ -40,6 +40,26 @@ Description:     Translation for luci-app-advanced-reboot - български (
 Stan Grishin <stangri@melmac.net>
 @@
 
+Package: luci-i18n-advanced-reboot-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-advanced-reboot - bn translation
+Maintainer: Stan Grishin <stangri@melmac.net>
+Source: 
+License: GPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-advanced-reboot - বাংলা (Bengali)
+Stan Grishin <stangri@melmac.net>
+@@
+
 Package: luci-i18n-advanced-reboot-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

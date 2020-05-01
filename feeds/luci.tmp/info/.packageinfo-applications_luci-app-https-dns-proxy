@@ -40,6 +40,26 @@ Description:     Translation for luci-app-https-dns-proxy - български (
 Stan Grishin <stangri@melmac.net>
 @@
 
+Package: luci-i18n-https-dns-proxy-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-https-dns-proxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-https-dns-proxy - bn translation
+Maintainer: Stan Grishin <stangri@melmac.net>
+Source: 
+License: GPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-https-dns-proxy - বাংলা (Bengali)
+Stan Grishin <stangri@melmac.net>
+@@
+
 Package: luci-i18n-https-dns-proxy-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

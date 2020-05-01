@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/python-lxml/Makefile
 
 Package: python3-lxml
 Submenu: Python
-Version: 4.4.2-2
+Version: 4.4.2-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libxslt +libexslt +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -10,21 +10,25 @@ Provides:
 Section: lang
 Category: Languages
 Repository: packages
-Title: python3-lxml
+Title: Pythonic XML processing library
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: lxml-4.4.2.tar.gz
-License: BSD
+License: BSD-3-Clause
 LicenseFiles: LICENSES.txt
 Type: ipkg
-Description: The lxml XML toolkit is a Pythonic binding
-for the C libraries libxml2 and libxslt.
+Description:   lxml is a Pythonic, mature binding for the libxml2 and libxslt
+  libraries. It provides safe and convenient access to these libraries
+  using the ElementTree API.
+
+  It extends the ElementTree API significantly to offer support for
+  XPath, RelaxNG, XML Schema, XSLT, C14N and much more.
 https://lxml.de
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: python3-lxml-src
 Submenu: Python
-Version: 4.4.2-2
+Version: 4.4.2-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -32,14 +36,18 @@ Provides:
 Section: lang
 Category: Languages
 Repository: packages
-Title: python3-lxml (sources)
+Title: Pythonic XML processing library (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: lxml-4.4.2.tar.gz
-License: BSD
+License: BSD-3-Clause
 LicenseFiles: LICENSES.txt
 Type: ipkg
-Description:     The lxml XML toolkit is a Pythonic binding
-for the C libraries libxml2 and libxslt.
+Description:       lxml is a Pythonic, mature binding for the libxml2 and libxslt
+  libraries. It provides safe and convenient access to these libraries
+  using the ElementTree API.
+
+  It extends the ElementTree API significantly to offer support for
+  XPath, RelaxNG, XML Schema, XSLT, C14N and much more.
 
     This package contains the Python source files for python3-lxml.
 https://lxml.de

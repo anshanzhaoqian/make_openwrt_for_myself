@@ -38,6 +38,25 @@ Description:     Translation for luci-app-transmission - български (Bul
 
 @@
 
+Package: luci-i18n-transmission-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-transmission
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-transmission - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-transmission - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-transmission-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

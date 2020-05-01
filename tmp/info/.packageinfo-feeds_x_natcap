@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/x/natcap/Makefile
 
 Package: kmod-natcap
 Submenu: Natcap Support
-Version: <LINUX_VERSION>+8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d
+Version: <LINUX_VERSION>+8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7
 Depends: +kmod-ipt-conntrack +kmod-ipt-nat +kmod-ipt-ipset
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Section: kernel
 Category: X
 Title: Natcap kernel driver
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natcap-8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d.tar.xz
+Source: natcap-8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:   Driver for natcap packet proxy to avoid inspection
@@ -20,7 +20,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natcapd
 Submenu: Natcap Support
-Version: 8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d
+Version: 8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-natcap +libustream-mbedtls +uclient-fetch +lua-cjson +ipset +dnsmasq-full +@PACKAGE_dnsmasq_full_ipset +busybox +@BUSYBOX_CUSTOM +@BUSYBOX_CONFIG_CKSUM +@BUSYBOX_CONFIG_BASE64 +@BUSYBOX_CONFIG_TIMEOUT +@BUSYBOX_CONFIG_NOHUP +@BUSYBOX_CONFIG_DIFF
 Conflicts: 
 Menu-Depends: 
@@ -30,7 +30,7 @@ Category: X
 Repository: x
 Title: natcapd agent for natcap
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natcap-8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d.tar.xz
+Source: natcap-8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:  Natcapd agent for natcap
@@ -39,7 +39,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natcapd-client
 Submenu: Natcap Support
-Version: 8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d
+Version: 8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
 Conflicts: 
 Menu-Depends: 
@@ -49,7 +49,7 @@ Category: X
 Repository: x
 Title: Natcapd_client agent for natcap
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natcap-8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d.tar.xz
+Source: natcap-8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Natcapd_client agent for natcap
@@ -58,7 +58,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natcapd-server
 Submenu: Natcap Support
-Version: 8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d
+Version: 8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libev
 Conflicts: 
 Menu-Depends: 
@@ -68,7 +68,7 @@ Category: X
 Repository: x
 Title: Natcapd_server agent for natcap
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natcap-8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d.tar.xz
+Source: natcap-8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: Natcapd_server agent for natcap
@@ -77,7 +77,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natcapd-peer
 Submenu: Natcap Support
-Version: 8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d
+Version: 8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-natcap +lua-cjson +ipset +busybox +@BUSYBOX_CUSTOM +@BUSYBOX_CONFIG_TIMEOUT
 Conflicts: 
 Menu-Depends: 
@@ -87,7 +87,7 @@ Category: X
 Repository: x
 Title: natcapd peer for natcap
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natcap-8.0.0-f00460785ac7d4d2fea5d52b156344c5b346954d.tar.xz
+Source: natcap-8.0.0-285732134298696c2d5212c7c8544eee6ac7d3b7.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: natcapd peer for natcap

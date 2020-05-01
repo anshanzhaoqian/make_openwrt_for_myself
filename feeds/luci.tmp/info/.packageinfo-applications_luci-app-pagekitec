@@ -38,6 +38,25 @@ Description:     Translation for luci-app-pagekitec - български (Bulgar
 Karl Palsson <karlp@tweak.net.au>
 @@
 
+Package: luci-i18n-pagekitec-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-pagekitec
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-pagekitec - bn translation
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-pagekitec - বাংলা (Bengali)
+Karl Palsson <karlp@tweak.net.au>
+@@
+
 Package: luci-i18n-pagekitec-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

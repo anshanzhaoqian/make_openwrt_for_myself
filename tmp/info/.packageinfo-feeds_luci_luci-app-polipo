@@ -38,6 +38,25 @@ Description:     Translation for luci-app-polipo - български (Bulgarian
 
 @@
 
+Package: luci-i18n-polipo-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-polipo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-polipo - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-polipo - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-polipo-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

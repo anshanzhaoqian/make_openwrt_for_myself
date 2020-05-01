@@ -4,7 +4,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Package: kamailio5
 Menu: 1
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libncurses +libpthread +libreadline +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -26,7 +26,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-lib-libkamailio-ims
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -47,7 +47,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-lib-libtrie
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -68,7 +68,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-util-kambdb-recover
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-util-kambdb-recover:kamailio5-mod-db-berkeley
 Conflicts: 
 Menu-Depends: 
@@ -89,7 +89,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-acc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-acc:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -110,7 +110,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-acc-diameter
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-acc-diameter:kamailio5-mod-acc
 Conflicts: 
 Menu-Depends: 
@@ -131,7 +131,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-acc-json
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-acc-json:jansson +PACKAGE_kamailio5-mod-acc-json:kamailio5-mod-acc
 Conflicts: 
 Menu-Depends: 
@@ -152,7 +152,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-alias-db
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -173,7 +173,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-app-jsdt
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -194,7 +194,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-app-lua
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-app-lua:liblua
 Conflicts: 
 Menu-Depends: 
@@ -215,7 +215,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-app-lua-sr
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-app-lua-sr:kamailio5-mod-app-lua
 Conflicts: 
 Menu-Depends: 
@@ -236,7 +236,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-app-python3
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-app-python3:python3-light
 Conflicts: 
 Menu-Depends: 
@@ -257,7 +257,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-app-ruby
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-app-ruby:libruby
 Conflicts: 
 Menu-Depends: 
@@ -278,7 +278,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-app-sqlang
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-app-sqlang:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -299,7 +299,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-async
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-async:kamailio5-mod-tm +PACKAGE_kamailio5-mod-async:kamailio5-mod-tmx
 Conflicts: 
 Menu-Depends: 
@@ -320,7 +320,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-auth
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -341,7 +341,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-auth-db
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-auth-db:kamailio5-mod-auth
 Conflicts: 
 Menu-Depends: 
@@ -362,7 +362,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-auth-diameter
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-auth-diameter:kamailio5-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -383,7 +383,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-auth-ephemeral
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-auth-ephemeral:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -404,7 +404,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-auth-identity
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-auth-identity:libopenssl +PACKAGE_kamailio5-mod-auth-identity:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -425,7 +425,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-auth-xkeys
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-auth-xkeys:kamailio5-mod-auth
 Conflicts: 
 Menu-Depends: 
@@ -446,7 +446,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-avp
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -467,7 +467,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-avpops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -488,7 +488,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-benchmark
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -509,7 +509,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-blst
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -530,7 +530,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-call-control
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-call-control:kamailio5-mod-dialog +PACKAGE_kamailio5-mod-call-control:kamailio5-mod-pv
 Conflicts: 
 Menu-Depends: 
@@ -551,7 +551,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-call-obj
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -572,7 +572,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-carrierroute
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-carrierroute:kamailio5-lib-libtrie
 Conflicts: 
 Menu-Depends: 
@@ -593,7 +593,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-cdp
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -614,7 +614,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-cdp-avp
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-cdp-avp:kamailio5-mod-cdp
 Conflicts: 
 Menu-Depends: 
@@ -635,7 +635,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-cfgutils
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -656,7 +656,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-cfg-db
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -677,7 +677,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-cfg-rpc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -698,7 +698,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-cfgt
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -719,7 +719,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-cnxcc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-cnxcc:kamailio5-mod-dialog +PACKAGE_kamailio5-mod-cnxcc:libhiredis +PACKAGE_kamailio5-mod-cnxcc:libevent2
 Conflicts: 
 Menu-Depends: 
@@ -740,7 +740,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-corex
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -761,7 +761,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-counters
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -782,7 +782,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-cplc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-cplc:kamailio5-mod-sl +PACKAGE_kamailio5-mod-cplc:kamailio5-mod-tm +PACKAGE_kamailio5-mod-cplc:kamailio5-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -803,7 +803,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-crypto
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-crypto:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -824,7 +824,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ctl
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -845,7 +845,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db2-ldap
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-db2-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -866,7 +866,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db2-ops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -887,7 +887,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-berkeley
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-db-berkeley:libdb47
 Conflicts: 
 Menu-Depends: 
@@ -908,7 +908,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-cluster
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -929,7 +929,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-flatstore
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -950,7 +950,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-mysql
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-db-mysql:libmysqlclient
 Conflicts: 
 Menu-Depends: 
@@ -971,7 +971,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-postgres
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-db-postgres:libpq
 Conflicts: 
 Menu-Depends: 
@@ -992,7 +992,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-redis
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-db-redis:libhiredis
 Conflicts: 
 Menu-Depends: 
@@ -1013,7 +1013,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-sqlite
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-db-sqlite:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -1034,7 +1034,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-text
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1055,7 +1055,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-db-unixodbc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-db-unixodbc:unixodbc
 Conflicts: 
 Menu-Depends: 
@@ -1076,7 +1076,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-debugger
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1097,7 +1097,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-dialog
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-dialog:kamailio5-mod-rr +PACKAGE_kamailio5-mod-dialog:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1118,7 +1118,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-dialplan
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-dialplan:libpcre
 Conflicts: 
 Menu-Depends: 
@@ -1139,7 +1139,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-dispatcher
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1160,7 +1160,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-diversion
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1181,7 +1181,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-dmq
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-dmq:kamailio5-mod-sl +PACKAGE_kamailio5-mod-dmq:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1202,7 +1202,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-dmq-usrloc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-dmq-usrloc:kamailio5-mod-dmq +PACKAGE_kamailio5-mod-dmq-usrloc:kamailio5-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -1223,7 +1223,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-domain
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1244,7 +1244,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-domainpolicy
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1265,7 +1265,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-drouting
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1286,7 +1286,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-enum
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1307,7 +1307,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-erlang
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 @!USE_MUSL +PACKAGE_kamailio5-mod-erlang:erlang
 Conflicts: 
 Menu-Depends: 
@@ -1328,7 +1328,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-evapi
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-evapi:libev
 Conflicts: 
 Menu-Depends: 
@@ -1349,7 +1349,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-evrexec
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1370,7 +1370,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-exec
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1391,7 +1391,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-group
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1412,7 +1412,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-gzcompress
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-gzcompress:zlib
 Conflicts: 
 Menu-Depends: 
@@ -1433,7 +1433,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-h350
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-h350:kamailio5-mod-ldap +PACKAGE_kamailio5-mod-h350:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -1454,7 +1454,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-htable
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1475,7 +1475,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-http-client
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-http-client:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -1496,7 +1496,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-imc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-imc:kamailio5-mod-db-mysql +PACKAGE_kamailio5-mod-imc:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1517,7 +1517,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-auth
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-auth:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-auth:kamailio5-mod-cdp +PACKAGE_kamailio5-mod-ims-auth:kamailio5-mod-cdp-avp +PACKAGE_kamailio5-mod-ims-auth:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1538,7 +1538,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-charging
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-charging:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-charging:kamailio5-mod-cdp +PACKAGE_kamailio5-mod-ims-charging:kamailio5-mod-cdp-avp +PACKAGE_kamailio5-mod-ims-charging:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1559,7 +1559,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-dialog
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-dialog:kamailio5-mod-rr +PACKAGE_kamailio5-mod-ims-dialog:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1580,7 +1580,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-diameter-server
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-diameter-server:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-diameter-server:kamailio5-mod-cdp +PACKAGE_kamailio5-mod-ims-diameter-server:kamailio5-mod-cdp-avp
 Conflicts: 
 Menu-Depends: 
@@ -1601,7 +1601,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-icscf
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-icscf:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-icscf:kamailio5-mod-cdp +PACKAGE_kamailio5-mod-ims-icscf:kamailio5-mod-cdp-avp +PACKAGE_kamailio5-mod-ims-icscf:kamailio5-mod-sl +PACKAGE_kamailio5-mod-ims-icscf:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1622,7 +1622,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-ipsec-pcscf
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-ipsec-pcscf:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-ipsec-pcscf:kamailio5-mod-ims-usrloc-pcscf +PACKAGE_kamailio5-mod-ims-ipsec-pcscf:kamailio5-mod-tm +PACKAGE_kamailio5-mod-ims-ipsec-pcscf:libmnl
 Conflicts: 
 Menu-Depends: 
@@ -1643,7 +1643,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-isc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-isc:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-isc:kamailio5-mod-ims-usrloc-scscf +PACKAGE_kamailio5-mod-ims-isc:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1664,7 +1664,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-ocs
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-ocs:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-ocs:kamailio5-mod-cdp +PACKAGE_kamailio5-mod-ims-ocs:kamailio5-mod-cdp-avp
 Conflicts: 
 Menu-Depends: 
@@ -1685,7 +1685,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-qos
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-qos:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-qos:kamailio5-mod-cdp +PACKAGE_kamailio5-mod-ims-qos:kamailio5-mod-cdp-avp +PACKAGE_kamailio5-mod-ims-qos:kamailio5-mod-ims-dialog +PACKAGE_kamailio5-mod-ims-qos:kamailio5-mod-ims-usrloc-pcscf +PACKAGE_kamailio5-mod-ims-qos:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1706,7 +1706,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-registrar-pcscf
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-registrar-pcscf:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-registrar-pcscf:kamailio5-mod-ims-usrloc-pcscf
 Conflicts: 
 Menu-Depends: 
@@ -1727,7 +1727,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-registrar-scscf
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ims-registrar-scscf:kamailio5-lib-libkamailio-ims +PACKAGE_kamailio5-mod-ims-registrar-scscf:kamailio5-mod-cdp +PACKAGE_kamailio5-mod-ims-registrar-scscf:kamailio5-mod-cdp-avp +PACKAGE_kamailio5-mod-ims-registrar-scscf:kamailio5-mod-ims-usrloc-scscf +PACKAGE_kamailio5-mod-ims-registrar-scscf:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -1748,7 +1748,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-usrloc-pcscf
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1769,7 +1769,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ims-usrloc-scscf
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1790,7 +1790,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ipops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1811,7 +1811,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-jansson
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-jansson:jansson
 Conflicts: 
 Menu-Depends: 
@@ -1832,7 +1832,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-janssonrpcc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-janssonrpcc:kamailio5-mod-jansson +PACKAGE_kamailio5-mod-janssonrpcc:libevent2
 Conflicts: 
 Menu-Depends: 
@@ -1853,7 +1853,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-json
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-json:libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -1874,7 +1874,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-jsonrpcs
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-jsonrpcs:libevent2
 Conflicts: 
 Menu-Depends: 
@@ -1895,7 +1895,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-keepalive
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1916,7 +1916,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-kemix
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1937,7 +1937,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-kex
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -1958,7 +1958,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-lcr
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-lcr:kamailio5-mod-tm +PACKAGE_kamailio5-mod-lcr:libpcre
 Conflicts: 
 Menu-Depends: 
@@ -1979,7 +1979,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ldap
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ldap:libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -2000,7 +2000,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-log-custom
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2021,7 +2021,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-lost
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-lost:kamailio5-mod-http-client
 Conflicts: 
 Menu-Depends: 
@@ -2042,7 +2042,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-mangler
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2063,7 +2063,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-matrix
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2084,7 +2084,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-maxfwd
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2105,7 +2105,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-mediaproxy
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-mediaproxy:kamailio5-mod-dialog
 Conflicts: 
 Menu-Depends: 
@@ -2126,7 +2126,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-mohqueue
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-mohqueue:kamailio5-mod-rtpproxy +PACKAGE_kamailio5-mod-mohqueue:kamailio5-mod-sl +PACKAGE_kamailio5-mod-mohqueue:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -2147,7 +2147,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-mqueue
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2168,7 +2168,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-msilo
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-msilo:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -2189,7 +2189,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-msrp
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-msrp:kamailio5-mod-tls
 Conflicts: 
 Menu-Depends: 
@@ -2210,7 +2210,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-mtree
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2231,7 +2231,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-nathelper
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-nathelper:kamailio5-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -2252,7 +2252,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-nat-traversal
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-nat-traversal:kamailio5-mod-dialog +PACKAGE_kamailio5-mod-nat-traversal:kamailio5-mod-sl +PACKAGE_kamailio5-mod-nat-traversal:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -2273,7 +2273,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ndb-redis
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-ndb-redis:libhiredis
 Conflicts: 
 Menu-Depends: 
@@ -2294,7 +2294,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-nosip
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-nosip:kamailio5-mod-rr
 Conflicts: 
 Menu-Depends: 
@@ -2315,7 +2315,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-outbound
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-outbound:kamailio5-mod-stun +PACKAGE_kamailio5-mod-outbound:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -2336,7 +2336,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-p-usrloc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2357,7 +2357,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-path
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-path:kamailio5-mod-rr
 Conflicts: 
 Menu-Depends: 
@@ -2378,7 +2378,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pdb
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2399,7 +2399,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pdt
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2420,7 +2420,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-permissions
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2441,7 +2441,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pike
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2462,7 +2462,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pipelimit
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pipelimit:kamailio5-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -2483,7 +2483,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-prefix-route
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2504,7 +2504,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-presence
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-presence:kamailio5-mod-sl +PACKAGE_kamailio5-mod-presence:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -2525,7 +2525,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-presence-conference
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-presence-conference:kamailio5-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -2546,7 +2546,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-presence-dialoginfo
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-presence-dialoginfo:kamailio5-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -2567,7 +2567,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-presence-mwi
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-presence-mwi:kamailio5-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -2588,7 +2588,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-presence-profile
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-presence-profile:kamailio5-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -2609,7 +2609,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-presence-reginfo
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-presence-reginfo:kamailio5-mod-presence
 Conflicts: 
 Menu-Depends: 
@@ -2630,7 +2630,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-presence-xml
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-presence-xml:kamailio5-mod-presence +PACKAGE_kamailio5-mod-presence-xml:kamailio5-mod-xcap-client
 Conflicts: 
 Menu-Depends: 
@@ -2651,7 +2651,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pua
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pua:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -2672,7 +2672,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pua-bla
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pua-bla:kamailio5-mod-presence +PACKAGE_kamailio5-mod-pua-bla:kamailio5-mod-pua +PACKAGE_kamailio5-mod-pua-bla:kamailio5-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -2693,7 +2693,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pua-dialoginfo
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pua-dialoginfo:kamailio5-mod-dialog +PACKAGE_kamailio5-mod-pua-dialoginfo:kamailio5-mod-pua
 Conflicts: 
 Menu-Depends: 
@@ -2714,7 +2714,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pua-json
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pua-json:libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -2735,7 +2735,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pua-reginfo
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pua-reginfo:kamailio5-mod-pua +PACKAGE_kamailio5-mod-pua-reginfo:kamailio5-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -2756,7 +2756,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pua-rpc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pua-rpc:kamailio5-mod-pua
 Conflicts: 
 Menu-Depends: 
@@ -2777,7 +2777,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pua-usrloc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pua-usrloc:kamailio5-mod-pua +PACKAGE_kamailio5-mod-pua-usrloc:kamailio5-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -2798,7 +2798,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pua-xmpp
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-pua-xmpp:kamailio5-mod-presence +PACKAGE_kamailio5-mod-pua-xmpp:kamailio5-mod-pua +PACKAGE_kamailio5-mod-pua-xmpp:kamailio5-mod-xmpp
 Conflicts: 
 Menu-Depends: 
@@ -2819,7 +2819,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-pv
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2840,7 +2840,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-qos
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-qos:kamailio5-mod-dialog
 Conflicts: 
 Menu-Depends: 
@@ -2861,7 +2861,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ratelimit
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2882,7 +2882,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-regex
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-regex:libpcre
 Conflicts: 
 Menu-Depends: 
@@ -2903,7 +2903,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-registrar
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-registrar:kamailio5-mod-usrloc
 Conflicts: 
 Menu-Depends: 
@@ -2924,7 +2924,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-rls
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-rls:kamailio5-mod-presence +PACKAGE_kamailio5-mod-rls:kamailio5-mod-pua +PACKAGE_kamailio5-mod-rls:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -2945,7 +2945,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-rr
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2966,7 +2966,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-rtimer
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -2987,7 +2987,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-rtjson
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3008,7 +3008,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-rtpengine
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-rtpengine:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -3029,7 +3029,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-rtpproxy
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-rtpproxy:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -3050,7 +3050,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sanity
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-sanity:kamailio5-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -3071,7 +3071,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sca
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-sca:kamailio5-mod-sl +PACKAGE_kamailio5-mod-sca:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -3092,7 +3092,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sctp
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-sctp:libsctp
 Conflicts: 
 Menu-Depends: 
@@ -3113,7 +3113,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sdpops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3134,7 +3134,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-seas
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-seas:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -3155,7 +3155,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-secfilter
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3176,7 +3176,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sipcapture
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3197,7 +3197,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sipdump
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3218,7 +3218,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sipt
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3239,7 +3239,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-siptrace
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3260,7 +3260,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-siputils
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-siputils:kamailio5-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -3281,7 +3281,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sl
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3302,7 +3302,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sms
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-sms:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -3323,7 +3323,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-smsops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3344,7 +3344,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-snmpstats
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-snmpstats:libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -3365,7 +3365,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-speeddial
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3386,7 +3386,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sqlops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3407,7 +3407,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-ss7ops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3428,7 +3428,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-statistics
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3449,7 +3449,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-statsc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3470,7 +3470,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-statsd
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3491,7 +3491,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-stun
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3512,7 +3512,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-sst
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-sst:kamailio5-mod-dialog +PACKAGE_kamailio5-mod-sst:kamailio5-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -3533,7 +3533,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-tcpops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3554,7 +3554,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-textops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3575,7 +3575,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-textopsx
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3596,7 +3596,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-timer
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3617,7 +3617,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-tls
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-tls:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -3638,7 +3638,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-tmrec
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3659,7 +3659,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-topoh
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-topoh:kamailio5-mod-rr
 Conflicts: 
 Menu-Depends: 
@@ -3680,7 +3680,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-topos
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-topos:kamailio5-mod-rr
 Conflicts: 
 Menu-Depends: 
@@ -3701,7 +3701,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-topos-redis
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-topos-redis:kamailio5-mod-ndb-redis +PACKAGE_kamailio5-mod-topos-redis:kamailio5-mod-topos
 Conflicts: 
 Menu-Depends: 
@@ -3722,7 +3722,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-tm
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3743,7 +3743,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-tmx
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3764,7 +3764,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-tsilo
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-tsilo:kamailio5-mod-registrar +PACKAGE_kamailio5-mod-tsilo:kamailio5-mod-sl +PACKAGE_kamailio5-mod-tsilo:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -3785,7 +3785,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uac
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-uac:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -3806,7 +3806,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uac-redirect
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-uac-redirect:kamailio5-mod-tm
 Conflicts: 
 Menu-Depends: 
@@ -3827,7 +3827,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uid-auth-db
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-uid-auth-db:kamailio5-mod-auth
 Conflicts: 
 Menu-Depends: 
@@ -3848,7 +3848,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uid-avp-db
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3869,7 +3869,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uid-domain
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3890,7 +3890,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uid-gflags
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3911,7 +3911,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uid-uri-db
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3932,7 +3932,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uri-db
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3953,7 +3953,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-userblacklist
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-userblacklist:kamailio5-lib-libtrie
 Conflicts: 
 Menu-Depends: 
@@ -3974,7 +3974,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-usrloc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -3995,7 +3995,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-utils
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-utils:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -4016,7 +4016,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-uuid
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-uuid:libuuid
 Conflicts: 
 Menu-Depends: 
@@ -4037,7 +4037,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-websocket
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-websocket:kamailio5-mod-sl +PACKAGE_kamailio5-mod-websocket:kamailio5-mod-tm +PACKAGE_kamailio5-mod-websocket:libopenssl +PACKAGE_kamailio5-mod-websocket:libunistring
 Conflicts: 
 Menu-Depends: 
@@ -4058,7 +4058,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xcap-client
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-xcap-client:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -4079,7 +4079,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xcap-server
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-xcap-server:kamailio5-mod-xhttp +PACKAGE_kamailio5-mod-xcap-server:kamailio5-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -4100,7 +4100,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xhttp
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-xhttp:kamailio5-mod-sl
 Conflicts: 
 Menu-Depends: 
@@ -4121,7 +4121,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xhttp-pi
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-xhttp-pi:kamailio5-mod-xhttp
 Conflicts: 
 Menu-Depends: 
@@ -4142,7 +4142,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xhttp-prom
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-xhttp-prom:kamailio5-mod-xhttp
 Conflicts: 
 Menu-Depends: 
@@ -4163,7 +4163,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xhttp-rpc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-xhttp-rpc:kamailio5-mod-xhttp
 Conflicts: 
 Menu-Depends: 
@@ -4184,7 +4184,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xlog
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -4205,7 +4205,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xmlops
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -4226,7 +4226,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xmlrpc
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 
@@ -4247,7 +4247,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xmpp
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5 +PACKAGE_kamailio5-mod-xmpp:kamailio5-mod-tm +PACKAGE_kamailio5-mod-xmpp:libexpat
 Conflicts: 
 Menu-Depends: 
@@ -4268,7 +4268,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: kamailio5-mod-xprint
 Submenu: Telephony
-Version: 5.3.3-2
+Version: 5.3.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread kamailio5
 Conflicts: 
 Menu-Depends: 

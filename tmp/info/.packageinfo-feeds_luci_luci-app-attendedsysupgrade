@@ -38,6 +38,25 @@ Description:     Translation for luci-app-attendedsysupgrade - българск�
 
 @@
 
+Package: luci-i18n-attendedsysupgrade-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-attendedsysupgrade
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-attendedsysupgrade - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-attendedsysupgrade - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-attendedsysupgrade-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

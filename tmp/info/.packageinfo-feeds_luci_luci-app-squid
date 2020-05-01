@@ -40,6 +40,26 @@ Description:     Translation for luci-app-squid - български (Bulgarian)
 Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
+Package: luci-i18n-squid-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-squid
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-squid - bn translation
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-squid - বাংলা (Bengali)
+Marko Ratkaj <marko.ratkaj@sartura.hr>
+@@
+
 Package: luci-i18n-squid-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

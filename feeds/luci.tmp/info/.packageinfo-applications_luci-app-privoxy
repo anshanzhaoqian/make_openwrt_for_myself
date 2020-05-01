@@ -47,6 +47,26 @@ Description:     Translation for luci-app-privoxy - български (Bulgaria
 
 @@
 
+Package: luci-i18n-privoxy-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-privoxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-privoxy - bn translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-privoxy - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-privoxy-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

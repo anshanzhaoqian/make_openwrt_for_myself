@@ -38,6 +38,25 @@ Description:     Translation for luci-app-ahcp - български (Bulgarian)
 
 @@
 
+Package: luci-i18n-ahcp-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ahcp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ahcp - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ahcp - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-ahcp-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

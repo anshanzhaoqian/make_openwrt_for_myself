@@ -38,6 +38,25 @@ Description:     Translation for luci-app-wireguard - български (Bulgar
 
 @@
 
+Package: luci-i18n-wireguard-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-wireguard
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-wireguard - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-wireguard - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-wireguard-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

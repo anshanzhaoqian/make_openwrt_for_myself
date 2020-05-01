@@ -40,6 +40,26 @@ Description:     Translation for luci-app-noddos - български (Bulgarian
 Steven Hessing <steven.hessing@gmail.com>
 @@
 
+Package: luci-i18n-noddos-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-noddos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-noddos - bn translation
+Maintainer: Steven Hessing <steven.hessing@gmail.com>
+Source: 
+License: GPLv3
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-noddos - বাংলা (Bengali)
+Steven Hessing <steven.hessing@gmail.com>
+@@
+
 Package: luci-i18n-noddos-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

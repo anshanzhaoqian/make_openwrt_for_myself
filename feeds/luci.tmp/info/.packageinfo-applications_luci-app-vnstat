@@ -38,6 +38,25 @@ Description:     Translation for luci-app-vnstat - български (Bulgarian
 
 @@
 
+Package: luci-i18n-vnstat-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vnstat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-vnstat - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-vnstat - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-vnstat-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

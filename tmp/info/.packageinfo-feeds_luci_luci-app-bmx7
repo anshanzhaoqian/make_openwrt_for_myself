@@ -40,6 +40,26 @@ Description:     Translation for luci-app-bmx7 - български (Bulgarian)
 Roger Pueyo <roger.pueyo@guifi.net> Pau Escrich <p4u@dabax.net>
 @@
 
+Package: luci-i18n-bmx7-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-bmx7
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-bmx7 - bn translation
+Maintainer: Roger Pueyo <roger.pueyo@guifi.net> Pau Escrich <p4u@dabax.net>
+Source: 
+License: GPL-2.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-bmx7 - বাংলা (Bengali)
+Roger Pueyo <roger.pueyo@guifi.net> Pau Escrich <p4u@dabax.net>
+@@
+
 Package: luci-i18n-bmx7-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

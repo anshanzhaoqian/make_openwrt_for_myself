@@ -38,6 +38,9 @@ Config:
      config LUCI_LANG_bg
 	   tristate "Bulgarian (bg)" 
 
+     config LUCI_LANG_bn_BD
+	   tristate "Bengali (bn_BD)" 
+
      config LUCI_LANG_ca
 	   tristate "Catalan (ca)" 
 
@@ -142,6 +145,26 @@ License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - български (Bulgarian)
+
+@@
+
+Package: luci-i18n-base-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-base - bn translation
+Maintainer: 
+Source: 
+License: MIT
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-base - বাংলা (Bengali)
 
 @@
 

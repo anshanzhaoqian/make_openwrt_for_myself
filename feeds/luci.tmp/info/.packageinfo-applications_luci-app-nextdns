@@ -38,6 +38,25 @@ Description:     Translation for luci-app-nextdns - български (Bulgaria
 
 @@
 
+Package: luci-i18n-nextdns-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-nextdns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-nextdns - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-nextdns - বাংলা (Bengali)
+
+@@
+
 Package: luci-i18n-nextdns-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

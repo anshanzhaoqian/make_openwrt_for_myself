@@ -38,6 +38,25 @@ Description:     Translation for luci-app-sqm - български (Bulgarian)
 Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
+Package: luci-i18n-sqm-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-sqm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-sqm - bn translation
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-sqm - বাংলা (Bengali)
+Toke Høiland-Jørgensen <toke@toke.dk>
+@@
+
 Package: luci-i18n-sqm-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

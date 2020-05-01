@@ -40,6 +40,26 @@ Description:     Translation for luci-app-mwan3 - български (Bulgarian)
 Aedan Renner <chipdankly@gmail.com> Florian Eckert <fe@dev.tdt.de>
 @@
 
+Package: luci-i18n-mwan3-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-mwan3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-mwan3 - bn translation
+Maintainer: Aedan Renner <chipdankly@gmail.com> Florian Eckert <fe@dev.tdt.de>
+Source: 
+License: GPLv2
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-mwan3 - বাংলা (Bengali)
+Aedan Renner <chipdankly@gmail.com> Florian Eckert <fe@dev.tdt.de>
+@@
+
 Package: luci-i18n-mwan3-ca
 Default: LUCI_LANG_ca||(ALL&&m)
 Version: x

@@ -13497,25 +13497,6 @@ Description:   Kernel support for the Lantiq/Falcon I2C controller
 
 @@
 
-Package: kmod-mcs814x-wdt
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_mcs814x
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MCS814x watchdog driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MCS814X_WATCHDOG
-Description:   Kernel module for the Moschip MCS814x watchdog timer.
-
-@@
-
 Package: kmod-ata-ixp4xx-cf
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
@@ -13687,6 +13668,44 @@ Description:  Kernel modules for Broadcom bgmac Ethernet adapters.
 
 @@
 
+Package: kmod-ata-rb532-cf
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rb532 @BROKEN kmod-ata-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: RB532 Compact Flash support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PATA_PLATFORM CONFIG_PATA_RB532
+Description:   RB532 Compact Flash support.
+
+@@
+
+Package: kmod-input-rb532
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_rb532 +kmod-input-polldev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: RB532 button device support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_INPUT_MISC=y CONFIG_INPUT_RB532_BUTTON
+Description:   Kernel module for RB532 button
+
+@@
+
 Package: kmod-ata-oxnas-sata
 Submenu: Block Devices
 Version: <LINUX_VERSION>-
@@ -13723,6 +13742,63 @@ Type: ipkg
 Kernel-Config: CONFIG_USB_EHCI_OXNAS
 Description:  This driver provides USB Device Controller support for the
  EHCI USB host built-in to the OX820 SoC.
+
+@@
+
+Package: kmod-sound-soc-jz4740
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: kmod-sound-soc-core @TARGET_xburst @BROKEN
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: JZ4740 SoC sound support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_JZ4740_SOC CONFIG_SND_JZ4740_SOC_I2S
+Description: JZ4740 SoC sound support
+
+@@
+
+Package: kmod-sound-soc-jz4740-codec
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: kmod-sound-soc-core @TARGET_xburst @BROKEN
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: JZ4740 SoC internal codec support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_SOC_JZ4740_CODEC
+Description: JZ4740 SoC internal codec support
+
+@@
+
+Package: kmod-sound-soc-qilb60
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: kmod-sound-soc-jz4740 kmod-sound-soc-jz4740-codec @TARGET_xburst_qi_lb60 @BROKEN
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: QI NanoNote sound support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_JZ4740_SOC_QI_LB60
+Description: QI NanoNote sound support
 
 @@
 
@@ -13973,616 +14049,6 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_CRYPTO_HW=y CONFIG_CRYPTO_AES=y CONFIG_CRYPTO_AEAD=y CONFIG_CRYPTO_SHA1=y CONFIG_CRYPTO_SHA256=y CONFIG_CRYPTO_SHA512=y CONFIG_CRYPTO_HMAC=y CONFIG_CRYPTO_DEV_MEDIATEK
 Description:   MediaTek's EIP97 Cryptographic Engine driver.
-
-@@
-
-Package: kmod-pwm-mediatek-ramips
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7628 PWM
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PWM=y CONFIG_PWM_MEDIATEK_RAMIPS CONFIG_PWM_SYSFS=y
-Description: MT7628 PWM
-
-@@
-
-Package: kmod-sdhci-mt7620
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @(TARGET_ramips_mt7620||TARGET_ramips_mt76x8||TARGET_ramips_mt7621) +kmod-mmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7620 SDCI
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MTK_MMC CONFIG_MTK_AEE_KDUMP=n CONFIG_MTK_MMC_CD_POLL=n
-Description: MT7620 SDCI
-
-@@
-
-Package: kmod-i2c-ralink
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: kmod-i2c-core @TARGET_ramips @!(TARGET_ramips_mt7621||TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink I2C Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_RALINK
-Description:  Kernel modules for enable ralink i2c controller.
-
-@@
-
-Package: kmod-i2c-mt7628
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: kmod-i2c-core @(TARGET_ramips_mt76x8)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7628/88 I2C Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_MT7621
-Description:  Kernel modules for enable mt7621 i2c controller.
-
-@@
-
-Package: kmod-dma-ralink
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Ralink GDMA Engine
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_DMA_RALINK
-Description:  Kernel modules for enable ralink dma engine.
-
-@@
-
-Package: kmod-hsdma-mtk
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips @TARGET_ramips_mt7621
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MediaTek HSDMA Engine
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_MTK_HSDMA
-Description:  Kernel modules for enable MediaTek hsdma engine.
-
-@@
-
-Package: kmod-sound-mt7620
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_ramips +kmod-sound-soc-core +kmod-regmap +kmod-dma-ralink @!TARGET_ramips_rt288x kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MT7620 PCM/I2S Alsa Driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_RALINK_SOC_I2S CONFIG_SND_SIMPLE_CARD CONFIG_SND_SIMPLE_CARD_UTILS CONFIG_SND_SOC_WM8960
-Description:  Alsa modules for ralink i2s controller.
-
-@@
-
-Package: kmod-mmc-at91
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-mmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: MMC/SD Card Support on AT91
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MMC_AT91
-Description:  Kernel support for MMC/SD cards on the AT91 target
-
-@@
-
-Package: kmod-pwm-atmel
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: PWM on atmel SoC
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_ATMEL_PWM
-Description:  Kernel module to use the PWM channel on ATMEL SoC
-
-@@
-
-Package: kmod-at91-adc
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-iio-core +kmod-input-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: ADC on atmel SoC
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_AT91_ADC
-Description:  Kernel module to use the ADC channels of SoC
-
-@@
-
-Package: kmod-at91-udc
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-usb-gadget +kmod-regmap
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: USB Device Controller on atmel SoC
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_AT91
-Description:  Kernel module to use the USB Device controller for Atmel AT91
-
-@@
-
-Package: kmod-atmel-usba-udc
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-usb-gadget
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: High-speed USB Device Controller on atmel SoC
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_ATMEL_USBA
-Description:  Kernel module to use the High-speed USB Device controller for Atmel AT91
-
-@@
-
-Package: kmod-at91-i2c
-Submenu: I2C support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_at91 +kmod-i2c-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: I2C (TWI) master driver for Atmel AT91
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_I2C_AT91
-Description:  Kernel module to use the I2C (TWI) master driver for Atmel AT91
-
-@@
-
-Package: kmod-rtc-sunxi
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Sunxi SoC built-in RTC support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_RTC_DRV_SUNXI CONFIG_RTC_CLASS=y
-Description:  Support for the AllWinner sunXi SoC's onboard RTC
-
-@@
-
-Package: kmod-sunxi-ir
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-input-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Sunxi SoC built-in IR support (A20)
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_MEDIA_SUPPORT=y CONFIG_MEDIA_RC_SUPPORT=y CONFIG_RC_DEVICES=y CONFIG_IR_SUNXI
-Description:  Support for the AllWinner sunXi SoC's onboard IR (A20)
-
-@@
-
-Package: kmod-ata-sunxi
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-ata-ahci-platform +kmod-scsi-core
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: AllWinner sunXi AHCI SATA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_AHCI_SUNXI
-Description:  SATA support for the AllWinner sunXi SoC's onboard AHCI SATA
-
-@@
-
-Package: kmod-sun4i-emac
-Submenu: Network Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-of-mdio +kmod-libphy
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: AllWinner EMAC Ethernet support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SUN4I_EMAC
-Description: AllWinner EMAC Ethernet support
-
-@@
-
-Package: kmod-sound-soc-sunxi
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_sunxi +kmod-sound-soc-core kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: AllWinner built-in SoC sound support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_SUN4I_CODEC
-Description:   Kernel support for AllWinner built-in SoC audio
-
-@@
-
-Package: kmod-ata-rb532-cf
-Submenu: Block Devices
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rb532 @BROKEN kmod-ata-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RB532 Compact Flash support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PATA_PLATFORM CONFIG_PATA_RB532
-Description:   RB532 Compact Flash support.
-
-@@
-
-Package: kmod-input-rb532
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_rb532 +kmod-input-polldev
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: RB532 button device support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_INPUT_MISC=y CONFIG_INPUT_RB532_BUTTON
-Description:   Kernel module for RB532 button
-
-@@
-
-Package: kmod-sound-soc-jz4740
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: kmod-sound-soc-core @TARGET_xburst @BROKEN
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: JZ4740 SoC sound support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_JZ4740_SOC CONFIG_SND_JZ4740_SOC_I2S
-Description: JZ4740 SoC sound support
-
-@@
-
-Package: kmod-sound-soc-jz4740-codec
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: kmod-sound-soc-core @TARGET_xburst @BROKEN
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: JZ4740 SoC internal codec support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_SOC_JZ4740_CODEC
-Description: JZ4740 SoC internal codec support
-
-@@
-
-Package: kmod-sound-soc-qilb60
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: kmod-sound-soc-jz4740 kmod-sound-soc-jz4740-codec @TARGET_xburst_qi_lb60 @BROKEN
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: QI NanoNote sound support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_JZ4740_SOC_QI_LB60
-Description: QI NanoNote sound support
-
-@@
-
-Package: kmod-sound-cs5535audio
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86_geode +kmod-ac97 kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: CS5535/CS5536 Audio Controller
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_CS5535AUDIO
-Description:  Support for the integrated AC97 sound device on motherboards
- with AMD CS5535/CS5536 chipsets.
-
-@@
-
-Package: kmod-sp5100_tco
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_x86
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: SP5100 Watchdog Support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SP5100_TCO
-Description:  Kernel module for the SP5100_TCO hardware watchdog.
-
-@@
-
-Package: kmod-sound-soc-omap
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_omap24xx +kmod-sound-soc-core kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: OMAP SoC sound support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_OMAP_SOC
-Description: OMAP SoC sound support
-
-@@
-
-Package: kmod-sound-soc-omap-mcbsp
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_omap24xx +kmod-sound-soc-omap kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: OMAP SoC MCBSP support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_OMAP_SOC_MCBSP
-Description: OMAP SoC MCBSP support
-
-@@
-
-Package: kmod-sound-soc-n810
-Submenu: Sound Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_omap24xx +kmod-sound-soc-omap +kmod-sound-soc-omap-mcbsp kmod-sound-core  @!TARGET_uml
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Nokia n810 SoC sound support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_SND_OMAP_SOC_N810
-Description: Nokia n810 SoC sound support
-
-@@
-
-Package: kmod-n810bm
-Submenu: Other modules
-Version: <LINUX_VERSION>-
-Depends: @TARGET_omap24xx
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Nokia N810 battery management driver
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_N810BM
-Description:   Nokia N810 battery management driver.
-  Controls battery power management and battery charging.
-
-@@
-
-Package: kmod-usb-tahvo
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_omap24xx +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Support for Tahvo (Nokia n810) USB
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_TAHVO_USB CONFIG_TAHVO_USB_HOST_BY_DEFAULT=n CONFIG_USB_OHCI_HCD_OMAP1=y CONFIG_USB_GADGET_DEBUG_FS=n
-Description:   Kernel support for Nokia n810 USB OHCI controller.
-
-@@
-
-Package: kmod-pcmcia-bcm63xx
-Submenu: PCMCIA support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_brcm63xx +kmod-pcmcia-rsrc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Broadcom BCM63xx PCMCIA support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_PCMCIA_BCM63XX
-Description:   Kernel support for PCMCIA/CardBus controller on the BCM63xx SoC
-
-@@
-
-Package: kmod-bcm63xx-udc
-Submenu: USB Support
-Version: <LINUX_VERSION>-
-Depends: @TARGET_brcm63xx +kmod-usb-gadget +kmod-usb-core 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: kernel
-Category: Kernel modules
-Title: Broadcom BCM63xx UDC support
-Maintainer: 
-Source: 
-License: GPL-2.0
-Type: ipkg
-Kernel-Config: CONFIG_USB_BCM63XX_UDC
-Description:   Kernel support for the USB gadget (device) controller on the BCM63xx SoC
 
 @@
 
@@ -15346,6 +14812,540 @@ License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_VIDEO_BCM2835 CONFIG_VIDEO_BCM2835_MMAL
 Description:   This is a V4L2 driver for the Broadcom 2835 MMAL camera host interface
+
+@@
+
+Package: kmod-sound-cs5535audio
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86_geode +kmod-ac97 kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: CS5535/CS5536 Audio Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_CS5535AUDIO
+Description:  Support for the integrated AC97 sound device on motherboards
+ with AMD CS5535/CS5536 chipsets.
+
+@@
+
+Package: kmod-sp5100_tco
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_x86
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: SP5100 Watchdog Support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SP5100_TCO
+Description:  Kernel module for the SP5100_TCO hardware watchdog.
+
+@@
+
+Package: kmod-mmc-at91
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-mmc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MMC/SD Card Support on AT91
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MMC_AT91
+Description:  Kernel support for MMC/SD cards on the AT91 target
+
+@@
+
+Package: kmod-pwm-atmel
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: PWM on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_ATMEL_PWM
+Description:  Kernel module to use the PWM channel on ATMEL SoC
+
+@@
+
+Package: kmod-at91-adc
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-iio-core +kmod-input-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: ADC on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AT91_ADC
+Description:  Kernel module to use the ADC channels of SoC
+
+@@
+
+Package: kmod-at91-udc
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-usb-gadget +kmod-regmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: USB Device Controller on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_AT91
+Description:  Kernel module to use the USB Device controller for Atmel AT91
+
+@@
+
+Package: kmod-atmel-usba-udc
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-usb-gadget
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: High-speed USB Device Controller on atmel SoC
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_ATMEL_USBA
+Description:  Kernel module to use the High-speed USB Device controller for Atmel AT91
+
+@@
+
+Package: kmod-at91-i2c
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_at91 +kmod-i2c-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: I2C (TWI) master driver for Atmel AT91
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_AT91
+Description:  Kernel module to use the I2C (TWI) master driver for Atmel AT91
+
+@@
+
+Package: kmod-rtc-sunxi
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Sunxi SoC built-in RTC support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_RTC_DRV_SUNXI CONFIG_RTC_CLASS=y
+Description:  Support for the AllWinner sunXi SoC's onboard RTC
+
+@@
+
+Package: kmod-sunxi-ir
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-input-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Sunxi SoC built-in IR support (A20)
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MEDIA_SUPPORT=y CONFIG_MEDIA_RC_SUPPORT=y CONFIG_RC_DEVICES=y CONFIG_IR_SUNXI
+Description:  Support for the AllWinner sunXi SoC's onboard IR (A20)
+
+@@
+
+Package: kmod-ata-sunxi
+Submenu: Block Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-ata-ahci-platform +kmod-scsi-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AllWinner sunXi AHCI SATA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_AHCI_SUNXI
+Description:  SATA support for the AllWinner sunXi SoC's onboard AHCI SATA
+
+@@
+
+Package: kmod-sun4i-emac
+Submenu: Network Devices
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-of-mdio +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AllWinner EMAC Ethernet support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SUN4I_EMAC
+Description: AllWinner EMAC Ethernet support
+
+@@
+
+Package: kmod-sound-soc-sunxi
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_sunxi +kmod-sound-soc-core kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AllWinner built-in SoC sound support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_SUN4I_CODEC
+Description:   Kernel support for AllWinner built-in SoC audio
+
+@@
+
+Package: kmod-pwm-mediatek-ramips
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7628 PWM
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PWM=y CONFIG_PWM_MEDIATEK_RAMIPS CONFIG_PWM_SYSFS=y
+Description: MT7628 PWM
+
+@@
+
+Package: kmod-sdhci-mt7620
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @(TARGET_ramips_mt7620||TARGET_ramips_mt76x8||TARGET_ramips_mt7621) +kmod-mmc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7620 SDCI
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MTK_MMC CONFIG_MTK_AEE_KDUMP=n CONFIG_MTK_MMC_CD_POLL=n
+Description: MT7620 SDCI
+
+@@
+
+Package: kmod-i2c-ralink
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: kmod-i2c-core @TARGET_ramips @!(TARGET_ramips_mt7621||TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ralink I2C Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_RALINK
+Description:  Kernel modules for enable ralink i2c controller.
+
+@@
+
+Package: kmod-i2c-mt7628
+Submenu: I2C support
+Version: <LINUX_VERSION>-
+Depends: kmod-i2c-core @(TARGET_ramips_mt76x8)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7628/88 I2C Controller
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_I2C_MT7621
+Description:  Kernel modules for enable mt7621 i2c controller.
+
+@@
+
+Package: kmod-dma-ralink
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Ralink GDMA Engine
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_DMA_RALINK
+Description:  Kernel modules for enable ralink dma engine.
+
+@@
+
+Package: kmod-hsdma-mtk
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips @TARGET_ramips_mt7621
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MediaTek HSDMA Engine
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_DMADEVICES=y CONFIG_DW_DMAC_PCI=n CONFIG_MTK_HSDMA
+Description:  Kernel modules for enable MediaTek hsdma engine.
+
+@@
+
+Package: kmod-sound-mt7620
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_ramips +kmod-sound-soc-core +kmod-regmap +kmod-dma-ralink @!TARGET_ramips_rt288x kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MT7620 PCM/I2S Alsa Driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_RALINK_SOC_I2S CONFIG_SND_SIMPLE_CARD CONFIG_SND_SIMPLE_CARD_UTILS CONFIG_SND_SOC_WM8960
+Description:  Alsa modules for ralink i2s controller.
+
+@@
+
+Package: kmod-mcs814x-wdt
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_mcs814x
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: MCS814x watchdog driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_MCS814X_WATCHDOG
+Description:   Kernel module for the Moschip MCS814x watchdog timer.
+
+@@
+
+Package: kmod-sound-soc-omap
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_omap24xx +kmod-sound-soc-core kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: OMAP SoC sound support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_OMAP_SOC
+Description: OMAP SoC sound support
+
+@@
+
+Package: kmod-sound-soc-omap-mcbsp
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_omap24xx +kmod-sound-soc-omap kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: OMAP SoC MCBSP support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_OMAP_SOC_MCBSP
+Description: OMAP SoC MCBSP support
+
+@@
+
+Package: kmod-sound-soc-n810
+Submenu: Sound Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_omap24xx +kmod-sound-soc-omap +kmod-sound-soc-omap-mcbsp kmod-sound-core  @!TARGET_uml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Nokia n810 SoC sound support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_SND_OMAP_SOC_N810
+Description: Nokia n810 SoC sound support
+
+@@
+
+Package: kmod-n810bm
+Submenu: Other modules
+Version: <LINUX_VERSION>-
+Depends: @TARGET_omap24xx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Nokia N810 battery management driver
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_N810BM
+Description:   Nokia N810 battery management driver.
+  Controls battery power management and battery charging.
+
+@@
+
+Package: kmod-usb-tahvo
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_omap24xx +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Support for Tahvo (Nokia n810) USB
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_TAHVO_USB CONFIG_TAHVO_USB_HOST_BY_DEFAULT=n CONFIG_USB_OHCI_HCD_OMAP1=y CONFIG_USB_GADGET_DEBUG_FS=n
+Description:   Kernel support for Nokia n810 USB OHCI controller.
+
+@@
+
+Package: kmod-pcmcia-bcm63xx
+Submenu: PCMCIA support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_brcm63xx +kmod-pcmcia-rsrc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Broadcom BCM63xx PCMCIA support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_PCMCIA_BCM63XX
+Description:   Kernel support for PCMCIA/CardBus controller on the BCM63xx SoC
+
+@@
+
+Package: kmod-bcm63xx-udc
+Submenu: USB Support
+Version: <LINUX_VERSION>-
+Depends: @TARGET_brcm63xx +kmod-usb-gadget +kmod-usb-core 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Broadcom BCM63xx UDC support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Kernel-Config: CONFIG_USB_BCM63XX_UDC
+Description:   Kernel support for the USB gadget (device) controller on the BCM63xx SoC
 
 @@
 
