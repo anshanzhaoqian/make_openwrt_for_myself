@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/libs/psqlodbc/Makefile
 Build-Depends: unixodbc/host
 
 Package: psqlodbca
-Submenu: Database
-Version: 11.00.0000-2
+Submenu: database
+Version: 09.06.0310-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +unixodbc +libpq
 Conflicts: 
 Menu-Depends: 
@@ -13,8 +13,8 @@ Category: Libraries
 Repository: base
 Title: psqlODBC - PostgreSQL ODBC driver (ASCII)
 Maintainer: 
-Source: psqlodbc-11.00.0000.tar.gz
-License: LGPL-2.0-or-later
+Source: psqlodbc-09.06.0310.tar.gz
+License: LGPL-2.0+
 LicenseFiles: license.txt
 Type: ipkg
 Description: 	psqlODBC is the official PostgreSQL ODBC Driver.
@@ -24,8 +24,8 @@ https://odbc.postgresql.org/
 @@
 
 Package: psqlodbcw
-Submenu: Database
-Version: 11.00.0000-2
+Submenu: database
+Version: 09.06.0310-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +unixodbc +libpq
 Conflicts: 
 Menu-Depends: 
@@ -35,8 +35,8 @@ Category: Libraries
 Repository: base
 Title: psqlODBC - PostgreSQL ODBC driver (UTF-8)
 Maintainer: 
-Source: psqlodbc-11.00.0000.tar.gz
-License: LGPL-2.0-or-later
+Source: psqlodbc-09.06.0310.tar.gz
+License: LGPL-2.0+
 LicenseFiles: license.txt
 Type: ipkg
 Description: 	psqlODBC is the official PostgreSQL ODBC Driver.

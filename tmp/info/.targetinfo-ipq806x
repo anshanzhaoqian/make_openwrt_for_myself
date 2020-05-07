@@ -6,9 +6,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a15_neon-vfpv4
 Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=cortex-a15 -mfpu=neon-vfpv4
+Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -26,6 +26,8 @@ Target-Profile-Description:
 Target-Profile: DEVICE_buffalo_wxr-2533dhp
 Target-Profile-Name: Buffalo WXR-2533DHP
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: buffalo,wxr-2533dhp
 Target-Profile-Description:
 Build firmware images for Buffalo WXR-2533DHP
 @@
@@ -33,6 +35,8 @@ Build firmware images for Buffalo WXR-2533DHP
 Target-Profile: DEVICE_compex_wpq864
 Target-Profile-Name: Compex WPQ864
 Target-Profile-Packages: kmod-gpio-beeper 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: compex,wpq864
 Target-Profile-Description:
 Build firmware images for Compex WPQ864
 @@
@@ -40,6 +44,8 @@ Build firmware images for Compex WPQ864
 Target-Profile: DEVICE_linksys_ea8500
 Target-Profile-Name: Linksys EA8500
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,ea8500 ea8500
 Target-Profile-Description:
 Build firmware images for Linksys EA8500
 @@
@@ -47,6 +53,8 @@ Build firmware images for Linksys EA8500
 Target-Profile: DEVICE_nec_wg2600hp
 Target-Profile-Name: NEC Aterm WG2600HP
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: nec,wg2600hp
 Target-Profile-Description:
 Build firmware images for NEC Aterm WG2600HP
 @@
@@ -54,6 +62,8 @@ Build firmware images for NEC Aterm WG2600HP
 Target-Profile: DEVICE_netgear_d7800
 Target-Profile-Name: Netgear Nighthawk X4 D7800
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,d7800 d7800
 Target-Profile-Description:
 Build firmware images for Netgear Nighthawk X4 D7800
 @@
@@ -61,6 +71,8 @@ Build firmware images for Netgear Nighthawk X4 D7800
 Target-Profile: DEVICE_netgear_r7500
 Target-Profile-Name: Netgear Nighthawk X4 R7500
 Target-Profile-Packages: ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,r7500 r7500
 Target-Profile-Description:
 Build firmware images for Netgear Nighthawk X4 R7500
 @@
@@ -68,6 +80,8 @@ Build firmware images for Netgear Nighthawk X4 R7500
 Target-Profile: DEVICE_netgear_r7500v2
 Target-Profile-Name: Netgear Nighthawk X4 R7500v2
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct ath10k-firmware-qca988x-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,r7500v2 r7500v2
 Target-Profile-Description:
 Build firmware images for Netgear Nighthawk X4 R7500v2
 @@
@@ -75,6 +89,8 @@ Build firmware images for Netgear Nighthawk X4 R7500v2
 Target-Profile: DEVICE_netgear_r7800
 Target-Profile-Name: Netgear Nighthawk X4S R7800
 Target-Profile-Packages: ath10k-firmware-qca9984-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,r7800 r7800
 Target-Profile-Description:
 Build firmware images for Netgear Nighthawk X4S R7800
 @@
@@ -82,6 +98,8 @@ Build firmware images for Netgear Nighthawk X4S R7800
 Target-Profile: DEVICE_qcom_ipq8064-ap148
 Target-Profile-Name: Qualcomm AP148
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: qcom,ipq8064-ap148 ap148
 Target-Profile-Description:
 Build firmware images for Qualcomm AP148
 @@
@@ -89,6 +107,8 @@ Build firmware images for Qualcomm AP148
 Target-Profile: DEVICE_qcom_ipq8064-ap148-legacy
 Target-Profile-Name: Qualcomm AP148 (legacy)
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: qcom,ipq8064-ap148 ap148
 Target-Profile-Description:
 Build firmware images for Qualcomm AP148 (legacy)
 @@
@@ -96,6 +116,8 @@ Build firmware images for Qualcomm AP148 (legacy)
 Target-Profile: DEVICE_qcom_ipq8064-ap161
 Target-Profile-Name: Qualcomm AP161
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: qcom,ipq8064-ap161
 Target-Profile-Description:
 Build firmware images for Qualcomm AP161
 @@
@@ -103,6 +125,8 @@ Build firmware images for Qualcomm AP161
 Target-Profile: DEVICE_qcom_ipq8064-db149
 Target-Profile-Name: Qualcomm DB149
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: qcom,ipq8064-db149
 Target-Profile-Description:
 Build firmware images for Qualcomm DB149
 @@
@@ -110,6 +134,8 @@ Build firmware images for Qualcomm DB149
 Target-Profile: DEVICE_tplink_c2600
 Target-Profile-Name: TP-Link Archer C2600
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,c2600 c2600
 Target-Profile-Description:
 Build firmware images for TP-Link Archer C2600
 @@
@@ -117,6 +143,8 @@ Build firmware images for TP-Link Archer C2600
 Target-Profile: DEVICE_tplink_vr2600v
 Target-Profile-Name: TP-Link Archer VR2600v
 Target-Profile-Packages: ath10k-firmware-qca99x0-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,vr2600v vr2600v
 Target-Profile-Description:
 Build firmware images for TP-Link Archer VR2600v
 @@
@@ -124,6 +152,8 @@ Build firmware images for TP-Link Archer VR2600v
 Target-Profile: DEVICE_zyxel_nbg6817
 Target-Profile-Name: ZyXEL NBG6817
 Target-Profile-Packages: ath10k-firmware-qca9984-ct e2fsprogs kmod-fs-ext4 losetup 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,nbg6817 nbg6817
 Target-Profile-Description:
 Build firmware images for ZyXEL NBG6817
 @@

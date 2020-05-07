@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/openzwave/Makefile
 
 Package: libopenzwave
-Version: 1.6.1063-1
+Version: 1.4.164-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Open-ZWave Library
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: openzwave-1.6.1063.tar.gz
+Source: openzwave-1.4.164.tar.gz
 Type: ipkg
 Description: Open-ZWave Library
 http://openzwave.com
@@ -19,7 +19,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: openzwave
-Version: 1.6.1063-1
+Version: 1.4.164-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenzwave +openzwave-config
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,7 @@ Category: Utilities
 Repository: base
 Title: Open-ZWave MinOZW test utility
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: openzwave-1.6.1063.tar.gz
+Source: openzwave-1.4.164.tar.gz
 Type: ipkg
 Description: 	Open-ZWave is a library that interfaces with selected Z-Wave PC controllers
 http://openzwave.com
@@ -37,7 +37,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: openzwave-config
-Version: 1.6.1063-1
+Version: 1.4.164-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -47,7 +47,7 @@ Category: Utilities
 Repository: base
 Title: Open-ZWave Device Configs
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
-Source: openzwave-1.6.1063.tar.gz
+Source: openzwave-1.4.164.tar.gz
 Type: ipkg
 Description: Open-ZWave Device Configs
 http://openzwave.com

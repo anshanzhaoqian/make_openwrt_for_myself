@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/nbd/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: glib2 gettext
 
 Package: nbd
-Version: 3.19-2
+Version: 3.16.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-nbd
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Category: Network
 Repository: packages
 Title: Network Block Device utilities
 Maintainer: Marcin Jurkowski <marcin1j@gmail.com>
-Source: nbd-3.19.tar.xz
-License: GPL-2.0-or-later
+Source: nbd-3.16.2.tar.xz
+License: GPL-2.0+
 Type: ipkg
 Description:   This package contains the network block device client.
 http://nbd.sourceforge.net
@@ -21,7 +21,7 @@ Marcin Jurkowski <marcin1j@gmail.com>
 @@
 
 Package: nbd-server
-Version: 3.19-2
+Version: 3.16.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
 Conflicts: 
 Menu-Depends: 
@@ -31,8 +31,8 @@ Category: Network
 Repository: packages
 Title: Network Block Device Server
 Maintainer: Marcin Jurkowski <marcin1j@gmail.com>
-Source: nbd-3.19.tar.xz
-License: GPL-2.0-or-later
+Source: nbd-3.16.2.tar.xz
+License: GPL-2.0+
 Type: ipkg
 Description:   This package contains the network block device server.
 http://nbd.sourceforge.net

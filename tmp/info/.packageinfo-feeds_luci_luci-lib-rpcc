@@ -1,9 +1,9 @@
 Source-Makefile: package/feeds/luci/luci-lib-rpcc/Makefile
-Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+Build-Depends: lua/host luci-base/host 
 
 Package: luci-lib-rpcc
 Submenu: 6. Libraries
-Version: x
+Version: x-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @BROKEN
 Conflicts: 
 Menu-Depends: 

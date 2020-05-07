@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/fwknop/Makefile
 
 Package: fwknopd
 Submenu: Firewall
-Version: 2.6.10-3
+Version: 2.6.9-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libfko +!FWKNOPD_NFQ_CAPTURE:libpcap +FWKNOPD_NFQ_CAPTURE:iptables-mod-nfqueue +FWKNOP_GPG:gnupg +FWKNOPD_NFQ_CAPTURE:libnetfilter-queue +FWKNOPD_NFQ_CAPTURE:libnfnetlink
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Category: Network
 Repository: base
 Title: FireWall KNock OPerator Daemon
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
-Source: fwknop-2.6.10.tar.bz2
-License: GPL-2.0-or-later
+Source: fwknop-2.6.9.tar.bz2
+License: GPLv2
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a
@@ -24,7 +24,7 @@ Description:     Fwknop implements an authorization scheme known as Single Packe
   make the exploitation of vulnerabilities (both 0-day and unpatched code) much
   more difficult.
   This package contains the fwknop daemon.
-https://www.cipherdyne.org/fwknop/
+http://www.cipherdyne.org/fwknop/
 Jonathan Bennett <JBennett@incomsystems.biz>
 @@
 Config:
@@ -33,7 +33,7 @@ Config:
 
 Package: fwknop
 Submenu: Firewall
-Version: 2.6.10-3
+Version: 2.6.9-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libfko
 Conflicts: 
 Menu-Depends: 
@@ -43,8 +43,8 @@ Category: Network
 Repository: base
 Title: FireWall KNock OPerator Client
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
-Source: fwknop-2.6.10.tar.bz2
-License: GPL-2.0-or-later
+Source: fwknop-2.6.9.tar.bz2
+License: GPLv2
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a
@@ -55,13 +55,13 @@ Description:     Fwknop implements an authorization scheme known as Single Packe
   make the exploitation of vulnerabilities (both 0-day and unpatched code) much
   more difficult.
   This package contains the fwknop client.
-https://www.cipherdyne.org/fwknop/
+http://www.cipherdyne.org/fwknop/
 Jonathan Bennett <JBennett@incomsystems.biz>
 @@
 
 Package: libfko
 Submenu: Firewall
-Version: 2.6.10-3
+Version: 2.6.9-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -71,8 +71,8 @@ Category: Libraries
 Repository: base
 Title: FireWall KNock OPerator Library
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
-Source: fwknop-2.6.10.tar.bz2
-License: GPL-2.0-or-later
+Source: fwknop-2.6.9.tar.bz2
+License: GPLv2
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a
@@ -83,7 +83,7 @@ Description:     Fwknop implements an authorization scheme known as Single Packe
   make the exploitation of vulnerabilities (both 0-day and unpatched code) much
   more difficult.
   This package contains the libfko shared library.
-https://www.cipherdyne.org/fwknop/
+http://www.cipherdyne.org/fwknop/
 Jonathan Bennett <JBennett@incomsystems.biz>
 @@
 

@@ -35,7 +35,20 @@ define Package/grub2/Default
   SECTION:=boot
   TITLE:=GRand Unified Bootloader
   URL:=http://www.gnu.org/software/grub/
-  DEPENDS:=@TARGET_x86||TARGET_x86_64
+  DEPENDS:=@TARGET_x86
+endef
+
+define Package/grub2-editenv
+  CATEGORY:=Utilities
+  SECTION:=utils
+  SUBMENU:=Boot Loaders
+  TITLE:=Grub2 Environment editor
+  URL:=http://www.gnu.org/software/grub/
+  DEPENDS:=@TARGET_x86
+endef
+
+define Package/grub2-editenv/description
+	Edit grub2 environment files.
 endef
 
 HOST_BUILD_PREFIX := $(STAGING_DIR_HOST)

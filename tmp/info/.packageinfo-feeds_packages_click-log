@@ -2,11 +2,12 @@ Source-Makefile: package/feeds/packages/click-log/Makefile
 
 Package: python3-click-log
 Submenu: Python
-Version: 0.3.2-2
+Version: 0.3.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-click
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -22,11 +23,12 @@ Karel Kočí <cynerd@email.cz>
 
 Package: python3-click-log-src
 Submenu: Python
-Version: 0.3.2-2
+Version: 0.3.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -35,14 +37,10 @@ Maintainer: Karel Kočí <cynerd@email.cz>
 Source: click-log-0.3.2.tar.gz
 License: MIT
 Type: ipkg
-Description:       Simple and beautiful logging for click applications
-
-    This package contains the Python source files for python3-click-log.
+Description:       Simple and beautiful logging for click applications.
+    (Contains the Python3 sources for this package).
 http://github.com/mitsuhiko/click
 Karel Kočí <cynerd@email.cz>
-@@
-Config:
-    depends on PACKAGE_python3-click-log
 @@
 
 

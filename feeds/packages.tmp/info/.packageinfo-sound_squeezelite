@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/sound/squeezelite/Makefile
 
 Package: squeezelite-mini
 Menu: 1
-Version: 1.9.6-1210-1
+Version: 1.8.4-743-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +SQUEEZELITE_RESAMPLE:libsoxr
 Conflicts: 
 Menu-Depends: 
@@ -13,18 +13,18 @@ Category: Sound
 Repository: base
 Title: Headless squeezebox emulator (minimal)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: squeezelite-1.9.6-1210.tar.xz
-License: GPL-3.0-or-later
+Source: squeezelite-1.8.4-743-e37ed17fed9e11a7346cbe9f1e1deeccc051f42e.tar.gz
+License: GPL-3.0
 LicenseFiles: LICENSE.txt
 Type: ipkg
-Description:         Squeezelite is a small headless squeezebox emulator for linux using alsa audio output
-    It is aimed at supporting high quality audio at multiple sample rates including
-    44.1/48/88.2/96/176.4/192k/352.8/384kHz
-    Supported codecs: mp3, flac, ogg, aac, (wma and alac via ffmpeg)
+Description:         Squeezelite is a small headless squeezebox emulator for linux using alsa audio output 
+    It is aimed at supporting high quality audio at multiple sample rates including 
+    44.1/48/88.2/96/176.4/192k/352.8/384kHz 
+    Supported codecs: mp3, flac, ogg, aac, (wma and alac via ffmpeg) 
     Native support for PCM builtin
     Optional support of DSD playback via PCM for DoP capable DAC
     Optional resampling to match sound device
-
+    .
     This package will dynamically load installed codecs.
 https://github.com/ralph-irving/squeezelite
 Ted Hess <thess@kitschensync.net>
@@ -54,7 +54,7 @@ Config:
 
 Package: squeezelite-full
 Menu: 1
-Version: 1.9.6-1210-1
+Version: 1.8.4-743-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +SQUEEZELITE_RESAMPLE:libsoxr +libflac +libvorbis +libmpg123 +libfaad2 +SQUEEZELITE_WMA:libffmpeg-audio-dec
 Conflicts: 
 Menu-Depends: 
@@ -65,19 +65,11 @@ Category: Sound
 Repository: base
 Title: Headless squeezebox emulator (full)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: squeezelite-1.9.6-1210.tar.xz
-License: GPL-3.0-or-later
+Source: squeezelite-1.8.4-743-e37ed17fed9e11a7346cbe9f1e1deeccc051f42e.tar.gz
+License: GPL-3.0
 LicenseFiles: LICENSE.txt
 Type: ipkg
-Description:         Squeezelite is a small headless squeezebox emulator for linux using alsa audio output
-    It is aimed at supporting high quality audio at multiple sample rates including
-    44.1/48/88.2/96/176.4/192k/352.8/384kHz
-    Supported codecs: mp3, flac, ogg, aac, (wma and alac via ffmpeg)
-    Native support for PCM builtin
-    Optional support of DSD playback via PCM for DoP capable DAC
-    Optional resampling to match sound device
-
-    This package has all the audio codecs compiled in.
+Description: Headless squeezebox emulator (full)
 https://github.com/ralph-irving/squeezelite
 Ted Hess <thess@kitschensync.net>
 @@

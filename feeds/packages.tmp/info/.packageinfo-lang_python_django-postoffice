@@ -1,12 +1,13 @@
 Source-Makefile: feeds/packages/lang/python/django-postoffice/Makefile
 
-Package: python3-django-postoffice
+Package: python-django-postoffice
 Submenu: Python
-Version: 3.2.1-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-django1 +python3-django-jsonfield
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python-django-postoffice:python python-django1 +PACKAGE_python-django-postoffice:python-django-jsonfield
 Conflicts: 
-Menu-Depends: 
+Menu-Depends: python-django1
 Provides: 
+Build-Variant: python
 Section: lang
 Category: Languages
 Repository: base
@@ -22,13 +23,63 @@ https://github.com/ui/django-post_office
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
+Package: python-django-postoffice-src
+Submenu: Python
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: python-django1
+Provides: 
+Build-Variant: python
+Section: lang
+Category: Languages
+Repository: base
+Title: A Django app to monitor and send mail asynchronously (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: django-post_office-3.2.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:       A Django app to monitor and send mail asynchronously, complete with template
+  support.
+    (Contains the Python sources for this package).
+https://github.com/ui/django-post_office
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-django-postoffice
+Submenu: Python
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python3-django-postoffice:python3 +PACKAGE_python3-django-postoffice:python3-django1 +PACKAGE_python3-django-postoffice:python3-django-jsonfield
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Section: lang
+Category: Languages
+Repository: base
+Title: A Django app to monitor and send mail asynchronously
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: django-post_office-3.2.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:   A Django app to monitor and send mail asynchronously, complete with template
+  support
+.
+(Variant for Python3)
+https://github.com/ui/django-post_office
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
 Package: python3-django-postoffice-src
 Submenu: Python
-Version: 3.2.1-2
+Version: 3.2.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: base
@@ -40,13 +91,11 @@ LicenseFiles: LICENSE.txt
 Type: ipkg
 Description:       A Django app to monitor and send mail asynchronously, complete with template
   support
-
-    This package contains the Python source files for python3-django-postoffice.
+.
+(Variant for Python3).
+    (Contains the Python3 sources for this package).
 https://github.com/ui/django-post_office
 Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-django-postoffice
 @@
 
 

@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/monit/Makefile
 
 Package: monit
-Version: 5.26.0-1
+Version: 5.24.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Administration
 Repository: packages
 Title: System services monitoring utility (with SSL support)
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
-Source: monit-5.26.0.tar.gz
+Source: monit-5.24.0.tar.gz
 License: AGPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -23,7 +23,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: monit-nossl
-Version: 5.26.0-1
+Version: 5.24.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Administration
 Repository: packages
 Title: System services monitoring utility (without SSL support)
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
-Source: monit-5.26.0.tar.gz
+Source: monit-5.24.0.tar.gz
 License: AGPL-3.0
 LicenseFiles: COPYING
 Type: ipkg

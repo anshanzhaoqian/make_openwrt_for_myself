@@ -1,8 +1,7 @@
 Source-Makefile: package/feeds/packages/libnatpmp/Makefile
 
 Package: libnatpmp
-Version: 20150609-3
-ABIVersion: 1
+Version: 20150609-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,9 +10,9 @@ Section: libs
 Category: Libraries
 Repository: packages
 Title: NAT Port Mapping Protocol (NAT-PMP) library
-Maintainer: 
+Maintainer: Hauke Mehrtens <hauke@hauke-m.de>
 Source: libnatpmp-20150609.tar.gz
-License: BSD-3-Clause
+License: BSD-3c
 LicenseFiles: LICENSE
 Type: ipkg
 Description:     libnatpmp is an attempt to make a portable and fully compliant implementation
@@ -21,13 +20,13 @@ Description:     libnatpmp is an attempt to make a portable and fully compliant 
   all calls of the API are asynchronous. It is therefore very easy to integrate
   the NAT-PMP code to any event driven code.
   This package contains the shared library.
-https://miniupnp.tuxfamily.org/libnatpmp.html
-
+http://miniupnp.free.fr/libnatpmp.html
+Hauke Mehrtens <hauke@hauke-m.de>
 @@
 
 Package: natpmpc
 Submenu: Firewall
-Version: 20150609-3
+Version: 20150609-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libnatpmp
 Conflicts: 
 Menu-Depends: 
@@ -36,9 +35,9 @@ Section: net
 Category: Network
 Repository: packages
 Title: NAT Port Mapping Protocol (NAT-PMP) client
-Maintainer: 
+Maintainer: Hauke Mehrtens <hauke@hauke-m.de>
 Source: libnatpmp-20150609.tar.gz
-License: BSD-3-Clause
+License: BSD-3c
 LicenseFiles: LICENSE
 Type: ipkg
 Description:     libnatpmp is an attempt to make a portable and fully compliant implementation
@@ -46,8 +45,8 @@ Description:     libnatpmp is an attempt to make a portable and fully compliant 
   all calls of the API are asynchronous. It is therefore very easy to integrate
   the NAT-PMP code to any event driven code.
   This package contains the natpmp client.
-https://miniupnp.tuxfamily.org/libnatpmp.html
-
+http://miniupnp.free.fr/libnatpmp.html
+Hauke Mehrtens <hauke@hauke-m.de>
 @@
 
 

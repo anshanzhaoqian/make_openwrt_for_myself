@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/mtdev/Makefile
 
 Package: mtdev
-Version: 1.1.6-1
+Version: 1.1.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: Multitouch Protocol Translation Library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: mtdev-1.1.6.tar.bz2
+Source: mtdev-1.1.5.tar.bz2
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg

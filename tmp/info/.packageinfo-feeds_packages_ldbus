@@ -3,7 +3,7 @@ Build-Depends: luarocks/host
 
 Package: ldbus
 Submenu: Lua
-Version: 2019-08-15-9e176fe851006037a643610e6d8f3a8e597d4073-1
+Version: 2017-10-03-f4a1464e915a2313c80fb40c5c40b0bee7583677-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +dbus +lua
 Conflicts: 
 Menu-Depends: 
@@ -13,15 +13,13 @@ Category: Languages
 Repository: packages
 Title: ldbus Lua DBus bindings
 Maintainer: Enrico Mioso <mrkiko.rs@gmail.com>
-Source: ldbus-2019-08-15-9e176fe851006037a643610e6d8f3a8e597d4073.tar.xz
+Source: ldbus-2017-10-03-f4a1464e915a2313c80fb40c5c40b0bee7583677.tar.xz
 License: MIT
-LicenseFiles: LICENSE
 Type: ipkg
 Description:   This package contains "ldbus": LUA bindings to interact with the DBUS
   message bus system, and services connected to it.
   See https://github.com/daurnimator/ldbus
   for details.
-https://github.com/daurnimator/ldbus
 Enrico Mioso <mrkiko.rs@gmail.com>
 @@
 

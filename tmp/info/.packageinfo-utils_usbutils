@@ -1,7 +1,7 @@
 Source-Makefile: package/utils/usbutils/Makefile
 
 Package: usbutils
-Version: 007-9
+Version: 007-10
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +librt +libpthread
 Conflicts: 
 Menu-Depends: 

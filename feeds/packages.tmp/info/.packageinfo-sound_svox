@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/sound/svox/Makefile
 
 Package: svox
-Version: 1.0+git20130326-3
+Version: 1.0+git20130326-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt
 Conflicts: 
 Menu-Depends: 

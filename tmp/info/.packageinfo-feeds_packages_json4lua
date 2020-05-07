@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/json4lua/Makefile
 
 Package: json4lua
 Submenu: Lua
-Version: 0.9.54-1
+Version: 0.9.53-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +luasocket
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: packages
 Title: json4lua
 Maintainer: Amr Hassan <amr.hassan@gmail.com>
-Source: json4lua-0.9.54.tar.gz
+Source: json4lua-0.9.53.tar.xz
 License: MIT
 Type: ipkg
 Description: 	JSON and JSONRPC for Lua

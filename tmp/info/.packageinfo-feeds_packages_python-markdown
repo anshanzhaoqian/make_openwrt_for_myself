@@ -2,11 +2,12 @@ Source-Makefile: package/feeds/packages/python-markdown/Makefile
 
 Package: python3-markdown
 Submenu: Python
-Version: 3.2.1-2
+Version: 3.2.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-setuptools +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -23,11 +24,12 @@ Josef Schlehofer <josef.schlehofer@nic.cz>
 
 Package: python3-markdown-src
 Submenu: Python
-Version: 3.2.1-2
+Version: 3.2.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -37,14 +39,10 @@ Source: Markdown-3.2.1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.md
 Type: ipkg
-Description:       A fast and complete Python implementation of Markdown.
-
-    This package contains the Python source files for python3-markdown.
+Description:       A fast and complete Python implementation of Markdown..
+    (Contains the Python3 sources for this package).
 https://python-markdown.github.io/
 Josef Schlehofer <josef.schlehofer@nic.cz>
-@@
-Config:
-    depends on PACKAGE_python3-markdown
 @@
 
 

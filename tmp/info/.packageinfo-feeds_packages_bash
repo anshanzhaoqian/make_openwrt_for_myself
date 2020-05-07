@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/bash/Makefile
 
 Package: bash
 Submenu: Shells
-Version: 5.0-4
+Version: 4.4.18-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Category: Utilities
 Repository: packages
 Title: The GNU Bourne Again SHell
 Maintainer: Marcel Denia <naoir@gmx.net>
-Source: bash-5.0.tar.gz
-License: GPL-3.0-or-later
+Source: bash-4.4.18.tar.gz
+License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:   Bash is an sh-compatible command language interpreter that executes

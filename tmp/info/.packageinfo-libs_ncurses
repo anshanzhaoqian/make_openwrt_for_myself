@@ -3,7 +3,7 @@ Build-Depends: ncurses/host
 Build-Types: host
 
 Package: terminfo
-Version: 6.1-3
+Version: 6.1-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -23,7 +23,7 @@ http://www.gnu.org/software/ncurses/
 @@
 
 Package: libncurses
-Version: 6.1-3
+Version: 6.1-4
 ABIVersion: 6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +terminfo
 Conflicts: 
@@ -45,7 +45,7 @@ http://www.gnu.org/software/ncurses/
 
 Package: libncurses-dev
 Submenu: Libraries
-Version: 6.1-3
+Version: 6.1-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread zlib
 Conflicts: 
 Menu-Depends: 

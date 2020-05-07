@@ -2,7 +2,7 @@ Source-Makefile: package/boot/uboot-sunxi/Makefile
 
 Package: u-boot-A10-OLinuXino-Lime
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_sun4i-a10-olinuxino-lime || TARGET_DEVICE_sunxi_cortexa8_DEVICE_sun4i-a10-olinuxino-lime)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for A10 OLinuXino LIME
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -25,7 +25,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-A13-OLinuXino
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_sun5i-a13-olinuxino || TARGET_DEVICE_sunxi_cortexa8_DEVICE_sun5i-a13-olinuxino)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for A13 OlinuXino
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -48,7 +48,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-A20-OLinuXino-Lime
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-olinuxino-lime || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-olinuxino-lime)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -58,7 +58,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for A20 OLinuXino LIME
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -71,7 +71,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-A20-OLinuXino-Lime2
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-olinuxino-lime2 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-olinuxino-lime2)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -81,7 +81,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for A20 OLinuXino LIME2
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -94,7 +94,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-A20-OLinuXino-Lime2-eMMC
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-olinuxino-lime2-emmc || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-olinuxino-lime2-emmc)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -104,7 +104,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for A20 OLinuXino LIME2 eMMC
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -117,7 +117,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-A20-OLinuXino_MICRO
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-olinuxino-micro || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-olinuxino-micro)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -127,7 +127,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for A20 OLinuXino MICRO
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -140,7 +140,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Bananapi
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-bananapi || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-bananapi)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -150,7 +150,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Bananapi
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -163,7 +163,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Bananapro
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-bananapro || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-bananapro)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -173,7 +173,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Bananapro
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -186,7 +186,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Cubieboard
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_sun4i-a10-cubieboard || TARGET_DEVICE_sunxi_cortexa8_DEVICE_sun4i-a10-cubieboard)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
@@ -196,7 +196,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Cubieboard
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -209,7 +209,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Cubieboard2
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-cubieboard2 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-cubieboard2)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -219,7 +219,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Cubieboard2
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -232,7 +232,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Cubietruck
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-cubietruck || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-cubietruck)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -242,7 +242,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Cubietruck
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -254,7 +254,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 
 Package: u-boot-Hummingbird_A31
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -264,7 +264,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Hummingbird A31 board
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -277,7 +277,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Marsboard_A10
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_sun4i-a10-marsboard || TARGET_DEVICE_sunxi_cortexa8_DEVICE_sun4i-a10-marsboard)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
@@ -287,7 +287,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Marsboard
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -300,7 +300,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Mele_M9
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun6i-a31-m9 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun6i-a31-m9)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -310,7 +310,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Mele M9 (A31)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -323,7 +323,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-OLIMEX_A13_SOM
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_sun5i-a13-olimex-som || TARGET_DEVICE_sunxi_cortexa8_DEVICE_sun5i-a13-olimex-som)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
@@ -333,7 +333,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Olimex A13 SOM
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -346,7 +346,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Linksprite_pcDuino
 Default: y if (TARGET_sunxi_cortexa8_Default || TARGET_sunxi_cortexa8_DEVICE_sun4i-a10-pcduino || TARGET_DEVICE_sunxi_cortexa8_DEVICE_sun4i-a10-pcduino)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa8
 Conflicts: 
 Menu-Depends: 
@@ -356,7 +356,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Linksprite pcDuino
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -369,7 +369,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Linksprite_pcDuino3
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-pcduino3 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-pcduino3)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -379,7 +379,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Linksprite pcDuino3
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -392,7 +392,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-Lamobo_R1
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun7i-a20-lamobo-r1 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun7i-a20-lamobo-r1)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -402,7 +402,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Lamobo R1
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -415,7 +415,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-nanopi_m1_plus
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h3-nanopi-m1-plus || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h3-nanopi-m1-plus)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -425,7 +425,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for NanoPi M1 Plus (H3)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -438,7 +438,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-nanopi_neo
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h3-nanopi-neo || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h3-nanopi-neo)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -448,7 +448,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for U-Boot for NanoPi NEO (H3)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -461,7 +461,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-nanopi_neo_plus2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_sun50i-h5-nanopi-neo-plus2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_sun50i-h5-nanopi-neo-plus2)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_neo_plus2:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -471,7 +471,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for NanoPi NEO Plus2 (H5)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -484,7 +484,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-nanopi_neo2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_sun50i-h5-nanopi-neo2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_sun50i-h5-nanopi-neo2)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-nanopi_neo2:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -494,7 +494,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for NanoPi NEO2 (H5)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -507,7 +507,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-orangepi_zero
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h2-plus-orangepi-zero || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h2-plus-orangepi-zero)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -517,7 +517,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Orange Pi Zero (H2+)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -530,7 +530,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-orangepi_r1
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h2-plus-orangepi-r1 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h2-plus-orangepi-r1)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -540,7 +540,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Orange Pi R1 (H2+)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -551,9 +551,32 @@ Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
 
+Package: u-boot-orangepi_one
+Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-one || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-one)
+Version: 2019.01
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: orangepi_one
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Orange Pi One (H3)
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2019.01.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Orange Pi One (H3)
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+
 Package: u-boot-orangepi_pc
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-pc || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-pc)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -563,7 +586,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Orange Pi PC (H3)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -574,9 +597,32 @@ Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
 
+Package: u-boot-orangepi_pc_plus
+Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-pc-plus || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-pc-plus)
+Version: 2019.01
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: orangepi_pc_plus
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Orange Pi PC Plus (H3)
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2019.01.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Orange Pi PC Plus (H3)
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+
 Package: u-boot-orangepi_plus
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-plus || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-plus)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -586,7 +632,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Orange Pi Plus (H3)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -599,7 +645,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-orangepi_2
 Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-2 || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h3-orangepi-2)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -609,7 +655,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Orange Pi 2 (H3)
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -622,7 +668,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-orangepi_pc2
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_sun50i-h5-orangepi-pc2 || TARGET_DEVICE_sunxi_cortexa53_DEVICE_sun50i-h5-orangepi-pc2)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_pc2:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -632,7 +678,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Xunlong Orange Pi PC2
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -644,7 +690,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 
 Package: u-boot-pangolin
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
 Conflicts: 
 Menu-Depends: 
@@ -654,7 +700,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Theobroma A31-yQ7 devboard
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -667,7 +713,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-pine64_plus
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_sun50i-a64-pine64-plus || TARGET_DEVICE_sunxi_cortexa53_DEVICE_sun50i-a64-pine64-plus)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-pine64_plus:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -677,7 +723,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Pine64 Plus A64
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -688,9 +734,32 @@ Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
 
+Package: u-boot-Sinovoip_BPI_M2_Plus
+Default: y if (TARGET_sunxi_cortexa7_Default || TARGET_sunxi_cortexa7_DEVICE_sun8i-h3-bananapi-m2-plus || TARGET_DEVICE_sunxi_cortexa7_DEVICE_sun8i-h3-bananapi-m2-plus)
+Version: 2019.01
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_sunxi_cortexa7
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: Sinovoip_BPI_M2_Plus
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Bananapi M2 Plus
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2019.01.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for Bananapi M2 Plus
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+
 Package: u-boot-sopine_baseboard
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_sun50i-a64-sopine-baseboard || TARGET_DEVICE_sunxi_cortexa53_DEVICE_sun50i-a64-sopine-baseboard)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-sopine_baseboard:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -700,7 +769,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Sopine Baseboard
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -713,7 +782,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 
 Package: u-boot-orangepi_zero_plus
 Default: y if (TARGET_sunxi_cortexa53_Default || TARGET_sunxi_cortexa53_DEVICE_sun50i-h5-orangepi-zero-plus || TARGET_DEVICE_sunxi_cortexa53_DEVICE_sun50i-h5-orangepi-zero-plus)
-Version: 2018.11
+Version: 2019.01
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-orangepi_zero_plus:arm-trusted-firmware-sunxi @TARGET_sunxi_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -723,7 +792,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Xunlong Orange Pi Zero Plus
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: u-boot-2018.11.tar.bz2
+Source: u-boot-2019.01.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin

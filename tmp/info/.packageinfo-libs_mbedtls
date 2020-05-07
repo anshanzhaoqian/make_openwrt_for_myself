@@ -2,7 +2,7 @@ Source-Makefile: package/libs/mbedtls/Makefile
 
 Package: libmbedtls
 Submenu: SSL
-Version: 2.14.1-2
+Version: 2.16.1-1
 ABIVersion: 12
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: base
 Title: Embedded SSL (library)
 Maintainer: 
-Source: mbedtls-2.14.1-gpl.tgz
+Source: mbedtls-2.16.1-gpl.tgz
 License: GPL-2.0+
 Type: ipkg
 Description: The aim of the mbedtls project is to provide a quality, open-source
@@ -22,9 +22,22 @@ This package contains the mbedtls library.
 https://tls.mbed.org
 
 @@
+Config:
+config LIBMBEDTLS_DEBUG_C
+	depends on PACKAGE_libmbedtls
+	bool "Enable debug functions"
+	default n
+	help
+	 This option enables mbedtls library's debug functions.
+
+	 It increases the uncompressed libmbedtls binary size
+	 by around 60 KiB (for an ARMv5 platform).
+
+	 Usually, you don't need this, so don't select this if you're unsure.
+@@
 
 Package: mbedtls-util
-Version: 2.14.1-2
+Version: 2.16.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +47,7 @@ Category: Utilities
 Repository: base
 Title: Embedded SSL (utilities)
 Maintainer: 
-Source: mbedtls-2.14.1-gpl.tgz
+Source: mbedtls-2.16.1-gpl.tgz
 License: GPL-2.0+
 Type: ipkg
 Description: The aim of the mbedtls project is to provide a quality, open-source

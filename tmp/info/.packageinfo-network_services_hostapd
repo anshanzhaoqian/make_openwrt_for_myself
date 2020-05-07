@@ -1,7 +1,7 @@
 Source-Makefile: package/network/services/hostapd/Makefile
 
 Package: hostapd
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: 
 Menu-Depends: 
@@ -22,7 +22,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: hostapd-basic
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: hostapd
 Menu-Depends: 
@@ -42,7 +42,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: hostapd-mini
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: hostapd hostapd-basic
 Menu-Depends: 
@@ -62,7 +62,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: hostapd-openssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libopenssl
 Conflicts: hostapd hostapd-basic hostapd-mini
 Menu-Depends: 
@@ -83,7 +83,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: hostapd-wolfssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libwolfssl
 Conflicts: hostapd hostapd-basic hostapd-mini hostapd-openssl
 Menu-Depends: 
@@ -104,7 +104,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpad
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: hostapd hostapd-basic hostapd-mini hostapd-openssl hostapd-wolfssl 
 Menu-Depends: 
@@ -125,7 +125,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpad-mesh-openssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +libopenssl
 Conflicts: hostapd hostapd-basic hostapd-mini hostapd-openssl hostapd-wolfssl wpad  wpad
 Menu-Depends: 
@@ -145,7 +145,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpad-mesh-wolfssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +libwolfssl
 Conflicts: hostapd hostapd-basic hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl  wpad wpad-mesh-openssl
 Menu-Depends: 
@@ -165,7 +165,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpad-basic
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: hostapd hostapd-basic hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl
 Menu-Depends: 
@@ -185,7 +185,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpad-mini
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: hostapd hostapd-basic hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic
 Menu-Depends: 
@@ -205,7 +205,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpad-openssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libopenssl
 Conflicts: hostapd hostapd-basic hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini
 Menu-Depends: 
@@ -226,7 +226,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpad-wolfssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libwolfssl
 Conflicts: hostapd hostapd-basic hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl
 Menu-Depends: 
@@ -247,7 +247,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpa-supplicant
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl wpad-wolfssl
 Menu-Depends: 
@@ -270,7 +270,7 @@ Config:
 @@
 
 Package: wpa-supplicant-mesh-openssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +libopenssl
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl wpad-wolfssl wpa-supplicant
 Menu-Depends: 
@@ -290,7 +290,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpa-supplicant-mesh-wolfssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +libwolfssl
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl wpad-wolfssl wpa-supplicant wpa-supplicant-mesh-openssl
 Menu-Depends: 
@@ -310,7 +310,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpa-supplicant-basic
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl wpad-wolfssl wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl
 Menu-Depends: 
@@ -330,7 +330,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpa-supplicant-mini
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl wpad-wolfssl wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-basic
 Menu-Depends: 
@@ -350,7 +350,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpa-supplicant-p2p
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl wpad-wolfssl wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-basic wpa-supplicant-mini
 Menu-Depends: 
@@ -370,7 +370,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpa-supplicant-openssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libopenssl
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl wpad-wolfssl wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-basic wpa-supplicant-mini wpa-supplicant-p2p
 Menu-Depends: 
@@ -390,7 +390,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpa-supplicant-wolfssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libwolfssl
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-mini wpad-openssl wpad-wolfssl wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-basic wpa-supplicant-mini wpa-supplicant-p2p wpa-supplicant-openssl
 Menu-Depends: 
@@ -410,7 +410,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wpa-cli
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @PACKAGE_wpad||PACKAGE_wpad-mesh-openssl||PACKAGE_wpad-mesh-wolfssl||PACKAGE_wpad-basic||PACKAGE_wpad-mini||PACKAGE_wpad-openssl||PACKAGE_wpad-wolfssl||PACKAGE_wpa-supplicant||PACKAGE_wpa-supplicant-mesh-openssl||PACKAGE_wpa-supplicant-mesh-wolfssl||PACKAGE_wpa-supplicant-basic||PACKAGE_wpa-supplicant-mini||PACKAGE_wpa-supplicant-p2p||PACKAGE_wpa-supplicant-openssl||PACKAGE_wpa-supplicant-wolfssl
 Conflicts: 
 Menu-Depends: 
@@ -428,7 +428,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: hostapd-utils
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @PACKAGE_hostapd||PACKAGE_hostapd-basic||PACKAGE_hostapd-mini||PACKAGE_hostapd-openssl||PACKAGE_hostapd-wolfssl||PACKAGE_wpad||PACKAGE_wpad-mesh-openssl||PACKAGE_wpad-mesh-wolfssl||PACKAGE_wpad-basic||PACKAGE_wpad-mini||PACKAGE_wpad-openssl||PACKAGE_wpad-wolfssl
 Conflicts: 
 Menu-Depends: 
@@ -448,7 +448,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: hostapd-common
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -466,7 +466,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: eapol-test
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +libubus
 Conflicts: 
 Menu-Depends: 
@@ -485,7 +485,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: eapol-test-openssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +libubus +libopenssl
 Conflicts: eapol-test eapol-test-wolfssl
 Menu-Depends: 
@@ -504,7 +504,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: eapol-test-wolfssl
-Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-1
+Version: 2018-12-02-c2c6c01bb8b6fafc2074b46a53c4eab2c145ac6f-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +libubus +libwolfssl
 Conflicts: eapol-test
 Menu-Depends: 

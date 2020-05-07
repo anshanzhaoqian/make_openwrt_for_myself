@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/pixman/Makefile
 
 Package: pixman
-Version: 0.38.4-1
+Version: 0.34.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: a low-level software library for pixel manipulation
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: pixman-0.38.4.tar.gz
+Source: pixman-0.34.0.tar.gz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg

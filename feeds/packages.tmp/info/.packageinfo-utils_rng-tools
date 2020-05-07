@@ -1,9 +1,9 @@
 Source-Makefile: feeds/packages/utils/rng-tools/Makefile
-Build-Depends: !USE_GLIBC:argp-standalone
+Build-Depends: USE_UCLIBC:argp-standalone USE_MUSL:argp-standalone
 
 Package: rng-tools
-Version: 6.7-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysfs
+Version: 5-6
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,14 +12,13 @@ Category: Utilities
 Repository: base
 Title: Daemon for adding entropy to kernel entropy pool
 Maintainer: Nathaniel Wesley Filardo <nwfilardo@gmail.com>
-Source: rng-tools-6.7.tar.xz
-License: GPL-2.0-or-later
-LicenseFiles: COPYING
+Source: rng-tools-5.tar.gz
+License: GPLv2
 Type: ipkg
-Description:   Daemon for adding entropy to kernel entropy pool. By default it uses
-  /dev/urandom as the source but the init script can be modified
-  to use a hardware source like /dev/hwrng if present
-https://github.com/nhorman/rng-tools
+Description: Daemon for adding entropy to kernel entropy pool. By default it uses
+/dev/urandom as the source but the init script can be modified
+to use a hardware source like /dev/hwrng if present
+http://sourceforge.net/projects/gkernel/
 Nathaniel Wesley Filardo <nwfilardo@gmail.com>
 @@
 

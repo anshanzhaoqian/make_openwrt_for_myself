@@ -8,7 +8,7 @@ Version: 2018-09-18-e1c722b1b6cbf2527b3178342464e56b97825874-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +usign +libubox
 Conflicts: ucert-full
 Menu-Depends: 
-Provides: 
+Provides: ucert
 Build-Variant: tiny
 Section: base
 Category: Base system

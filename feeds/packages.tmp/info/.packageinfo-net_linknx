@@ -1,9 +1,9 @@
 Source-Makefile: feeds/packages/net/linknx/Makefile
-Build-Depends: USE_UCLIBC:argp-standalone USE_MUSL:argp-standalone !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: argp-standalone
 
 Package: linknx
-Version: 0.0.1.38-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +pthsem +lua +luac +libcurl +libesmtp +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +BUILD_NLS:libiconv-full
+Version: 0.0.1.34-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +pthsem +lua +luac +libstdcpp +libcurl +libesmtp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,12 +12,11 @@ Category: Network
 Repository: base
 Title: KNX home automation platform
 Maintainer: Othmar Truniger <github@truniger.ch>
-Source: linknx-0.0.1.38.tar.gz
-License: GPL-2.0-or-later
-LicenseFiles: LICENSE
+Source: linknx-0.0.1.34.tar.xz
+License: GPL-2.0+
 Type: ipkg
 Description: KNX home automation platform
-https://github.com/linknx/linknx
+http://sourceforge.net/projects/linknx/
 Othmar Truniger <github@truniger.ch>
 @@
 

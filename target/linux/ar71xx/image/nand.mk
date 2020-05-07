@@ -20,7 +20,7 @@ define Device/arris-sbr-ac1750
   BOARDNAME := ARRIS-SBR-AC1750
   BLOCKSIZE := 128KiB
   PAGESIZE := 2048
-  IMAGE_SIZE := 72m
+  IMAGE_SIZE := 32m
   KERNEL_SIZE := 4096k
   UBINIZE_OPTS := -E 5
   MTDPARTS := ar934x-nfc:1m(u-boot)ro,1m(boot-flag),4m(kernel),32m(ubi),4m(kernel2),32m(ubi_rsvd),27m(config),1m(scfgmgr),4m(openwrt),1m(ft),2m(PKI),1m(caldata)ro

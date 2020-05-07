@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/mt-st/Makefile
 
 Package: mt-st
-Version: 1.1-2
+Version: 1.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 

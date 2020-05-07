@@ -3,10 +3,34 @@ Build-Depends: libevent2 mariadb/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Build-Depends/host: libxml2/host
 Build-Types: host
 
+Package: libmariadb
+Menu: 1
+Version: 10.2.26-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +mariadb-common +BUILD_NLS:libiconv-full +libopenssl +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: libmariadbclient libmysqlclient libmysqlclient-r
+Section: libs
+Category: Libraries
+Repository: base
+Title: MariaDB database client library
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
+Type: ipkg
+Description: MariaDB is a very fast and robust SQL database server.
+
+This package includes the client library.
+
+https://mariadb.org/
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
 Package: mariadb-client
 Menu: 1
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-client-base
 Conflicts: 
 Menu-Depends: 
@@ -16,9 +40,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database client
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -33,8 +57,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-client-base
 Submenu: Database
-Version: 10.4.12-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-common +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib @!USE_UCLIBC +libedit
+Version: 10.2.26-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-common +BUILD_NLS:libiconv-full +libopenssl +zlib +libatomic +libstdcpp +libedit
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43,9 +67,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database client base
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -58,7 +82,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-client-extra
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-client
 Conflicts: 
 Menu-Depends: 
@@ -68,9 +92,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database client extra
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -90,10 +114,34 @@ https://mariadb.org/
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
+Package: mariadb-common
+Submenu: Database
+Version: 10.2.26-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: MariaDB database common files
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
+Type: ipkg
+Description: MariaDB is a very fast and robust SQL database server.
+
+This package includes shared files, for example /etc/mysql/my.cnf.
+
+https://mariadb.org/
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
 Package: mariadb-server
 Menu: 1
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server-base
 Conflicts: 
 Menu-Depends: 
@@ -103,9 +151,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database server
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -123,8 +171,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-base
 Submenu: Database
-Version: 10.4.12-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-common +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib @!USE_UCLIBC +libaio +liblzma +libpcre +resolveip
+Version: 10.2.26-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-common +BUILD_NLS:libiconv-full +libopenssl +zlib +libatomic +libstdcpp +libaio +liblzma +libpcre +resolveip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -134,9 +182,9 @@ Repository: base
 Title: MariaDB database server base
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
 Require-User: mariadb=376:mariadb=376
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -150,7 +198,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-extra
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -160,19 +208,15 @@ Category: Utilities
 Repository: base
 Title: MariaDB database server extra
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
 This package includes the following extra server binaries:
 
-aria_chk
-aria_dump_log
-aria_ftdump
-aria_pack
-aria_read_log
+aria*
 mariabackup
 msql2mysql
 myisam_ftdump
@@ -192,10 +236,30 @@ mysqlhotcopy
 perror
 replace
 resolve_stack_dump
-wsrep_sst_mariabackup
-wsrep_sst_mysqldump
-wsrep_sst_rsync
-wsrep_sst_rsync_wan
+wsrep_sst_*
+
+https://mariadb.org/
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: libmariadb-plugin-auth-gssapi-client
+Version: 10.2.26-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread libmariadb +PACKAGE_libmariadb-plugin-auth-gssapi-client:krb5-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libmariadb plugin
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
+Type: ipkg
+Description:     MariaDB is a very fast and robust SQL database server.
+
+This package provides the auth_gssapi_client plugin.
 
 https://mariadb.org/
 Sebastian Kemper <sebastian_ml@gmx.net>
@@ -203,7 +267,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-ed25519
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -213,9 +277,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -227,7 +291,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-gssapi
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-gssapi:krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -237,9 +301,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -251,7 +315,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-pam
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-pam:libpam
 Conflicts: 
 Menu-Depends: 
@@ -261,9 +325,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -273,33 +337,9 @@ https://mariadb.org/
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
-Package: mariadb-server-plugin-auth-pam-v1
-Submenu: Database
-Version: 10.4.12-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-pam-v1:libpam
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: mariadb-server plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
-Type: ipkg
-Description:     MariaDB is a very fast and robust SQL database server.
-
-This package provides the auth_pam_v1 plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
 Package: mariadb-server-plugin-disks
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -309,9 +349,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -323,7 +363,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-feedback
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -333,9 +373,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -347,7 +387,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-file-key-management
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -357,9 +397,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -371,7 +411,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-archive
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -381,9 +421,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -395,7 +435,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-blackhole
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -405,9 +445,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -419,7 +459,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-connect
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-ha-connect:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -429,9 +469,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -443,7 +483,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-federated
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -453,9 +493,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -467,7 +507,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-federatedx
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -477,9 +517,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -491,7 +531,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-sphinx
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -501,9 +541,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -515,7 +555,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-spider
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -525,9 +565,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -539,7 +579,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-handlersocket
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -549,9 +589,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -563,7 +603,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-locales
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -573,9 +613,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -587,7 +627,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-metadata-lock-info
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -597,9 +637,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -611,7 +651,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-query-cache-info
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -621,9 +661,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -635,7 +675,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-query-response-time
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -645,9 +685,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -657,9 +697,9 @@ https://mariadb.org/
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
-Package: mariadb-server-plugin-server-audit
+Package: mariadb-server-plugin-semisync-master
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -669,9 +709,57 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
+Type: ipkg
+Description:     MariaDB is a very fast and robust SQL database server.
+
+This package provides the semisync_master plugin.
+
+https://mariadb.org/
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: mariadb-server-plugin-semisync-slave
+Submenu: Database
+Version: 10.2.26-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: mariadb-server plugin
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
+Type: ipkg
+Description:     MariaDB is a very fast and robust SQL database server.
+
+This package provides the semisync_slave plugin.
+
+https://mariadb.org/
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: mariadb-server-plugin-server-audit
+Submenu: Database
+Version: 10.2.26-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: mariadb-server plugin
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -683,7 +771,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-simple-password-check
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -693,9 +781,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -707,7 +795,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-sql-errlog
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -717,9 +805,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -731,7 +819,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-wsrep-info
 Submenu: Database
-Version: 10.4.12-2
+Version: 10.2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -741,9 +829,9 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.4.12.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING THIRDPARTY
+Source: mariadb-10.2.26.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING THIRDPARTY libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 

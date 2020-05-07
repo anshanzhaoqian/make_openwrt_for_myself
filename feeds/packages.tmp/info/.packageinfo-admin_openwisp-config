@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/admin/openwisp-config/Makefile
 
 Package: openwisp-config-openssl
-Submenu: OpenWISP
+Submenu: openwisp
 Version: 0.4.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +ca-certificates +libopenssl
 Conflicts: 
@@ -22,7 +22,7 @@ Federico Capoano <f.capoano@cineca.it>
 @@
 
 Package: openwisp-config-mbedtls
-Submenu: OpenWISP
+Submenu: openwisp
 Version: 0.4.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +ca-certificates +libmbedtls
 Conflicts: 
@@ -43,7 +43,7 @@ Federico Capoano <f.capoano@cineca.it>
 @@
 
 Package: openwisp-config-cyassl
-Submenu: OpenWISP
+Submenu: openwisp
 Version: 0.4.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem +ca-certificates +libcyassl
 Conflicts: 
@@ -64,7 +64,7 @@ Federico Capoano <f.capoano@cineca.it>
 @@
 
 Package: openwisp-config-nossl
-Submenu: OpenWISP
+Submenu: openwisp
 Version: 0.4.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +lua +libuci-lua +luafilesystem
 Conflicts: 

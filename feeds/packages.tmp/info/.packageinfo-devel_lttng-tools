@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/devel/lttng-tools/Makefile
 
 Package: lttng-tools
-Version: 2.10.6-2
+Version: 2.6.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lttng-ust +libpopt +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -10,14 +10,14 @@ Section: devel
 Category: Development
 Repository: base
 Title: Linux Trace Toolkit: next generation (tools)
-Maintainer: 
-Source: lttng-tools-2.10.6.tar.bz2
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Source: lttng-tools-2.6.0.tar.bz2
 License: LGPL-2.1 GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: Linux Trace Toolkit: next generation (tools)
 https://lttng.org/
-
+Nicolas Thill <nico@openwrt.org>
 @@
 
 

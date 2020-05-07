@@ -8,7 +8,7 @@ Target-Features: ext4 fpu gpio nand pcie squashfs ubifs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: display dt ext4 fpu gpio nand pci pcie rtc squashfs ubifs usb v
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -34,6 +34,8 @@ Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fs
 Target-Profile: DEVICE_ls1012ardb
 Target-Profile-Name: LS1012ARDB
 Target-Profile-Packages:  layerscape-rcw-ls1012ardb layerscape-ppfe layerscape-ppa-ls1012ardb kmod-ppfe 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1012ARDB
 @@
@@ -41,6 +43,8 @@ Build firmware images for LS1012ARDB
 Target-Profile: DEVICE_ls1012afrwy
 Target-Profile-Name: LS1012AFRWY
 Target-Profile-Packages:  layerscape-rcw-ls1012afrwy layerscape-ppfe layerscape-ppa-ls1012afrwy kmod-ppfe 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1012AFRWY
 @@
@@ -48,6 +52,8 @@ Build firmware images for LS1012AFRWY
 Target-Profile: DEVICE_ls1043ardb
 Target-Profile-Name: LS1043ARDB
 Target-Profile-Packages:  layerscape-rcw-ls1043ardb layerscape-fman-ls1043ardb layerscape-ppa-ls1043ardb 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1043ARDB
 @@
@@ -55,6 +61,8 @@ Build firmware images for LS1043ARDB
 Target-Profile: DEVICE_ls1043ardb-sdboot
 Target-Profile-Name: LS1043ARDB (SD Card Boot)
 Target-Profile-Packages:  layerscape-fman-ls1043ardb layerscape-ppa-ls1043ardb 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1043ARDB (SD Card Boot)
 @@
@@ -62,6 +70,8 @@ Build firmware images for LS1043ARDB (SD Card Boot)
 Target-Profile: DEVICE_ls1046ardb
 Target-Profile-Name: LS1046ARDB
 Target-Profile-Packages:  layerscape-rcw-ls1046ardb layerscape-fman-ls1046ardb layerscape-ppa-ls1046ardb 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1046ARDB
 @@
@@ -69,6 +79,8 @@ Build firmware images for LS1046ARDB
 Target-Profile: DEVICE_ls1046ardb-sdboot
 Target-Profile-Name: LS1046ARDB (SD Card Boot)
 Target-Profile-Packages:  layerscape-fman-ls1046ardb layerscape-ppa-ls1046ardb 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1046ARDB (SD Card Boot)
 @@
@@ -76,6 +88,8 @@ Build firmware images for LS1046ARDB (SD Card Boot)
 Target-Profile: DEVICE_ls1088ardb
 Target-Profile-Name: LS1088ARDB
 Target-Profile-Packages:  layerscape-rcw-ls1088ardb layerscape-mc-ls1088ardb layerscape-dpl-ls1088ardb layerscape-ppa-ls1088ardb restool 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1088ARDB
 @@
@@ -83,6 +97,8 @@ Build firmware images for LS1088ARDB
 Target-Profile: DEVICE_ls1088ardb-sdboot
 Target-Profile-Name: LS1088ARDB (SD Card Boot)
 Target-Profile-Packages:  layerscape-rcw-ls1088ardb-sdboot layerscape-mc-ls1088ardb layerscape-dpl-ls1088ardb layerscape-ppa-ls1088ardb restool 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1088ARDB (SD Card Boot)
 @@
@@ -90,13 +106,17 @@ Build firmware images for LS1088ARDB (SD Card Boot)
 Target-Profile: DEVICE_ls2088ardb
 Target-Profile-Name: LS2088ARDB
 Target-Profile-Packages:  layerscape-rcw-ls2088ardb layerscape-mc-ls2088ardb layerscape-dpl-ls2088ardb layerscape-ppa-ls2088ardb restool 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS2088ARDB
 @@
 
-Target-Profile: DEVICE_traverse-five64
-Target-Profile-Name: Traverse LS1043 Boards (Five64, LS1043S)
-Target-Profile-Packages:  layerscape-fman-ls1043ardb uboot-envtools uboot-traverse-ls1043v uboot-traverse-ls1043v-sdcard kmod-i2c-core kmod-i2c-mux-pca954x kmod-hwmon-core kmod-hwmon-ltc2990 kmod-hwmon-pac1934 kmod-hwmon-emc17xx kmod-gpio-pca953x kmod-input-gpio-keys-polled kmod-rtc-isl1208 
+Target-Profile: DEVICE_traverse-ls1043
+Target-Profile-Name: Traverse LS1043 Boards
+Target-Profile-Packages:  layerscape-fman-ls1043ardb uboot-envtools kmod-i2c-core kmod-i2c-mux-pca954x kmod-hwmon-core kmod-gpio-pca953x kmod-input-gpio-keys-polled kmod-rtc-isl1208 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build images for Traverse LS1043 boards. This generates a single image capable of booting on any of the boards in this family.
 @@
@@ -108,9 +128,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a15_neon-vfpv4
 Target-Features: arm_v7 display dt ext4 fpu gpio nand pci pcie rtc squashfs ubifs usb virtio
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=cortex-a15 -mfpu=neon-vfpv4
+Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -120,6 +140,8 @@ Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fs
 Target-Profile: DEVICE_ls1012ardb
 Target-Profile-Name: LS1012ARDB
 Target-Profile-Packages:  layerscape-rcw-ls1012ardb layerscape-ppfe layerscape-ppa-ls1012ardb u-boot-ls1012ardb-image kmod-ppfe 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1012ARDB
 @@
@@ -127,6 +149,8 @@ Build firmware images for LS1012ARDB
 Target-Profile: DEVICE_ls1012afrwy
 Target-Profile-Name: LS1012AFRWY
 Target-Profile-Packages:  layerscape-rcw-ls1012afrwy layerscape-ppfe layerscape-ppa-ls1012afrwy u-boot-ls1012afrwy-image kmod-ppfe 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1012AFRWY
 @@
@@ -134,6 +158,8 @@ Build firmware images for LS1012AFRWY
 Target-Profile: DEVICE_ls1043ardb
 Target-Profile-Name: LS1043ARDB
 Target-Profile-Packages:  layerscape-rcw-ls1043ardb layerscape-fman-ls1043ardb layerscape-ppa-ls1043ardb u-boot-ls1043ardb-image 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1043ARDB
 @@
@@ -141,6 +167,8 @@ Build firmware images for LS1043ARDB
 Target-Profile: DEVICE_ls1046ardb
 Target-Profile-Name: LS1046ARDB
 Target-Profile-Packages:  layerscape-rcw-ls1046ardb layerscape-fman-ls1046ardb layerscape-ppa-ls1046ardb u-boot-ls1046ardb-image 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1046ARDB
 @@
@@ -152,9 +180,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a7_neon-vfpv4
 Target-Features: arm_v7 dt ext4 fpu gpio nand pci pcie rtc squashfs ubifs usb virtio
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=cortex-a7 -mfpu=neon-vfpv4
+Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -164,6 +192,8 @@ Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fs
 Target-Profile: DEVICE_ls1021atwr
 Target-Profile-Name: LS1021ATWR
 Target-Profile-Packages:  layerscape-rcw-ls1021atwr 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1021ATWR
 @@
@@ -171,6 +201,8 @@ Build firmware images for LS1021ATWR
 Target-Profile: DEVICE_ls1021atwr-sdboot
 Target-Profile-Name: LS1021ATWR (SD Card Boot)
 Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1021ATWR (SD Card Boot)
 @@
@@ -178,6 +210,8 @@ Build firmware images for LS1021ATWR (SD Card Boot)
 Target-Profile: DEVICE_ls1021aiot-sdboot
 Target-Profile-Name: LS1021AIOT (SD Card Boot)
 Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for LS1021AIOT (SD Card Boot)
 @@

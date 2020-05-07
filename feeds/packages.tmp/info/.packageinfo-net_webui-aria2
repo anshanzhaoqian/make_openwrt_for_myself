@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/webui-aria2/Makefile
 
 Package: webui-aria2
 Submenu: Download Manager
-Version: 2018-12-09-fb9d758d5cdc2be0867ee9502c44fd17560f5d24-1
+Version: 2017-05-21-d1ce5b992680f4d03eeee899ed8280cbcab8961a-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: An interface to interact with aria2
 Maintainer: Hsing-Wang Liao <kuoruan@gmail.com>
-Source: webui-aria2-2018-12-09.tar.gz
+Source: webui-aria2-2017-05-21-d1ce5b992680f4d03eeee899ed8280cbcab8961a.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/spice/Makefile
 Build-Depends: spice-protocol
 
 Package: libspice-server
-Version: 0.14.3-1
+Version: 0.14.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libjpeg +libopenssl +pixman +zlib
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: packages
 Title: SPICE server library
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: spice-0.14.3.tar.bz2
+Source: spice-0.14.2.tar.bz2
 License: LGPL-2.1-only
 LicenseFiles: COPYING
 Type: ipkg

@@ -2,24 +2,22 @@ Source-Makefile: feeds/packages/libs/libgd/Makefile
 
 Package: libgd
 Menu: 1
-Version: 2.3.0-3
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libpng +libwebp +LIBGD_TIFF:libtiff +LIBGD_FREETYPE:libfreetype +LIBGD_TIFF:libtiff +LIBGD_FREETYPE:libfreetype
+Version: 2.2.5-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libpng +LIBGD_TIFF:libtiff +LIBGD_FREETYPE:libfreetype
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Build-Variant: default
 Section: libs
 Category: Libraries
 Repository: base
 Title: The GD graphics library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libgd-2.3.0.tar.xz
+Source: libgd-2.2.5.tar.xz
 License: MIT
-LicenseFiles: COPYING
 Type: ipkg
 Description:   GD is an open source code library for the dynamic creation of images by
   programmers. GD creates PNG, JPEG and GIF images, among other formats.
-https://libgd.github.io/
+http://www.libgd.org/
 Jo-Philipp Wich <jo@mein.io>
 @@
 Config:
@@ -37,30 +35,6 @@ Config:
 			help
 				Enable Freetype 2.x font engine support through libfreetype
 	endif
-@@
-
-Package: libgd-full
-Version: 2.3.0-3
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libpng +libwebp +LIBGD_TIFF:libtiff +LIBGD_FREETYPE:libfreetype +libtiff +libfreetype
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Build-Variant: full
-Section: libs
-Category: Libraries
-Repository: base
-Title: The GD graphics library (full)
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libgd-2.3.0.tar.xz
-License: MIT
-LicenseFiles: COPYING
-Type: ipkg
-Description:     GD is an open source code library for the dynamic creation of images by
-  programmers. GD creates PNG, JPEG and GIF images, among other formats.
-  .
-  This variant of the libgd package is compiled will all features enabled.
-https://libgd.github.io/
-Jo-Philipp Wich <jo@mein.io>
 @@
 
 

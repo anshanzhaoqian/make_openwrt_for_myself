@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/freetype/Makefile
 Build-Types: host
 
 Package: libfreetype
-Version: 2.10.1-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpng
+Version: 2.9-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libbz2 +libpng
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,9 +12,9 @@ Category: Libraries
 Repository: packages
 Title: A free, high-quality and portable font engine
 Maintainer: Val Kulkov <val.kulkov@gmail.com>
-Source: freetype-2.10.1.tar.xz
-License: FTL GPL-2.0-only MIT ZLIB GPL-3.0-or-later
-LicenseFiles: docs/LICENSE.TXT docs/FTL.TXT docs/GPLv2.TXT src/bdf/README src/pcf/README src/gzip/zlib.h builds/unix/config.sub builds/unix/config.guess builds/unix/libtool 
+Source: freetype-2.9.tar.bz2
+License: FTL GPL-2.0 MIT ZLIB
+LicenseFiles: docs/LICENSE.TXT docs/FTL.TXT docs/GPLv2.TXT src/bdf/README src/pcf/README src/gzip/zlib.h
 Type: ipkg
 Description:  The FreeType project is a team of volunteers who develop free,
  portable and high-quality software solutions for digital typography.

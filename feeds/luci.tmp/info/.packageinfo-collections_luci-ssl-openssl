@@ -1,9 +1,9 @@
 Source-Makefile: feeds/luci/collections/luci-ssl-openssl/Makefile
-Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+Build-Depends: lua/host luci-base/host 
 
 Package: luci-ssl-openssl
 Submenu: 1. Collections
-Version: x
+Version: x-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci +libustream-openssl +openssl-util
 Conflicts: 
 Menu-Depends: 

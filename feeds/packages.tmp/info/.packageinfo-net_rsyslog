@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/rsyslog/Makefile
 
 Package: rsyslog
-Version: 8.39.0-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libestr +libfastjson +libuuid +zlib
+Version: 8.18.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libestr +libfastjson +libuuid +zlib +USE_UCLIBC:libpthread +USE_UCLIBC:librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10,14 +10,14 @@ Section: net
 Category: Network
 Repository: base
 Title: Enhanced system logging and kernel message trapping daemons
-Maintainer: 
-Source: rsyslog-8.39.0.tar.gz
+Maintainer: Dov Murik <dmurik@us.ibm.com>
+Source: rsyslog-8.18.0.tar.gz
 License: GPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: Enhanced system logging and kernel message trapping daemons
-https://www.rsyslog.com/
-
+http://www.rsyslog.com/
+Dov Murik <dmurik@us.ibm.com>
 @@
 
 

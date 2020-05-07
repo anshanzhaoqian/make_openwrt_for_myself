@@ -2,7 +2,7 @@ Source-Makefile: package/kernel/ath10k-ct/Makefile
 
 Package: kmod-ath10k-ct
 Submenu: Wireless Drivers
-Version: <LINUX_VERSION>+2018-12-20-118e16da8e82f2e028654f86e47f4c8e5bddccc8-1
+Version: <LINUX_VERSION>+2019-04-08-9cd701a4f028b1643928a1f03c76e3f8c9e56a5b-1
 Depends: +kmod-mac80211 +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT +@DRIVER_11W_SUPPORT @PCI_SUPPORT +kmod-hwmon-core
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Section: kernel
 Category: Kernel modules
 Title: ath10k-ct driver optimized for CT ath10k firmware
 Maintainer: Ben Greear <greearb@candelatech.com>
-Source: ath10k-ct-2018-12-20-118e16da8e82f2e028654f86e47f4c8e5bddccc8.tar.xz
+Source: ath10k-ct-2019-04-08-9cd701a4f028b1643928a1f03c76e3f8c9e56a5b.tar.xz
 License: GPLv2
 Type: ipkg
 Description: ath10k-ct driver optimized for CT ath10k firmware

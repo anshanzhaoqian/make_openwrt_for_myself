@@ -8,7 +8,7 @@ Target-Features: atm gpio low_mem squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: atm gpio low_mem squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -69,7 +69,7 @@ Target-Features: atm gpio low_mem squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:

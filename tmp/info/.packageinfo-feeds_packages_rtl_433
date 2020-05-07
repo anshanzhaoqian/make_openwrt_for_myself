@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/rtl_433/Makefile
 
 Package: rtl_433
-Version: 20.02-1
+Version: 6531ea4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librtlsdr +rtl-sdr +libtool-bin
 Conflicts: 
 Menu-Depends: 
@@ -11,8 +11,8 @@ Category: Utilities
 Repository: packages
 Title: Realtek RTL2832 based 433.92MHz generic data receiver
 Maintainer: Jasper Scholte <NightNL@outlook.com>
-Source: rtl_433-20.02.tar.gz
-License: GPL-2.0-or-later
+Source: rtl_433-6531ea4.tar.gz
+License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
 Description: Realtek RTL2832 based 433.92MHz generic data receiver

@@ -8,7 +8,7 @@ Target-Features: audio ext4 source-only squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: um
 Target-Description:

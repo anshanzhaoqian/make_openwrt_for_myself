@@ -12,8 +12,6 @@ Repository: base
 Title: ECDSA library
 Maintainer: Matthias Schiffer <mschiffer@universe-factory.net>
 Source: ecdsautils-0.3.2.20160630.tar.xz
-License: MIT
-LicenseFiles: COPYRIGHT
 Type: ipkg
 Description:  Library to sign and verify checksums using ECDSA.
 https://github.com/tcatm/ecdsautils
@@ -32,8 +30,6 @@ Repository: base
 Title: ECDSA Utilities
 Maintainer: Matthias Schiffer <mschiffer@universe-factory.net>
 Source: ecdsautils-0.3.2.20160630.tar.xz
-License: BSD-2-Clause
-LicenseFiles: COPYRIGHT
 Type: ipkg
 Description:  Utilities to sign and verify checksums using ECDSA.
 https://github.com/tcatm/ecdsautils

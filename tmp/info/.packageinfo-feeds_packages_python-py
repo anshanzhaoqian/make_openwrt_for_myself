@@ -2,11 +2,12 @@ Source-Makefile: package/feeds/packages/python-py/Makefile
 
 Package: python3-py
 Submenu: Python
-Version: 1.8.1-2
+Version: 1.8.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -23,11 +24,12 @@ Jan Pavlinec <jan.pavlinec@nic.cz>
 
 Package: python3-py-src
 Submenu: Python
-Version: 1.8.1-2
+Version: 1.8.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -37,14 +39,10 @@ Source: py-1.8.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:       Library with cross-python path, ini-parsing, io, code, log facilities
-
-    This package contains the Python source files for python3-py.
+Description:       Library with cross-python path, ini-parsing, io, code, log facilities.
+    (Contains the Python3 sources for this package).
 https://github.com/pytest-dev/py
 Jan Pavlinec <jan.pavlinec@nic.cz>
-@@
-Config:
-    depends on PACKAGE_python3-py
 @@
 
 

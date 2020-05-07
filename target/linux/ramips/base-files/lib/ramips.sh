@@ -277,9 +277,6 @@ ramips_board_detect() {
 	*"Mercury MAC1200R v2")
 		name="mac1200rv2"
 		;;
-	*"Mi Router 3G")
-		name="mir3g"
-		;;
 	*"MicroWRT")
 		name="microwrt"
 		;;
@@ -417,9 +414,6 @@ ramips_board_detect() {
 		;;
 	*"Q7")
 		name="zte-q7"
-		;;
-	*"R6220")
-		name="r6220"
 		;;
 	*"RE350 v1")
 		name="re350-v1"
@@ -588,9 +582,6 @@ ramips_board_detect() {
 		;;
 	*"WL-351 v1 002")
 		name="wl-351"
-		;;
-	*"WL-WN575A3")
-		name="wl-wn575a3"
 		;;
 	*"WLI-TX4-AG300N")
 		name="wli-tx4-ag300n"

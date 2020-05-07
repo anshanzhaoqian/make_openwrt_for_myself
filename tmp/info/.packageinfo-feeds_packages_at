@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/at/Makefile
 
 Package: at
-Version: 3.1.23-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf
+Version: 3.1.20-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf1
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,8 +11,8 @@ Category: Utilities
 Repository: packages
 Title: Delayed job execution and batch processing
 Maintainer: Phil Eichinger <phil@zankapfel.net>
-Source: at_3.1.23.orig.tar.gz
-License: GPL-2.0-or-later GPL-3.0-or-later ISC
+Source: at_3.1.20.orig.tar.gz
+License: GPL-2.0+ GPL-3.0+ ISC
 LicenseFiles: COPYING Copyright
 Type: ipkg
 Description:  At and batch read shell commands from standard input storing them as a job to

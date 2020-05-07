@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/lcdproc/Makefile
 
 Package: lcdproc-clients
-Version: 0.5.9-4
+Version: 0.5.9-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Repository: base
 Title: LCD Display clients
 Maintainer: Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.com>
 Source: lcdproc-0.5.9.tar.gz
-License: GPL-2.0-only
+License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: LCDProc is a daemon and clients for displaying system information
@@ -28,7 +28,7 @@ Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.c
 @@
 
 Package: lcdproc-server
-Version: 0.5.9-4
+Version: 0.5.9-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -39,7 +39,7 @@ Repository: base
 Title: LCD Display server
 Maintainer: Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.com>
 Source: lcdproc-0.5.9.tar.gz
-License: GPL-2.0-only
+License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: LCDProc is a daemon and clients for displaying system information
@@ -56,8 +56,8 @@ Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.c
 @@
 
 Package: lcdproc-drivers
-Version: 0.5.9-4
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lcdproc-server +libncurses +libusb-1.0 +libusb-compat +libftdi1 +GPIO_SUPPORT:libugpio +serdisplib
+Version: 0.5.9-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lcdproc-server +libncurses +libusb-1.0 +libusb-compat +libftdi1 +GPIO_SUPPORT:libugpio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67,7 +67,7 @@ Repository: base
 Title: LCD Display extra drivers
 Maintainer: Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish-solutions.com>
 Source: lcdproc-0.5.9.tar.gz
-License: GPL-2.0-only
+License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: LCDProc is a daemon and clients for displaying system information

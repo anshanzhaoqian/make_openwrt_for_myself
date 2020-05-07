@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/bluelog/Makefile
 
 Package: bluelog
-Version: 1.1.2-4
+Version: 1.1.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +kmod-bluetooth
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Bluetooth scanner and logger
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: Bluelog-1.1.2.tar.gz
+Source: bluelog-1.1.2.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -19,12 +19,12 @@ Description:     Bluelog is a simple Bluetooth scanner designed to tell you how 
   discoverable devices there are in an area as quickly as possible. It is
   intended to be used as a site survey tool, identifying the number of possible
   Bluetooth targets there are in the surrounding environment.
-https://github.com/MS3FGX/Bluelog
+http://www.digifail.com/software/bluelog.shtml
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: bluelog-live
-Version: 1.1.2-4
+Version: 1.1.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +kmod-bluetooth bluelog
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Utilities
 Repository: base
 Title: Bluetooth scanner and logger (live output)
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: Bluelog-1.1.2.tar.gz
+Source: bluelog-1.1.2.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -44,7 +44,7 @@ Description:     Bluelog is a simple Bluetooth scanner designed to tell you how 
   Bluetooth targets there are in the surrounding environment.
   This package contains the files for "Bluelog Live", an optional mode of
   Bluelog which creates a real-time webpage of discovered Bluetooth devices.
-https://github.com/MS3FGX/Bluelog
+http://www.digifail.com/software/bluelog.shtml
 Nicolas Thill <nico@openwrt.org>
 @@
 

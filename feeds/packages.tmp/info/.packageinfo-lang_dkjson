@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/dkjson/Makefile
 
 Package: dkjson
 Submenu: Lua
-Version: 2.5-4
+Version: 2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lua
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: DKJSON
 Maintainer: Lars Gierth <larsg@systemli.org>
-Source: dkjson-2.5.tar.gz
+Source: dkjson-e72ba0c9f5d8b8746fc306f6189a819dbb5cd0be.tar.bz2
 License: MIT
 Type: ipkg
 Description: 	Lua JSON parser/serializer with UTF-8 support

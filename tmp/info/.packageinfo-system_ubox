@@ -1,7 +1,7 @@
 Source-Makefile: package/system/ubox/Makefile
 
 Package: ubox
-Version: 2018-12-18-876c7f5bfb9b13d48e6d7960dd114082a0a95a6d-1
+Version: 2019-04-07-5130fa4d9c5d15d643506f906927b209d7690a83-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +ubusd +ubus +libubus +libuci
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt system helper toolbox
 Maintainer: John Crispin <john@phrozen.org>
-Source: ubox-2018-12-18-876c7f5bfb9b13d48e6d7960dd114082a0a95a6d.tar.xz
+Source: ubox-2019-04-07-5130fa4d9c5d15d643506f906927b209d7690a83.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt system helper toolbox
@@ -19,7 +19,7 @@ John Crispin <john@phrozen.org>
 @@
 
 Package: logd
-Version: 2018-12-18-876c7f5bfb9b13d48e6d7960dd114082a0a95a6d-1
+Version: 2019-04-07-5130fa4d9c5d15d643506f906927b209d7690a83-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libubus +libblobmsg-json
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt system log implementation
 Maintainer: John Crispin <john@phrozen.org>
-Source: ubox-2018-12-18-876c7f5bfb9b13d48e6d7960dd114082a0a95a6d.tar.xz
+Source: ubox-2019-04-07-5130fa4d9c5d15d643506f906927b209d7690a83.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: OpenWrt system log implementation

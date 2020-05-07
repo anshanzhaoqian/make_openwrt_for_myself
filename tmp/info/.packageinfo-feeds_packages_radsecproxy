@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/radsecproxy/Makefile
 
 Package: radsecproxy
-Version: 1.8.1-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libnettle
+Version: 1.6.8-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,12 +11,12 @@ Category: Network
 Repository: packages
 Title: radsecproxy
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: radsecproxy-1.8.1.tar.gz
-License: BSD-3-CLAUSE
+Source: radsecproxy-1.6.8.tar.gz
+License: GPL-2.0+
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   A generic radius proxy for UDP/TLS (RadSec)
-https://radsecproxy.github.io/
+http://software.uninett.no/radsecproxy
 Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 

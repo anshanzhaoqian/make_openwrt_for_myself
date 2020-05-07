@@ -8,41 +8,8 @@
 };
 
 &spi {
-	status = "okay";
-	num-cs = <1>;
-
-	flash@0 {
-		compatible = "winbond,w25q128", "jedec,spi-nor";
-		reg = <0>;
-		spi-max-frequency = <25000000>;
-
-		partitions {
-			compatible = "fixed-partitions";
-			#address-cells = <1>;
-			#size-cells = <1>;
-
-			partition@0 {
-				label = "u-boot";
-				reg = <0x000000 0x040000>;
-				read-only;
-			};
-
-			partition@1 {
-				label = "u-boot-env";
-				reg = <0x040000 0x010000>;
-			};
-
-			partition@2 {
-				label = "reserved";
-				reg = <0x050000 0xfa0000>;
-			};
-
-			art: partition@3 {
-				label = "art";
-				reg = <0xff0000 0x010000>;
-			};
-		};
-	};
+	num-cs = <2>;
+	cs-gpios = <0>, <0>;
 
 	flash@1 {
 		compatible = "spinand,mt29f";
@@ -65,4 +32,9 @@
 			};
 		};
 	};
+};
+
+&firmware {
+	/delete-property/ compatible;
+	label = "reserved";
 };

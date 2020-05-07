@@ -2,11 +2,12 @@ Source-Makefile: feeds/packages/lang/python/python-stem/Makefile
 
 Package: python3-stem
 Submenu: Python
-Version: 1.8.0-2
+Version: 1.8.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: base
@@ -24,11 +25,12 @@ Javier Marcet <javier@marcet.info>
 
 Package: python3-stem-src
 Submenu: Python
-Version: 1.8.0-2
+Version: 1.8.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: base
@@ -39,14 +41,10 @@ License: LGPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg
 Description:       Stem is a Python controller library for Tor. With it you can use Tor's control
-  protocol to script against the Tor process, or build things such as Nyx.
-
-    This package contains the Python source files for python3-stem.
+  protocol to script against the Tor process, or build things such as Nyx..
+    (Contains the Python3 sources for this package).
 https://stem.torproject.org/
 Javier Marcet <javier@marcet.info>
-@@
-Config:
-    depends on PACKAGE_python3-stem
 @@
 
 

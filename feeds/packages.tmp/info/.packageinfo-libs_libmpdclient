@@ -1,8 +1,7 @@
 Source-Makefile: feeds/packages/libs/libmpdclient/Makefile
-Build-Depends: meson/host
 
 Package: libmpdclient
-Version: 2.18-1
+Version: 2.11-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,12 +11,12 @@ Category: Libraries
 Repository: base
 Title: libmpdclient
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: libmpdclient-2.18.tar.xz
+Source: libmpdclient-2.11.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
 Description:     A stable, documented, asynchronous API library for interfacing MPD in the C, C++ & Objective C languages.
-https://musicpd.org/libs/libmpdclient/
+http://mpd.wikia.com/wiki/ClientLib:libmpdclient
 Ted Hess <thess@kitschensync.net>
 @@
 

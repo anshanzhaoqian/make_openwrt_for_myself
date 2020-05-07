@@ -1,8 +1,8 @@
 Source-Makefile: package/devel/strace/Makefile
 
 Package: strace
-Version: 4.25-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_strace_libunwind:libunwind
+Version: 4.26-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +STRACE_LIBDW:libdw +STRACE_LIBUNWIND:libunwind
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: System call tracer
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: strace-4.25.tar.xz
+Source: strace-4.26.tar.xz
 License: BSD-3c
 LicenseFiles: COPYRIGHT
 Type: ipkg
@@ -21,12 +21,19 @@ http://strace.sourceforge.net/
 Felix Fietkau <nbd@nbd.name>
 @@
 Config:
-config PACKAGE_strace_libdw
-	bool "Enable stack tracing support using libdw"
-	default n
-config PACKAGE_strace_libunwind
-	bool "Enable stack tracing support using libunwind (experimental)"
-	default n
+choice
+	prompt "stack tracing support"
+	default STRACE_NONE
+
+	config STRACE_NONE
+		bool "None"
+
+	config STRACE_LIBDW
+		bool "libdw"
+
+	config STRACE_LIBUNWIND
+		bool "libunwind (experimental)"
+endchoice
 @@
 
 

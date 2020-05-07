@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/madplay/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: madplay-alsa
-Version: 0.15.2b-7
+Version: 0.15.2b-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libid3tag +libmad +BUILD_NLS:libintl-full +alsa-lib
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Repository: packages
 Title: MPEG audio player in fixed point - alsa
 Maintainer: Simon Peter <probono@puredarwin.org>
 Source: madplay-0.15.2b.tar.gz
-License: GPL-2.0-or-later
+License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: MPEG audio player in fixed point - alsa
@@ -23,7 +23,7 @@ Simon Peter <probono@puredarwin.org>
 @@
 
 Package: madplay
-Version: 0.15.2b-7
+Version: 0.15.2b-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libid3tag +libmad +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Repository: packages
 Title: MPEG audio player in fixed point - oss
 Maintainer: Simon Peter <probono@puredarwin.org>
 Source: madplay-0.15.2b.tar.gz
-License: GPL-2.0-or-later
+License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: 	MAD is an MPEG audio decoder. It currently only supports the MPEG 1

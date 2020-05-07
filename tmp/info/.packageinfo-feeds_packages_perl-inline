@@ -4,7 +4,7 @@ Build-Types: host
 
 Package: perl-inline
 Submenu: Perl
-Version: 0.86+perl5.28-1
+Version: 0.80+perl5.28-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-base +perlbase-config +perlbase-cwd +perlbase-digest +perlbase-essential +perlbase-fcntl +perlbase-file
 Conflicts: 
 Menu-Depends: 
@@ -14,12 +14,11 @@ Category: Languages
 Repository: packages
 Title: Write subroutines in other languages
 Maintainer: Marcel Denia <naoir@gmx.net>
-Source: Inline-0.86.tar.gz
-License: GPL-1.0-or-later Artistic-1.0-Perl
-LicenseFiles: LICENSE
+Source: Inline-0.80.tar.gz
+License: GPL-1.0+ Artistic-1.0-Perl
 Type: ipkg
 Description: Write subroutines in other languages
-https://search.cpan.org/dist/Inline/
+http://search.cpan.org/dist/Inline/
 Marcel Denia <naoir@gmx.net>
 @@
 

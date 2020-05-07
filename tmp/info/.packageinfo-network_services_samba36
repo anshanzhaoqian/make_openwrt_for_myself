@@ -1,7 +1,7 @@
 Source-Makefile: package/network/services/samba36/Makefile
 
 Package: samba36-client
-Version: 3.6.25-13
+Version: 3.6.25-14
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -21,7 +21,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: samba36-server
-Version: 3.6.25-13
+Version: 3.6.25-14
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -50,7 +50,7 @@ Config:
 @@
 
 Package: samba36-hotplug
-Version: 3.6.25-13
+Version: 3.6.25-14
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +blockd
 Conflicts: 
 Menu-Depends: 
@@ -70,7 +70,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: samba36-net
-Version: 3.6.25-13
+Version: 3.6.25-14
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
 Conflicts: 
 Menu-Depends: 

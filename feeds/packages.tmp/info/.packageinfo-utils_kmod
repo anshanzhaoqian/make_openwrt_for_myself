@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/kmod/Makefile
 
 Package: kmod
-Version: 20-2
+Version: 20-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Repository: base
 Title: Linux kernel module handling (tools)
 Maintainer: Jeff Waugh <jdub@bethesignal.org>
 Source: kmod-20.tar.xz
-License: LGPL-2.1-or-later
+License: LGPL-2.1+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Linux kernel module handling
@@ -23,7 +23,7 @@ Jeff Waugh <jdub@bethesignal.org>
 @@
 
 Package: libkmod
-Version: 20-2
+Version: 20-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Repository: base
 Title: Linux kernel module handling (library)
 Maintainer: Jeff Waugh <jdub@bethesignal.org>
 Source: kmod-20.tar.xz
-License: LGPL-2.1-or-later
+License: LGPL-2.1+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Linux kernel module handling (library)

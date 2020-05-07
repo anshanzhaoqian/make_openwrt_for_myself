@@ -1,10 +1,9 @@
 Source-Makefile: feeds/packages/utils/tcsh/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: tcsh
 Submenu: Shells
-Version: 6.22.02-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +BUILD_NLS:libiconv-full
+Version: 6.20.00-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Enhanced Berkeley UNIX C shell
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: tcsh-6.22.02.tar.gz
+Source: tcsh-6.20.00.tar.gz
 License: BSD-3-Clause
 LicenseFiles: Copyright
 Type: ipkg
@@ -25,7 +24,7 @@ Description: 	Tcsh is an enhanced, but completely compatible
 	command-line editor, programmable word
 	completion, spelling correction, a history
 	mechanism, job control and a C-like syntax.
-https://www.tcsh.org/
+http://www.tcsh.org/
 Nuno Goncalves <nunojpg@gmail.com>
 @@
 

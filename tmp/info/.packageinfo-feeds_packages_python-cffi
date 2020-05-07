@@ -1,12 +1,13 @@
 Source-Makefile: package/feeds/packages/python-cffi/Makefile
 
-Package: python3-cffi
+Package: python-cffi
 Submenu: Python
-Version: 1.14.0-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libffi +python3-light +python3-pycparser
+Version: 1.14.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libffi +PACKAGE_python-cffi:python-light +PACKAGE_python-cffi:python-pycparser
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python
 Section: lang
 Category: Languages
 Repository: packages
@@ -21,13 +22,61 @@ https://cffi.readthedocs.org/
 Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
-Package: python3-cffi-src
+Package: python-cffi-src
 Submenu: Python
-Version: 1.14.0-2
+Version: 1.14.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python
+Section: lang
+Category: Languages
+Repository: packages
+Title: C Foreign Function Interface (sources)
+Maintainer: Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: cffi-1.14.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Foreign Function Interface for Python calling C code..
+    (Contains the Python sources for this package).
+https://cffi.readthedocs.org/
+Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-cffi
+Submenu: Python
+Version: 1.14.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libffi +PACKAGE_python3-cffi:python3-light +PACKAGE_python3-cffi:python3-pycparser
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Section: lang
+Category: Languages
+Repository: packages
+Title: C Foreign Function Interface
+Maintainer: Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: cffi-1.14.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Foreign Function Interface for Python calling C code.
+.
+(Variant for Python3)
+https://cffi.readthedocs.org/
+Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-cffi-src
+Submenu: Python
+Version: 1.14.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -38,13 +87,11 @@ License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
 Description:     Foreign Function Interface for Python calling C code.
-
-    This package contains the Python source files for python3-cffi.
+.
+(Variant for Python3).
+    (Contains the Python3 sources for this package).
 https://cffi.readthedocs.org/
 Jeffery To <jeffery.to@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-cffi
 @@
 
 

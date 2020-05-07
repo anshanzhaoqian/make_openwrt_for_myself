@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/open-plc-utils/Makefile
 
 Package: open-plc-utils
 Menu: 1
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,18 +11,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Qualcomm Atheros Power Line Communication utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
 Description: Qualcomm Atheros Power Line Communication utilities
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-efbu
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -31,18 +31,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility efbu from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility efbu from the Open PLC utilities package.
+Description:      Utility efbu from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-efeu
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -51,18 +51,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility efeu from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility efeu from the Open PLC utilities package.
+Description:      Utility efeu from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-efru
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -71,18 +71,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility efru from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility efru from the Open PLC utilities package.
+Description:      Utility efru from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-efsu
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -91,18 +91,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility efsu from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility efsu from the Open PLC utilities package.
+Description:      Utility efsu from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-edru
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -111,18 +111,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility edru from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility edru from the Open PLC utilities package.
+Description:      Utility edru from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-edsu
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -131,18 +131,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility edsu from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility edsu from the Open PLC utilities package.
+Description:      Utility edsu from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-nics
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -151,18 +151,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility nics from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility nics from the Open PLC utilities package.
+Description:      Utility nics from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-hpavkey
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -171,18 +171,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility hpavkey from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility hpavkey from the Open PLC utilities package.
+Description:      Utility hpavkey from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-hpavkeys
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -191,18 +191,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility hpavkeys from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility hpavkeys from the Open PLC utilities package.
+Description:      Utility hpavkeys from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-rkey
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -211,18 +211,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility rkey from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility rkey from the Open PLC utilities package.
+Description:      Utility rkey from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-mac2pw
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -231,18 +231,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility mac2pw from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility mac2pw from the Open PLC utilities package.
+Description:      Utility mac2pw from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-mac2pwd
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -251,18 +251,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility mac2pwd from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility mac2pwd from the Open PLC utilities package.
+Description:      Utility mac2pwd from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-mdioblock
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -271,18 +271,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility mdioblock from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility mdioblock from the Open PLC utilities package.
+Description:      Utility mdioblock from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-mdioblock2
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -291,18 +291,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility mdioblock2 from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility mdioblock2 from the Open PLC utilities package.
+Description:      Utility mdioblock2 from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-mdiodump
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -311,18 +311,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility mdiodump from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility mdiodump from the Open PLC utilities package.
+Description:      Utility mdiodump from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-mdiogen
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -331,18 +331,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility mdiogen from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility mdiogen from the Open PLC utilities package.
+Description:      Utility mdiogen from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-hpav
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -351,18 +351,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility hpav from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility hpav from the Open PLC utilities package.
+Description:      Utility hpav from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-mme
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -371,18 +371,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility mme from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility mme from the Open PLC utilities package.
+Description:      Utility mme from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-chknvm
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -391,18 +391,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility chknvm from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility chknvm from the Open PLC utilities package.
+Description:      Utility chknvm from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-chknvm2
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -411,18 +411,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility chknvm2 from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility chknvm2 from the Open PLC utilities package.
+Description:      Utility chknvm2 from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-nvmsplit
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -431,18 +431,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility nvmsplit from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility nvmsplit from the Open PLC utilities package.
+Description:      Utility nvmsplit from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-nvmmerge
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -451,18 +451,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility nvmmerge from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility nvmmerge from the Open PLC utilities package.
+Description:      Utility nvmmerge from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-chkpib
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -471,18 +471,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility chkpib from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility chkpib from the Open PLC utilities package.
+Description:      Utility chkpib from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-chkpib2
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -491,18 +491,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility chkpib2 from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility chkpib2 from the Open PLC utilities package.
+Description:      Utility chkpib2 from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-setpib
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -511,18 +511,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility setpib from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility setpib from the Open PLC utilities package.
+Description:      Utility setpib from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-getpib
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -531,18 +531,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility getpib from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility getpib from the Open PLC utilities package.
+Description:      Utility getpib from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-modpib
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -551,18 +551,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility modpib from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility modpib from the Open PLC utilities package.
+Description:      Utility modpib from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-pib2xml
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -571,18 +571,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility pib2xml from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility pib2xml from the Open PLC utilities package.
+Description:      Utility pib2xml from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-pibcomp
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -591,18 +591,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility pibcomp from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility pibcomp from the Open PLC utilities package.
+Description:      Utility pibcomp from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-pibdump
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -611,18 +611,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility pibdump from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility pibdump from the Open PLC utilities package.
+Description:      Utility pibdump from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-pibruin
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -631,18 +631,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility pibruin from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility pibruin from the Open PLC utilities package.
+Description:      Utility pibruin from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-xml2pib
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -651,18 +651,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility xml2pib from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility xml2pib from the Open PLC utilities package.
+Description:      Utility xml2pib from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-psin
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -671,18 +671,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility psin from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility psin from the Open PLC utilities package.
+Description:      Utility psin from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-psout
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -691,18 +691,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility psout from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility psout from the Open PLC utilities package.
+Description:      Utility psout from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-pskey
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -711,18 +711,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility pskey from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility pskey from the Open PLC utilities package.
+Description:      Utility pskey from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-psgraph
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -731,18 +731,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility psgraph from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility psgraph from the Open PLC utilities package.
+Description:      Utility psgraph from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-psnotch
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -751,18 +751,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility psnotch from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility psnotch from the Open PLC utilities package.
+Description:      Utility psnotch from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-pibrump
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -771,18 +771,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility pibrump from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility pibrump from the Open PLC utilities package.
+Description:      Utility pibrump from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6k
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -791,18 +791,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6k from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6k from the Open PLC utilities package.
+Description:      Utility int6k from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kboot
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -811,18 +811,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kboot from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kboot from the Open PLC utilities package.
+Description:      Utility int6kboot from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6keth
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -831,18 +831,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6keth from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6keth from the Open PLC utilities package.
+Description:      Utility int6keth from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kf
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -851,18 +851,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kf from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kf from the Open PLC utilities package.
+Description:      Utility int6kf from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6khost
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -871,18 +871,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6khost from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6khost from the Open PLC utilities package.
+Description:      Utility int6khost from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int64host
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -891,18 +891,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int64host from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int64host from the Open PLC utilities package.
+Description:      Utility int64host from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kid
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -911,18 +911,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kid from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kid from the Open PLC utilities package.
+Description:      Utility int6kid from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6klist
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -931,18 +931,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6klist from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6klist from the Open PLC utilities package.
+Description:      Utility int6klist from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6klog
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -951,18 +951,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6klog from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6klog from the Open PLC utilities package.
+Description:      Utility int6klog from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kmdio
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -971,18 +971,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kmdio from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kmdio from the Open PLC utilities package.
+Description:      Utility int6kmdio from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kmdio2
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -991,18 +991,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kmdio2 from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kmdio2 from the Open PLC utilities package.
+Description:      Utility int6kmdio2 from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kmod
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1011,18 +1011,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kmod from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kmod from the Open PLC utilities package.
+Description:      Utility int6kmod from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kstat
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1031,18 +1031,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kstat from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kstat from the Open PLC utilities package.
+Description:      Utility int6kstat from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6ktest
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1051,18 +1051,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6ktest from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6ktest from the Open PLC utilities package.
+Description:      Utility int6ktest from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6krate
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1071,18 +1071,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6krate from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6krate from the Open PLC utilities package.
+Description:      Utility int6krate from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6krule
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1091,18 +1091,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6krule from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6krule from the Open PLC utilities package.
+Description:      Utility int6krule from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6ktone
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1111,18 +1111,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6ktone from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6ktone from the Open PLC utilities package.
+Description:      Utility int6ktone from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kwait
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1131,18 +1131,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kwait from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kwait from the Open PLC utilities package.
+Description:      Utility int6kwait from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-CMEncrypt
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1151,18 +1151,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility CMEncrypt from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility CMEncrypt from the Open PLC utilities package.
+Description:      Utility CMEncrypt from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-sada
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1171,18 +1171,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility sada from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility sada from the Open PLC utilities package.
+Description:      Utility sada from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-coqos_add
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1191,18 +1191,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility coqos_add from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility coqos_add from the Open PLC utilities package.
+Description:      Utility coqos_add from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-coqos_info
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1211,18 +1211,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility coqos_info from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility coqos_info from the Open PLC utilities package.
+Description:      Utility coqos_info from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-coqos_man
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1231,18 +1231,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility coqos_man from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility coqos_man from the Open PLC utilities package.
+Description:      Utility coqos_man from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-coqos_mod
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1251,18 +1251,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility coqos_mod from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility coqos_mod from the Open PLC utilities package.
+Description:      Utility coqos_mod from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-coqos_rel
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1271,18 +1271,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility coqos_rel from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility coqos_rel from the Open PLC utilities package.
+Description:      Utility coqos_rel from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-mdustats
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1291,18 +1291,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility mdustats from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility mdustats from the Open PLC utilities package.
+Description:      Utility mdustats from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ampboot
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1311,18 +1311,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ampboot from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ampboot from the Open PLC utilities package.
+Description:      Utility ampboot from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-amphost
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1331,18 +1331,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility amphost from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility amphost from the Open PLC utilities package.
+Description:      Utility amphost from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ampID
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1351,18 +1351,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ampID from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ampID from the Open PLC utilities package.
+Description:      Utility ampID from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-amplist
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1371,18 +1371,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility amplist from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility amplist from the Open PLC utilities package.
+Description:      Utility amplist from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-amprate
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1391,38 +1391,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility amprate from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility amprate from the Open PLC utilities package.
+Description:      Utility amprate from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
-@@
-
-Package: open-plc-utils-amprule
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Utility amprule from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
-License: ISC
-LicenseFiles: LICENSE
-Type: ipkg
-Description:     Utility amprule from the Open PLC utilities package.
-https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ampstat
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1431,18 +1411,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ampstat from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ampstat from the Open PLC utilities package.
+Description:      Utility ampstat from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-amptest
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1451,18 +1431,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility amptest from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility amptest from the Open PLC utilities package.
+Description:      Utility amptest from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-amptool
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1471,18 +1451,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility amptool from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility amptool from the Open PLC utilities package.
+Description:      Utility amptool from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-amptone
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1491,18 +1471,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility amptone from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility amptone from the Open PLC utilities package.
+Description:      Utility amptone from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ampwait
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1511,18 +1491,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ampwait from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ampwait from the Open PLC utilities package.
+Description:      Utility ampwait from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcboot
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1531,18 +1511,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcboot from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcboot from the Open PLC utilities package.
+Description:      Utility plcboot from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plchost
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1551,18 +1531,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plchost from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plchost from the Open PLC utilities package.
+Description:      Utility plchost from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcID
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1571,18 +1551,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcID from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcID from the Open PLC utilities package.
+Description:      Utility plcID from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plclist
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1591,18 +1571,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plclist from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plclist from the Open PLC utilities package.
+Description:      Utility plclist from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcrate
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1611,18 +1591,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcrate from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcrate from the Open PLC utilities package.
+Description:      Utility plcrate from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcrule
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1631,18 +1611,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcrule from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcrule from the Open PLC utilities package.
+Description:      Utility plcrule from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcstat
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1651,18 +1631,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcstat from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcstat from the Open PLC utilities package.
+Description:      Utility plcstat from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plctest
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1671,18 +1651,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plctest from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plctest from the Open PLC utilities package.
+Description:      Utility plctest from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plctool
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1691,18 +1671,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plctool from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plctool from the Open PLC utilities package.
+Description:      Utility plctool from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plctone
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1711,18 +1691,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plctone from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plctone from the Open PLC utilities package.
+Description:      Utility plctone from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcwait
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1731,18 +1711,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcwait from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcwait from the Open PLC utilities package.
+Description:      Utility plcwait from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plchostd
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1751,18 +1731,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plchostd from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plchostd from the Open PLC utilities package.
+Description:      Utility plchostd from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcget
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1771,18 +1751,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcget from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcget from the Open PLC utilities package.
+Description:      Utility plcget from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcset
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1791,18 +1771,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcset from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcset from the Open PLC utilities package.
+Description:      Utility plcset from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcotst
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1811,18 +1791,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcotst from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcotst from the Open PLC utilities package.
+Description:      Utility plcotst from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcfwd
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1831,18 +1811,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcfwd from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcfwd from the Open PLC utilities package.
+Description:      Utility plcfwd from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcdevs
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1851,18 +1831,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcdevs from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcdevs from the Open PLC utilities package.
+Description:      Utility plcdevs from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plclog
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1871,18 +1851,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plclog from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plclog from the Open PLC utilities package.
+Description:      Utility plclog from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcmdio16
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1891,18 +1871,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcmdio16 from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcmdio16 from the Open PLC utilities package.
+Description:      Utility plcmdio16 from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-plcmdio32
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1911,18 +1891,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility plcmdio32 from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility plcmdio32 from the Open PLC utilities package.
+Description:      Utility plcmdio32 from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-config2cfg
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1931,18 +1911,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility config2cfg from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility config2cfg from the Open PLC utilities package.
+Description:      Utility config2cfg from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-sdram
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1951,18 +1931,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility sdram from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility sdram from the Open PLC utilities package.
+Description:      Utility sdram from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kuart
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1971,18 +1951,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kuart from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kuart from the Open PLC utilities package.
+Description:      Utility int6kuart from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kbaud
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -1991,18 +1971,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kbaud from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kbaud from the Open PLC utilities package.
+Description:      Utility int6kbaud from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ttysig
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -2011,18 +1991,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ttysig from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ttysig from the Open PLC utilities package.
+Description:      Utility ttysig from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ptsctl
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -2031,18 +2011,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ptsctl from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ptsctl from the Open PLC utilities package.
+Description:      Utility ptsctl from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-weeder
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -2051,18 +2031,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility weeder from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility weeder from the Open PLC utilities package.
+Description:      Utility weeder from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ttysend
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -2071,18 +2051,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ttysend from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ttysend from the Open PLC utilities package.
+Description:      Utility ttysend from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ttyrecv
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -2091,18 +2071,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ttyrecv from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ttyrecv from the Open PLC utilities package.
+Description:      Utility ttyrecv from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-ttycat
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -2111,18 +2091,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility ttycat from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility ttycat from the Open PLC utilities package.
+Description:      Utility ttycat from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: open-plc-utils-int6kdetect
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
+Version: 2017-12-03
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
 Conflicts: 
 Menu-Depends: 
@@ -2131,54 +2111,14 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Utility int6kdetect from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: open-plc-utils-2017-12-03-18b7e2a9a17f043fe8ac8b457680aafb1c249c55.tar.xz
 License: ISC
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     Utility int6kdetect from the Open PLC utilities package.
+Description:      Utility int6kdetect from the Open PLC utilities package.
 https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
-@@
-
-Package: open-plc-utils-pev
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Utility pev from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
-License: ISC
-LicenseFiles: LICENSE
-Type: ipkg
-Description:     Utility pev from the Open PLC utilities package.
-https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
-@@
-
-Package: open-plc-utils-evse
-Version: 32408520fcebe785983a68e39ec83830a3005779-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread open-plc-utils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Utility evse from the Open PLC utilities
-Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: open-plc-utils-32408520fcebe785983a68e39ec83830a3005779.tar.xz
-License: ISC
-LicenseFiles: LICENSE
-Type: ipkg
-Description:     Utility evse from the Open PLC utilities package.
-https://github.com/qca/open-plc-utils/blob/master/README
-Michael Heimpold <mhei@heimpold.de>
+Florian Fainelli <florian@openwrt.org>
 @@
 
 

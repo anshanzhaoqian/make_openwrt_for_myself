@@ -1,10 +1,9 @@
 Source-Makefile: feeds/packages/lang/tcl/Makefile
-Build-Types: host
 
 Package: tcl
 Submenu: Tcl
-Version: 8.6.9-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib
+Version: 8.6.4-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @BROKEN
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +12,7 @@ Category: Languages
 Repository: base
 Title: The Tcl language
 Maintainer: Joe Mistachkin <joe@mistachkin.com>
-Source: tcl8.6.9-src.tar.gz
+Source: tcl8.6.4-src.tar.gz
 License: TCL
 LicenseFiles: license.terms
 Type: ipkg
@@ -23,7 +22,7 @@ Description:   Tcl, or Tool Command Language, is a an elegant, versatile, featur
   stability and utility, and its emphasis on providing a cross-platform
   programming API makes it an ideal choice for an enormous variety of
   programming jobs.
-https://www.tcl.tk/
+http://www.tcl.tk/
 Joe Mistachkin <joe@mistachkin.com>
 @@
 

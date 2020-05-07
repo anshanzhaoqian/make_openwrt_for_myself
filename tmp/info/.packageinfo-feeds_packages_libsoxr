@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/libsoxr/Makefile
 
 Package: libsoxr
-Version: 0.1.3-2
+Version: 0.1.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -17,7 +17,7 @@ LicenseFiles: LICENCE
 Type: ipkg
 Description:   The SoX Resampler library
   High quality, one-dimensional sample-rate conversion library
-https://sourceforge.net/projects/soxr/
+http://sourceforge.net/projects/soxr/
 Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
 @@
 

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/hd-idle/Makefile
 
 Package: hd-idle
 Submenu: Disc
-Version: 1.05-2
+Version: 1.05-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 

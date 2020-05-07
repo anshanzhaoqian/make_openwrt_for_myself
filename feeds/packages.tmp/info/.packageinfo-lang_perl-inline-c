@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: perl-inline-c
 Submenu: Perl
-Version: 0.81+perl5.28-1
+Version: 0.78+perl5.28-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perl-inline +perl-parse-recdescent +perlbase-config +perlbase-cwd +perlbase-data +perlbase-essential +perlbase-file +perlbase-if
 Conflicts: 
 Menu-Depends: 
@@ -15,12 +15,11 @@ Category: Languages
 Repository: base
 Title: C Language Support for Inline
 Maintainer: Marcel Denia <naoir@gmx.net>
-Source: Inline-C-0.81.tar.gz
-License: GPL-1.0-or-later Artistic-1.0-Perl
-LicenseFiles: LICENSE
+Source: Inline-C-0.78.tar.gz
+License: GPL-1.0+ Artistic-1.0-Perl
 Type: ipkg
 Description: C Language Support for Inline
-https://search.cpan.org/dist/Inline-C/
+http://search.cpan.org/dist/Inline-C/
 Marcel Denia <naoir@gmx.net>
 @@
 

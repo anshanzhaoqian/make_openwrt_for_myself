@@ -1,8 +1,7 @@
 Source-Makefile: package/feeds/packages/libevdev/Makefile
-Build-Depends: meson/host
 
 Package: libevdev
-Version: 1.9.0-2
+Version: 1.5.6-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: a wrapper library for evdev devices
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: libevdev-1.9.0.tar.xz
+Source: libevdev-1.5.6.tar.xz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -22,7 +21,7 @@ Description:   libevdev is a wrapper library for evdev devices. it moves the com
 
   The eventual goal is that libevdev wraps all ioctls available to
   evdev devices, thus making direct access unnecessary.
-https://www.freedesktop.org/wiki/Software/libevdev/
+http://www.freedesktop.org/wiki/Software/libevdev/
 Daniel Golle <daniel@makrotopia.org>
 @@
 

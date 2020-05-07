@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/linuxptp/Makefile
 
 Package: linuxptp
 Submenu: Time Synchronization
-Version: 2.0-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Version: 1.9.2-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!USE_UCLIBC +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: packages
 Title: Linux Precision Time Protocol (PTP) daemon
 Maintainer: Wojciech Dubowik <Wojciech.Dubowik@neratec.com>
-Source: linuxptp-2.0.tgz
+Source: linuxptp-1.9.2.tgz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

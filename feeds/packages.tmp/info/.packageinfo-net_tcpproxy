@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/tcpproxy/Makefile
 
 Package: tcpproxy
 Submenu: Routing and Redirection
-Version: 1.2-3
+Version: 1.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: base
 Title: IPv4/IPv6 tcp connection proxy
 Maintainer: Christian Pointner <equinox@spreadspace.org>
 Source: tcpproxy-1.2.tar.gz
-License: GPL-3.0-or-later
+License: GPL-3.0+
 LicenseFiles: LICENSE
 Type: ipkg
 Description: tcpproxy is a simple tcp connection proxy which combines the features of rinetd and 6tunnel.

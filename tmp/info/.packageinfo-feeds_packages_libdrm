@@ -1,9 +1,8 @@
 Source-Makefile: package/feeds/packages/libdrm/Makefile
-Build-Depends: meson/host
 
 Package: libdrm
-Version: 2.4.101-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpciaccess
+Version: 2.4.70-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,15 +10,12 @@ Section: libs
 Category: Libraries
 Repository: packages
 Title: libdrm
-Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
-Source: libdrm-2.4.101.tar.xz
-License: BSD-3-Clause
+Maintainer: 
+Source: libdrm-2.4.70.tar.bz2
 Type: ipkg
-Description:   LIBDRM is the cross-driver middleware which allows user-space applications
-  (such as Mesa and 2D drivers) to communicate with the Kernel by the means
-  of the DRI protocol.
-https://dri.freedesktop.org/
-Lucian Cristian <lucian.cristian@gmail.com>
+Description: libdrm
+http://dri.freedesktop.org/
+
 @@
 
 

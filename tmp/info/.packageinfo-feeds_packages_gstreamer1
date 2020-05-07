@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/gstreamer1/Makefile
-Build-Depends: meson/host glib2/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libgst1check
-Version: 1.16.2-1
+Version: 1.12.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libgstreamer1
 Conflicts: 
 Menu-Depends: 
@@ -12,20 +12,20 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer check unit testing library (core)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gstreamer-1.16.2.tar.xz
-License: LGPL-2.1-or-later
+Source: gstreamer-1.12.4.tar.xz
+License: LGPLv2
 LicenseFiles: COPYING
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
    .
    This package contains the GStreamer check unit testing library.
-https://gstreamer.freedesktop.org/
+http://gstreamer.freedesktop.org/
 W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1controller
-Version: 1.16.2-1
+Version: 1.12.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libgstreamer1
 Conflicts: 
 Menu-Depends: 
@@ -35,20 +35,20 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer dynamic parameter control library (core)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gstreamer-1.16.2.tar.xz
-License: LGPL-2.1-or-later
+Source: gstreamer-1.12.4.tar.xz
+License: LGPLv2
 LicenseFiles: COPYING
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
    .
    This package contains the GStreamer dynamic parameter control library.
-https://gstreamer.freedesktop.org/
+http://gstreamer.freedesktop.org/
 W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1net
-Version: 1.16.2-1
+Version: 1.12.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libgstreamer1
 Conflicts: 
 Menu-Depends: 
@@ -58,20 +58,20 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer network classes library (core)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gstreamer-1.16.2.tar.xz
-License: LGPL-2.1-or-later
+Source: gstreamer-1.12.4.tar.xz
+License: LGPLv2
 LicenseFiles: COPYING
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
    .
    This package contains the GStreamer network classes library.
-https://gstreamer.freedesktop.org/
+http://gstreamer.freedesktop.org/
 W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgstreamer1
-Version: 1.16.2-1
+Version: 1.12.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +glib2 +libpthread +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -81,20 +81,20 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer library (core)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gstreamer-1.16.2.tar.xz
-License: LGPL-2.1-or-later
+Source: gstreamer-1.12.4.tar.xz
+License: LGPLv2
 LicenseFiles: COPYING
 Type: ipkg
 Hidden: 1
 Description:   GStreamer open source multimedia framework
  .
  This package contains the GStreamer core library.
-https://gstreamer.freedesktop.org/
+http://gstreamer.freedesktop.org/
 W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gstreamer1-libs
-Version: 1.16.2-1
+Version: 1.12.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +ALL:gstreamer1
 Conflicts: 
 Menu-Depends: 
@@ -104,15 +104,15 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer core libraries
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gstreamer-1.16.2.tar.xz
-License: LGPL-2.1-or-later
+Source: gstreamer-1.12.4.tar.xz
+License: LGPLv2
 LicenseFiles: COPYING
 Type: ipkg
 Description:   GStreamer open source multimedia framework
  .
  This meta package contains only dependencies on the other GStreamer
  componenents.
-https://gstreamer.freedesktop.org/
+http://gstreamer.freedesktop.org/
 W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 Config:
@@ -144,7 +144,7 @@ Config:
 @@
 
 Package: gstreamer1-utils
-Version: 1.16.2-1
+Version: 1.12.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libgstreamer1 +gstreamer1-libs
 Conflicts: 
 Menu-Depends: 
@@ -154,19 +154,19 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer utilities
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gstreamer-1.16.2.tar.xz
-License: LGPL-2.1-or-later
+Source: gstreamer-1.12.4.tar.xz
+License: LGPLv2
 LicenseFiles: COPYING
 Type: ipkg
 Description:   GStreamer open source multimedia framework
  .
  This package contains the GStreamer utilities.
-https://gstreamer.freedesktop.org/
+http://gstreamer.freedesktop.org/
 W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gstreamer1
-Version: 1.16.2-1
+Version: 1.12.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgstreamer1 +libgst1check +libgst1controller +libgst1net
 Conflicts: 
 Menu-Depends: 
@@ -176,13 +176,13 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer (All libraries)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gstreamer-1.16.2.tar.xz
-License: LGPL-2.1-or-later
+Source: gstreamer-1.12.4.tar.xz
+License: LGPLv2
 LicenseFiles: COPYING
 Type: ipkg
 Hidden: 1
 Description: GStreamer (All libraries)
-https://gstreamer.freedesktop.org/
+http://gstreamer.freedesktop.org/
 W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 

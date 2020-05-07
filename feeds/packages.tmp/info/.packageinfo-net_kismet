@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/kismet/Makefile
 
 Package: kismet-client
-Submenu: Wireless
-Version: 2016-07-R1-2
+Submenu: wireless
+Version: 2016-07-R1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libnl +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -23,8 +23,8 @@ Jean-Michel lacroix <lacroix@lepine-lacroix.info>
 @@
 
 Package: kismet-drone
-Submenu: Wireless
-Version: 2016-07-R1-2
+Submenu: wireless
+Version: 2016-07-R1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libnl +libpcap +libpcre +libcap +wireless-tools
 Conflicts: 
 Menu-Depends: 
@@ -45,8 +45,8 @@ Jean-Michel lacroix <lacroix@lepine-lacroix.info>
 @@
 
 Package: kismet-server
-Submenu: Wireless
-Version: 2016-07-R1-2
+Submenu: wireless
+Version: 2016-07-R1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +libnl +libpcap +libpcre +libcap +wireless-tools
 Conflicts: 
 Menu-Depends: 

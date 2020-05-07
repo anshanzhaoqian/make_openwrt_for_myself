@@ -30,7 +30,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: rrdcgi1
-Submenu: Database
+Submenu: database
 Version: 1.0.50-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librrd1
 Conflicts: 
@@ -61,7 +61,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: rrdtool1
-Submenu: Database
+Submenu: database
 Version: 1.0.50-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librrd1
 Conflicts: 

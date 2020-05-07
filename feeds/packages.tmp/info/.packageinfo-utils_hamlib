@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/hamlib/Makefile
 
 Package: hamlib
-Version: 3.3-1
+Version: 3.0.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libhamlib
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Ham Radio Control utilities
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
-Source: hamlib-3.3.tar.gz
+Source: hamlib-3.0.1.tar.gz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -26,7 +26,7 @@ Vasilis Tsiligiannis <acinonyx@openwrt.gr>
 
 Package: libhamlib
 Menu: 1
-Version: 3.3-1
+Version: 3.0.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Libraries
 Repository: base
 Title: Ham Radio Control shared library
 Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
-Source: hamlib-3.3.tar.gz
+Source: hamlib-3.0.1.tar.gz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg

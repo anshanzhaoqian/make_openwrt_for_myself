@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/ngircd/Makefile
 
 Package: ngircd
 Submenu: Instant Messaging
-Version: 25-1
+Version: 24-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: Next Generation IRC Server (with OpenSSL support)
-Maintainer: 
-Source: ngircd-25.tar.xz
+Maintainer: Claudio Leite <leitec@staticky.com>
+Source: ngircd-24.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -22,13 +22,13 @@ Description:     ngIRCd is an Open Source server for the Internet Relay Chat (IR
   ngIRCd means "next generation IRC daemon", it's written from scratch and
   not deduced from the "grandfather of IRC daemons", the daemon of the IRCNet.
   This package is built with OpenSSL support.
-https://ngircd.barton.de
-
+http://ngircd.barton.de
+Claudio Leite <leitec@staticky.com>
 @@
 
 Package: ngircd-nossl
 Submenu: Instant Messaging
-Version: 25-1
+Version: 24-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
 Conflicts: 
 Menu-Depends: 
@@ -38,8 +38,8 @@ Section: net
 Category: Network
 Repository: packages
 Title: Next Generation IRC Server (without OpenSSL support)
-Maintainer: 
-Source: ngircd-25.tar.xz
+Maintainer: Claudio Leite <leitec@staticky.com>
+Source: ngircd-24.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -48,8 +48,8 @@ Description:     ngIRCd is an Open Source server for the Internet Relay Chat (IR
   ngIRCd means "next generation IRC daemon", it's written from scratch and
   not deduced from the "grandfather of IRC daemons", the daemon of the IRCNet.
   This package is built without OpenSSL support.
-https://ngircd.barton.de
-
+http://ngircd.barton.de
+Claudio Leite <leitec@staticky.com>
 @@
 
 

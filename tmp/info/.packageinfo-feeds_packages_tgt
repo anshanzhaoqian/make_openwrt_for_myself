@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/tgt/Makefile
 
 Package: tgt
-Version: 1.0.79-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libaio
+Version: 1.0.73-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libaio @KERNEL_AIO
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,13 +11,13 @@ Category: Network
 Repository: packages
 Title: userspace iSCSI target
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: tgt-1.0.79.tar.gz
-License: GPL-2.0-only
+Source: tgt-1.0.73-013223dc886a03719ca02db52162056249d99448.tar.gz
+License: GPL-2.0
 Type: ipkg
-Description: The Linux target framework (tgt) is a user space SCSI target framework
-that supports the iSCSI and iSER transport protocols and that also
-supports multiple methods for accessing block storage. Tgt consists of
-a user-space daemon and user-space tools.
+Description: Linux SCSI target framework (tgt) aims to simplify various SCSI target driver (iSCSI, Fibre Channel, SRP, etc) creation and maintenance.
+Key goals of the project are the clean integration into the scsi-mid layer and implementing a great portion of tgt in user space.
+Tgt consists of kernel-space and user-space code. The kernel-space component is included in upstream as of 2.6.20.
+Note that if you are interested in only iSCSI (probably you are), you need only the user-space code (any kernel version is fine).
 http://stgt.sourceforge.net/
 Maxim Storchak <m.storchak@gmail.com>
 @@

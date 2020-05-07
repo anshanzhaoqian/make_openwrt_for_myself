@@ -1,7 +1,7 @@
 Source-Makefile: package/network/utils/iwinfo/Makefile
 
 Package: libiwinfo
-Version: 2018-12-25-dd508af481406bbbe42eaa20a54226645f0301cc-1
+Version: 2019-03-28-c2cfe9d96c9a321f7314e6321361ae6c982bbb0f-1
 ABIVersion: 20181126
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +libuci +libubus
 Conflicts: 
@@ -11,7 +11,7 @@ Section: libs
 Category: Libraries
 Title: Generalized Wireless Information Library (iwinfo)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiwinfo-2018-12-25-dd508af481406bbbe42eaa20a54226645f0301cc.tar.xz
+Source: libiwinfo-2019-03-28-c2cfe9d96c9a321f7314e6321361ae6c982bbb0f.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:   Wireless information library with consistent interface for proprietary Broadcom,
@@ -21,7 +21,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: libiwinfo-lua
 Submenu: Lua
-Version: 2018-12-25-dd508af481406bbbe42eaa20a54226645f0301cc-1
+Version: 2019-03-28-c2cfe9d96c9a321f7314e6321361ae6c982bbb0f-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libiwinfo +liblua
 Conflicts: 
 Menu-Depends: 
@@ -30,7 +30,7 @@ Section: lang
 Category: Languages
 Title: libiwinfo Lua binding
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiwinfo-2018-12-25-dd508af481406bbbe42eaa20a54226645f0301cc.tar.xz
+Source: libiwinfo-2019-03-28-c2cfe9d96c9a321f7314e6321361ae6c982bbb0f.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:   This is the Lua binding for the iwinfo library. It provides access to all enabled
@@ -39,7 +39,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: iwinfo
-Version: 2018-12-25-dd508af481406bbbe42eaa20a54226645f0301cc-1
+Version: 2019-03-28-c2cfe9d96c9a321f7314e6321361ae6c982bbb0f-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -48,7 +48,7 @@ Section: utils
 Category: Utilities
 Title: Generalized Wireless Information utility
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiwinfo-2018-12-25-dd508af481406bbbe42eaa20a54226645f0301cc.tar.xz
+Source: libiwinfo-2019-03-28-c2cfe9d96c9a321f7314e6321361ae6c982bbb0f.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:   Command line frontend for the wireless information library.

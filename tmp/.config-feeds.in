@@ -22,19 +22,3 @@
 		 Enable the \"routing\" feed in opkg distfeeds.conf.
 		 Say M to add the feed commented out.
 
-	config FEED_telephony
-		tristate "Enable feed telephony"
-		depends on PER_FEED_REPO
-		default y
-		help
-		 Enable the \"telephony\" feed in opkg distfeeds.conf.
-		 Say M to add the feed commented out.
-
-	config FEED_x
-		tristate "Enable feed x"
-		depends on PER_FEED_REPO
-		default y
-		help
-		 Enable the \"x\" feed in opkg distfeeds.conf.
-		 Say M to add the feed commented out.
-

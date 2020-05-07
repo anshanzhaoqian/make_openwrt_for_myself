@@ -6,9 +6,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_arm926ej-s
 Target-Features: dt ext4 gpio rtc usb usbgadget
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=arm926ej-s
+Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

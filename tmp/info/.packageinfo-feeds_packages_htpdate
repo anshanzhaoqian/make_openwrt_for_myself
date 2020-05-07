@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/htpdate/Makefile
 
 Package: htpdate
 Submenu: Time Synchronization
-Version: 1.1.1-4
+Version: 1.1.1-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: packages
 Title: an HTP (Hypertext Time Protocol) implementation
 Maintainer: Tijs Van Buggenhout <tvbuggen@netzerk.be>, Marcin Jurkowski <marcin1j@gmail.com>
 Source: htpdate-1.1.1.tar.xz
-License: GPL-2.0-or-later
+License: GPL-2.0+
 Type: ipkg
 Description: 	The HTTP Time Protocol (HTP) is used to synchronize a computer's time
 	with web servers as reference time source. Htpdate will synchronize your

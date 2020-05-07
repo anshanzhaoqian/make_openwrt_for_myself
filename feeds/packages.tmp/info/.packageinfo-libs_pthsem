@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/pthsem/Makefile
 
 Package: pthsem
-Version: 2.0.8-6
+Version: 2.0.8-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Repository: base
 Title: GNU pth extended with semaphore support
 Maintainer: Othmar Truniger <github@truniger.ch>
 Source: pthsem_2.0.8.tar.gz
-License: LGPL-2.1-or-later
+License: LGPL-2.1+
 LicenseFiles: COPYING
 Type: ipkg
 Description:   GNU pth is a user mode multi threading library.

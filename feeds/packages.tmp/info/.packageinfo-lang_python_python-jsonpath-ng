@@ -2,11 +2,12 @@ Source-Makefile: feeds/packages/lang/python/python-jsonpath-ng/Makefile
 
 Package: python3-jsonpath-ng
 Submenu: Python
-Version: 1.4.3-2
+Version: 1.4.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-ply +python3-six +python3-decorator
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: base
@@ -21,11 +22,12 @@ Karel Kočí <cynerd@email.cz>
 
 Package: python3-jsonpath-ng-src
 Submenu: Python
-Version: 1.4.3-2
+Version: 1.4.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: base
@@ -33,14 +35,10 @@ Title: python3-jsonpath-ng (sources)
 Maintainer: Karel Kočí <cynerd@email.cz>
 Source: jsonpath-ng-1.4.3.tar.gz
 Type: ipkg
-Description:     	python3-jsonpath-ng
-
-    This package contains the Python source files for python3-jsonpath-ng.
+Description:     .
+    (Contains the Python3 sources for this package).
 https://github.com/h2non/jsonpath-ng
 Karel Kočí <cynerd@email.cz>
-@@
-Config:
-    depends on PACKAGE_python3-jsonpath-ng
 @@
 
 

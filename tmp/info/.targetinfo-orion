@@ -6,9 +6,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_xscale
 Target-Features: broken dt gpio pci rtc usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22,9 +22,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_xscale
 Target-Features: broken dt gpio pci rtc squashfs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -39,9 +39,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_xscale
 Target-Features: broken dt gpio pci rtc targz usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

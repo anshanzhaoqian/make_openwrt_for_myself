@@ -6,9 +6,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_xscale
 Target-Features: fpu nand ramdisk squashfs
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -41,6 +41,8 @@ Target-Profile-Description:
 Target-Profile: DEVICE_MTK-RFB1
 Target-Profile-Name: MTK7622 rfb1 AP 
 Target-Profile-Packages: kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-core kmod-ata-ahci-mtk  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mt7622
 Target-Profile-Description:
 Build firmware images for MTK7622 rfb1 AP 
 @@
@@ -52,9 +54,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a7_neon-vfpv4
 Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=cortex-a7 -mfpu=neon-vfpv4
+Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -71,6 +73,8 @@ Target-Profile-Description:
 Target-Profile: DEVICE_7623a-unielec-u7623-02-emmc-512m
 Target-Profile-Name: MTK7623a UniElec U7623-02 (eMMC/512MB RAM)
 Target-Profile-Packages: mkf2fs e2fsprogs kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
 Target-Profile-Description:
 Build firmware images for MTK7623a UniElec U7623-02 (eMMC/512MB RAM)
 @@
@@ -78,6 +82,8 @@ Build firmware images for MTK7623a UniElec U7623-02 (eMMC/512MB RAM)
 Target-Profile: DEVICE_7623n-bananapi-bpi-r2
 Target-Profile-Name: MTK7623n BananaPi R2
 Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for MTK7623n BananaPi R2
 @@

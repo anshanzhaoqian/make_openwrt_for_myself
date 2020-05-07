@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/sane-backends/Makefile
 
 Package: libsane
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,8 +11,8 @@ Category: Libraries
 Repository: packages
 Title: Scanner Access Now Easy (libraries)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description:  SANE (Scanner Access Now Easy) is a universal scanner interface.
@@ -22,7 +22,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-daemon
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -32,9 +32,8 @@ Category: Utilities
 Repository: packages
 Title: Scanner Access Now Easy (network daemon)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Require-User: saned:scanner
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description:  SANE (Scanner Access Now Easy) is a universal scanner interface.
@@ -44,7 +43,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-abaton
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -54,8 +53,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-abaton) for Abaton flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -67,7 +66,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-agfafocus
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -77,8 +76,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-agfafocus) for AGFA Focus flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -90,7 +89,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-apple
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -100,8 +99,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-apple) for Apple flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -113,7 +112,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-artec
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -123,8 +122,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-artec) for Artec flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -136,8 +135,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-artec_eplus48u
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -146,8 +145,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-artec_eplus48u) for Artec E+ 48U and re-badged models
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -159,7 +158,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-as6e
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -169,8 +168,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-as6e) for Artec AS6E parallel port interface scanner
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -182,8 +181,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-avision
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -192,8 +191,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-avision) for Avision and Avision OEM scanners and possibly more flatbed and film scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -205,7 +204,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-bh
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -215,8 +214,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-bh) for Bell+Howell Copiscan II series document scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -228,8 +227,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-canon
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -238,8 +237,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-canon) for Canon SCSI scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -251,8 +250,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-canon630u
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -261,8 +260,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-canon630u) for the Canon 630u USB flatbed scanner
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -274,8 +273,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-canon_dr
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -284,8 +283,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-canon_dr) for Canon DR-series scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -297,8 +296,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-cardscan
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -307,8 +306,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-cardscan) for Corex CardScan usb scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -320,8 +319,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-coolscan
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -330,8 +329,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-coolscan) for Nikon film-scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -343,8 +342,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-coolscan2
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -353,8 +352,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-coolscan2) for Nikon Coolscan film scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -366,8 +365,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-coolscan3
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -376,8 +375,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-coolscan3) for Nikon Coolscan film scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -389,7 +388,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dc210
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -399,8 +398,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-dc210) for Kodak DC210 Digital Camera
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -412,7 +411,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dc240
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -422,8 +421,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-dc240) for Kodak DC240 Digital Camera
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -435,7 +434,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dc25
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -445,8 +444,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-dc25) for Kodak DC20/DC25 Digital Cameras
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -458,8 +457,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dell1600n_net
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libtiff +libjpeg
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libtiff
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -468,8 +467,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-dell1600n_net) for Dell 1600n
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -481,7 +480,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dmc
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -491,8 +490,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-dmc) for Polaroid Digital Microscope Camera
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -504,8 +503,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-epjitsu
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -514,8 +513,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-epjitsu) for Epson-based Fujitsu USB scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -527,8 +526,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-epson
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -537,8 +536,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-epson) for EPSON scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -550,8 +549,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-epsonds
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -560,8 +559,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-epsonds) for EPSON scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -573,8 +572,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-epson2
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -583,8 +582,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-epson2) for EPSON scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -596,8 +595,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-fujitsu
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -606,8 +605,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-fujitsu) for Fujitsu flatbed and ADF scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -619,8 +618,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-genesys
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libstdcpp +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -629,8 +628,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-genesys) for GL646 GL841 GL843 GL847 and GL124 based USB flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -641,32 +640,9 @@ http://www.sane-project.org/
 Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
-Package: sane-gphoto2
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg +libgphoto2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: opt
-Category: Extra packages
-Repository: packages
-Title: SANE backend (sane-gphoto2) for digital cameras supported by gphoto2
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
-LicenseFiles: COPYING LICENSE
-Type: ipkg
-Hidden: 1
-Description:     SANE (Scanner Access Now Easy) is a universal scanner interface.
-.
-This package contains the SANE backend for digital cameras supported by gphoto2.
-http://www.sane-project.org/
-Luiz Angelo Daros de Luca <luizluca@gmail.com>
-@@
-
 Package: sane-gt68xx
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -675,8 +651,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-gt68xx) for GT-68XX based USB flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -688,8 +664,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -698,8 +674,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-hp) for HP ScanJet scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -711,8 +687,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp3500
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -721,8 +697,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-hp3500) for Hewlett-Packard ScanJet 3500 series scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -734,8 +710,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp3900
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libtiff +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libtiff
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -744,8 +720,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-hp3900) for RTS8822 chipset based scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -757,8 +733,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp4200
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -767,8 +743,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-hp4200) for Hewlett-Packard 4200 scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -780,8 +756,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp5400
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -790,8 +766,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-hp5400) for Hewlett-Packard 54XX scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -803,8 +779,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp5590
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -813,8 +789,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-hp5590) for Hewlett-Packard 4500C/4570C/5500C/5550C/5590/7650 Workgroup/Document scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -826,8 +802,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hpljm1005
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -836,8 +812,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-hpljm1005) for Hewlett-Packard LaserJet M1005 MFP Scanner
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -849,7 +825,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hs2p
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -859,8 +835,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-hs2p) for Ricoh SCSI flatbed/ADF scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -872,7 +848,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-ibm
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -882,8 +858,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-ibm) for IBM and Ricoh SCSI flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -895,8 +871,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-kodak
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -905,8 +881,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-kodak) for big Kodak flatbed and ADF scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -918,8 +894,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-kodakaio
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -928,8 +904,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-kodakaio) for Kodak aio printer / scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -940,32 +916,9 @@ http://www.sane-project.org/
 Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
-Package: sane-kvs1025
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: opt
-Category: Extra packages
-Repository: packages
-Title: SANE backend (sane-kvs1025) for Panasonic KV-S102xC USB ADF scanners
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
-LicenseFiles: COPYING LICENSE
-Type: ipkg
-Hidden: 1
-Description:     SANE (Scanner Access Now Easy) is a universal scanner interface.
-.
-This package contains the SANE backend for Panasonic KV-S102xC USB ADF scanners.
-http://www.sane-project.org/
-Luiz Angelo Daros de Luca <luizluca@gmail.com>
-@@
-
 Package: sane-kvs20xx
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -974,8 +927,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-kvs20xx) for Panasonic KV-S20xxC USB/SCSI ADF scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -987,8 +940,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-kvs40xx
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libpthread +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -997,8 +950,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-kvs40xx) for Panasonic KV-S40xxC USB/SCSI ADF scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1009,8 +962,31 @@ http://www.sane-project.org/
 Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
+Package: sane-kvs1025
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: packages
+Title: SANE backend (sane-kvs1025) for Panasonic KV-S102xC USB ADF scanners
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Hidden: 1
+Description:     SANE (Scanner Access Now Easy) is a universal scanner interface.
+.
+This package contains the SANE backend for Panasonic KV-S102xC USB ADF scanners.
+http://www.sane-project.org/
+Luiz Angelo Daros de Luca <luizluca@gmail.com>
+@@
+
 Package: sane-leo
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1020,8 +996,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-leo) for LEO Technologies scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1033,8 +1009,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-lexmark
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1043,8 +1019,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-lexmark) for Lexmark X1100/X1200 Series scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1056,8 +1032,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-ma1509
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1066,8 +1042,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-ma1509) for Mustek BearPaw 1200F USB scanner
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1079,8 +1055,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-magicolor
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1089,8 +1065,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-magicolor) for KONICA MINOLTA magicolor scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1102,7 +1078,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-matsushita
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1112,8 +1088,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-matsushita) for Panasonic KV-SS high speed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1125,7 +1101,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-microtek
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1135,8 +1111,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-microtek) for Microtek scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1148,7 +1124,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-microtek2
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1158,8 +1134,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-microtek2) for Microtek scanners with SCSI-2 command set
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1171,7 +1147,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-mustek
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1181,8 +1157,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-mustek) for Mustek SCSI flatbed scanners and some other devices
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1194,8 +1170,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-mustek_usb
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1204,8 +1180,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-mustek_usb) for Mustek USB flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1217,8 +1193,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-mustek_usb2
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libpthread +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1227,8 +1203,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-mustek_usb2) for SQ113 based USB flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1240,7 +1216,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-nec
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1250,8 +1226,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-nec) for NEC scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1263,7 +1239,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-net
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1273,8 +1249,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-net) for network backend
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1286,8 +1262,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-niash
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1296,8 +1272,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-niash) for scanners based on the NIASH chipset
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1309,7 +1285,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-p5
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1319,8 +1295,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-p5) for the Primax PagePartner
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1332,7 +1308,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-pie
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1342,8 +1318,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-pie) for PIE Devcom and AdLib SCSI flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1355,8 +1331,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-pieusb
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1365,8 +1341,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-pieusb) for PIE Devcom and AdLib SCSI flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1378,8 +1354,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-pixma
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0 +libjpeg
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1388,8 +1364,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-pixma) for Canon Multi-Function Printers and CanoScan Scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1401,8 +1377,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-plustek
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1411,8 +1387,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-plustek) for LM983[1/2/3] based USB flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1424,7 +1400,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-plustek_pp
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1434,8 +1410,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-plustek_pp) for Plustek parallel port flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1447,7 +1423,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-qcam
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane @(TARGET_x86||TARGET_x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -1457,8 +1433,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-qcam) for Connectix QuickCam cameras
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1470,7 +1446,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-ricoh
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1480,8 +1456,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-ricoh) for Ricoh flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1492,32 +1468,9 @@ http://www.sane-project.org/
 Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
-Package: sane-ricoh2
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: opt
-Category: Extra packages
-Repository: packages
-Title: SANE backend (sane-ricoh2) for Ricoh2 flatbed scanners
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
-LicenseFiles: COPYING LICENSE
-Type: ipkg
-Hidden: 1
-Description:     SANE (Scanner Access Now Easy) is a universal scanner interface.
-.
-This package contains the SANE backend for Ricoh2 flatbed scanners.
-http://www.sane-project.org/
-Luiz Angelo Daros de Luca <luizluca@gmail.com>
-@@
-
 Package: sane-rts8891
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1526,8 +1479,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-rts8891) for rts8891 based scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1539,7 +1492,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-s9036
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1549,8 +1502,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-s9036) for Siemens 9036 flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1562,7 +1515,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sceptre
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1572,8 +1525,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-sceptre) for SCEPTRE scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1585,7 +1538,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sharp
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1595,8 +1548,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-sharp) for SHARP scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1608,8 +1561,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sm3600
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1618,8 +1571,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-sm3600) for Microtek scanners with M011 USB chip
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1631,8 +1584,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sm3840
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1641,8 +1594,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-sm3840) for Microtek scanners with SCAN08 USB chip
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1654,8 +1607,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-snapscan
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1664,8 +1617,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-snapscan) for AGFA SnapScan flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1677,7 +1630,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sp15c
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1687,8 +1640,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-sp15c) for Fujitsu ScanPartner 15C flatbed scanner
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1700,7 +1653,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-st400
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1710,8 +1663,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-st400) for Siemens ST/Highscan flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1723,8 +1676,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-stv680
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1733,8 +1686,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-stv680) for STV680 cameras
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1746,7 +1699,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-tamarack
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1756,8 +1709,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-tamarack) for Tamarack flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1769,7 +1722,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-teco1
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1779,8 +1732,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-teco1) for TECO / RELISYS scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1792,7 +1745,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-teco2
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1802,8 +1755,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-teco2) for TECO / RELISYS scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1815,7 +1768,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-teco3
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1825,8 +1778,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-teco3) for TECO / RELISYS scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1838,7 +1791,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-test
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1848,8 +1801,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-test) for testing frontends
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1861,8 +1814,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-u12
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1871,8 +1824,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-u12) for Plustek USB flatbed scanners based on older parport designs
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1884,8 +1837,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-umax
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1894,8 +1847,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-umax) for UMAX scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1907,8 +1860,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-umax1220u
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1917,8 +1870,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-umax1220u) for the UMAX Astra 1220U and similar scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1930,7 +1883,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-umax_pp
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1940,8 +1893,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-umax_pp) for Umax Astra parallel port flatbed scanners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1953,8 +1906,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-v4l
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libv4l +libjpeg +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libv4l +libjpeg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1963,8 +1916,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-v4l) for Video for Linux API
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1976,8 +1929,8 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-xerox_mfp
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg +libusb-1.0
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1986,8 +1939,8 @@ Category: Extra packages
 Repository: packages
 Title: SANE backend (sane-xerox_mfp) for Xerox Phaser 3200MFP device
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -1999,7 +1952,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-backends
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ALL:sane-backends-all
 Conflicts: 
 Menu-Depends: 
@@ -2009,8 +1962,8 @@ Category: Utilities
 Repository: packages
 Title: Scanner Access Now Easy (drivers)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description:  SANE (Scanner Access Now Easy) is a universal scanner interface.
@@ -2026,265 +1979,259 @@ Config:
 
     config PACKAGE_sane-backends-all
       depends on PACKAGE_sane-backends
-      tristate "Include all SANE backends (sane-backends-all)"
+      prompt "Include all SANE backends (sane-backends-all)"
 
     comment "Backends"
 
   config PACKAGE_sane-abaton
-      tristate "SANE backend (sane-abaton) for Abaton flatbed scanners"
+      prompt "SANE backend (sane-abaton) for Abaton flatbed scanners"
      
    config PACKAGE_sane-agfafocus
-      tristate "SANE backend (sane-agfafocus) for AGFA Focus flatbed scanners"
+      prompt "SANE backend (sane-agfafocus) for AGFA Focus flatbed scanners"
      
    config PACKAGE_sane-apple
-      tristate "SANE backend (sane-apple) for Apple flatbed scanners"
+      prompt "SANE backend (sane-apple) for Apple flatbed scanners"
      
    config PACKAGE_sane-artec
-      tristate "SANE backend (sane-artec) for Artec flatbed scanners"
+      prompt "SANE backend (sane-artec) for Artec flatbed scanners"
      
    config PACKAGE_sane-artec_eplus48u
-      tristate "SANE backend (sane-artec_eplus48u) for Artec E+ 48U and re-badged models"
+      prompt "SANE backend (sane-artec_eplus48u) for Artec E+ 48U and re-badged models"
      
    config PACKAGE_sane-as6e
-      tristate "SANE backend (sane-as6e) for Artec AS6E parallel port interface scanner"
+      prompt "SANE backend (sane-as6e) for Artec AS6E parallel port interface scanner"
      
    config PACKAGE_sane-avision
-      tristate "SANE backend (sane-avision) for Avision and Avision OEM scanners and possibly more flatbed and film scanners"
+      prompt "SANE backend (sane-avision) for Avision and Avision OEM scanners and possibly more flatbed and film scanners"
      
    config PACKAGE_sane-bh
-      tristate "SANE backend (sane-bh) for Bell+Howell Copiscan II series document scanners"
+      prompt "SANE backend (sane-bh) for Bell+Howell Copiscan II series document scanners"
      
    config PACKAGE_sane-canon
-      tristate "SANE backend (sane-canon) for Canon SCSI scanners"
+      prompt "SANE backend (sane-canon) for Canon SCSI scanners"
      
    config PACKAGE_sane-canon630u
-      tristate "SANE backend (sane-canon630u) for the Canon 630u USB flatbed scanner"
+      prompt "SANE backend (sane-canon630u) for the Canon 630u USB flatbed scanner"
      
    config PACKAGE_sane-canon_dr
-      tristate "SANE backend (sane-canon_dr) for Canon DR-series scanners"
+      prompt "SANE backend (sane-canon_dr) for Canon DR-series scanners"
      
    config PACKAGE_sane-cardscan
-      tristate "SANE backend (sane-cardscan) for Corex CardScan usb scanners"
+      prompt "SANE backend (sane-cardscan) for Corex CardScan usb scanners"
      
    config PACKAGE_sane-coolscan
-      tristate "SANE backend (sane-coolscan) for Nikon film-scanners"
+      prompt "SANE backend (sane-coolscan) for Nikon film-scanners"
      
    config PACKAGE_sane-coolscan2
-      tristate "SANE backend (sane-coolscan2) for Nikon Coolscan film scanners"
+      prompt "SANE backend (sane-coolscan2) for Nikon Coolscan film scanners"
      
    config PACKAGE_sane-coolscan3
-      tristate "SANE backend (sane-coolscan3) for Nikon Coolscan film scanners"
+      prompt "SANE backend (sane-coolscan3) for Nikon Coolscan film scanners"
      
    config PACKAGE_sane-dc210
-      tristate "SANE backend (sane-dc210) for Kodak DC210 Digital Camera"
+      prompt "SANE backend (sane-dc210) for Kodak DC210 Digital Camera"
      
    config PACKAGE_sane-dc240
-      tristate "SANE backend (sane-dc240) for Kodak DC240 Digital Camera"
+      prompt "SANE backend (sane-dc240) for Kodak DC240 Digital Camera"
      
    config PACKAGE_sane-dc25
-      tristate "SANE backend (sane-dc25) for Kodak DC20/DC25 Digital Cameras"
+      prompt "SANE backend (sane-dc25) for Kodak DC20/DC25 Digital Cameras"
      
    config PACKAGE_sane-dell1600n_net
-      tristate "SANE backend (sane-dell1600n_net) for Dell 1600n"
+      prompt "SANE backend (sane-dell1600n_net) for Dell 1600n"
      
    config PACKAGE_sane-dmc
-      tristate "SANE backend (sane-dmc) for Polaroid Digital Microscope Camera"
+      prompt "SANE backend (sane-dmc) for Polaroid Digital Microscope Camera"
      
    config PACKAGE_sane-epjitsu
-      tristate "SANE backend (sane-epjitsu) for Epson-based Fujitsu USB scanners"
+      prompt "SANE backend (sane-epjitsu) for Epson-based Fujitsu USB scanners"
      
    config PACKAGE_sane-epson
-      tristate "SANE backend (sane-epson) for EPSON scanners"
+      prompt "SANE backend (sane-epson) for EPSON scanners"
      
    config PACKAGE_sane-epsonds
-      tristate "SANE backend (sane-epsonds) for EPSON scanners"
+      prompt "SANE backend (sane-epsonds) for EPSON scanners"
      
    config PACKAGE_sane-epson2
-      tristate "SANE backend (sane-epson2) for EPSON scanners"
+      prompt "SANE backend (sane-epson2) for EPSON scanners"
      
    config PACKAGE_sane-fujitsu
-      tristate "SANE backend (sane-fujitsu) for Fujitsu flatbed and ADF scanners"
+      prompt "SANE backend (sane-fujitsu) for Fujitsu flatbed and ADF scanners"
      
    config PACKAGE_sane-genesys
-      tristate "SANE backend (sane-genesys) for GL646 GL841 GL843 GL847 and GL124 based USB flatbed scanners"
-     
-   config PACKAGE_sane-gphoto2
-      tristate "SANE backend (sane-gphoto2) for digital cameras supported by gphoto2"
+      prompt "SANE backend (sane-genesys) for GL646 GL841 GL843 GL847 and GL124 based USB flatbed scanners"
      
    config PACKAGE_sane-gt68xx
-      tristate "SANE backend (sane-gt68xx) for GT-68XX based USB flatbed scanners"
+      prompt "SANE backend (sane-gt68xx) for GT-68XX based USB flatbed scanners"
      
    config PACKAGE_sane-hp
-      tristate "SANE backend (sane-hp) for HP ScanJet scanners"
+      prompt "SANE backend (sane-hp) for HP ScanJet scanners"
      
    config PACKAGE_sane-hp3500
-      tristate "SANE backend (sane-hp3500) for Hewlett-Packard ScanJet 3500 series scanners"
+      prompt "SANE backend (sane-hp3500) for Hewlett-Packard ScanJet 3500 series scanners"
      
    config PACKAGE_sane-hp3900
-      tristate "SANE backend (sane-hp3900) for RTS8822 chipset based scanners"
+      prompt "SANE backend (sane-hp3900) for RTS8822 chipset based scanners"
      
    config PACKAGE_sane-hp4200
-      tristate "SANE backend (sane-hp4200) for Hewlett-Packard 4200 scanners"
+      prompt "SANE backend (sane-hp4200) for Hewlett-Packard 4200 scanners"
      
    config PACKAGE_sane-hp5400
-      tristate "SANE backend (sane-hp5400) for Hewlett-Packard 54XX scanners"
+      prompt "SANE backend (sane-hp5400) for Hewlett-Packard 54XX scanners"
      
    config PACKAGE_sane-hp5590
-      tristate "SANE backend (sane-hp5590) for Hewlett-Packard 4500C/4570C/5500C/5550C/5590/7650 Workgroup/Document scanners"
+      prompt "SANE backend (sane-hp5590) for Hewlett-Packard 4500C/4570C/5500C/5550C/5590/7650 Workgroup/Document scanners"
      
    config PACKAGE_sane-hpljm1005
-      tristate "SANE backend (sane-hpljm1005) for Hewlett-Packard LaserJet M1005 MFP Scanner"
+      prompt "SANE backend (sane-hpljm1005) for Hewlett-Packard LaserJet M1005 MFP Scanner"
      
    config PACKAGE_sane-hs2p
-      tristate "SANE backend (sane-hs2p) for Ricoh SCSI flatbed/ADF scanners"
+      prompt "SANE backend (sane-hs2p) for Ricoh SCSI flatbed/ADF scanners"
      
    config PACKAGE_sane-ibm
-      tristate "SANE backend (sane-ibm) for IBM and Ricoh SCSI flatbed scanners"
+      prompt "SANE backend (sane-ibm) for IBM and Ricoh SCSI flatbed scanners"
      
    config PACKAGE_sane-kodak
-      tristate "SANE backend (sane-kodak) for big Kodak flatbed and ADF scanners"
+      prompt "SANE backend (sane-kodak) for big Kodak flatbed and ADF scanners"
      
    config PACKAGE_sane-kodakaio
-      tristate "SANE backend (sane-kodakaio) for Kodak aio printer / scanners"
-     
-   config PACKAGE_sane-kvs1025
-      tristate "SANE backend (sane-kvs1025) for Panasonic KV-S102xC USB ADF scanners"
+      prompt "SANE backend (sane-kodakaio) for Kodak aio printer / scanners"
      
    config PACKAGE_sane-kvs20xx
-      tristate "SANE backend (sane-kvs20xx) for Panasonic KV-S20xxC USB/SCSI ADF scanners"
+      prompt "SANE backend (sane-kvs20xx) for Panasonic KV-S20xxC USB/SCSI ADF scanners"
      
    config PACKAGE_sane-kvs40xx
-      tristate "SANE backend (sane-kvs40xx) for Panasonic KV-S40xxC USB/SCSI ADF scanners"
+      prompt "SANE backend (sane-kvs40xx) for Panasonic KV-S40xxC USB/SCSI ADF scanners"
+     
+   config PACKAGE_sane-kvs1025
+      prompt "SANE backend (sane-kvs1025) for Panasonic KV-S102xC USB ADF scanners"
      
    config PACKAGE_sane-leo
-      tristate "SANE backend (sane-leo) for LEO Technologies scanners"
+      prompt "SANE backend (sane-leo) for LEO Technologies scanners"
      
    config PACKAGE_sane-lexmark
-      tristate "SANE backend (sane-lexmark) for Lexmark X1100/X1200 Series scanners"
+      prompt "SANE backend (sane-lexmark) for Lexmark X1100/X1200 Series scanners"
      
    config PACKAGE_sane-ma1509
-      tristate "SANE backend (sane-ma1509) for Mustek BearPaw 1200F USB scanner"
+      prompt "SANE backend (sane-ma1509) for Mustek BearPaw 1200F USB scanner"
      
    config PACKAGE_sane-magicolor
-      tristate "SANE backend (sane-magicolor) for KONICA MINOLTA magicolor scanners"
+      prompt "SANE backend (sane-magicolor) for KONICA MINOLTA magicolor scanners"
      
    config PACKAGE_sane-matsushita
-      tristate "SANE backend (sane-matsushita) for Panasonic KV-SS high speed scanners"
+      prompt "SANE backend (sane-matsushita) for Panasonic KV-SS high speed scanners"
      
    config PACKAGE_sane-microtek
-      tristate "SANE backend (sane-microtek) for Microtek scanners"
+      prompt "SANE backend (sane-microtek) for Microtek scanners"
      
    config PACKAGE_sane-microtek2
-      tristate "SANE backend (sane-microtek2) for Microtek scanners with SCSI-2 command set"
+      prompt "SANE backend (sane-microtek2) for Microtek scanners with SCSI-2 command set"
      
    config PACKAGE_sane-mustek
-      tristate "SANE backend (sane-mustek) for Mustek SCSI flatbed scanners and some other devices"
+      prompt "SANE backend (sane-mustek) for Mustek SCSI flatbed scanners and some other devices"
      
    config PACKAGE_sane-mustek_usb
-      tristate "SANE backend (sane-mustek_usb) for Mustek USB flatbed scanners"
+      prompt "SANE backend (sane-mustek_usb) for Mustek USB flatbed scanners"
      
    config PACKAGE_sane-mustek_usb2
-      tristate "SANE backend (sane-mustek_usb2) for SQ113 based USB flatbed scanners"
+      prompt "SANE backend (sane-mustek_usb2) for SQ113 based USB flatbed scanners"
      
    config PACKAGE_sane-nec
-      tristate "SANE backend (sane-nec) for NEC scanners"
+      prompt "SANE backend (sane-nec) for NEC scanners"
      
    config PACKAGE_sane-net
-      tristate "SANE backend (sane-net) for network backend"
+      prompt "SANE backend (sane-net) for network backend"
      
    config PACKAGE_sane-niash
-      tristate "SANE backend (sane-niash) for scanners based on the NIASH chipset"
+      prompt "SANE backend (sane-niash) for scanners based on the NIASH chipset"
      
    config PACKAGE_sane-p5
-      tristate "SANE backend (sane-p5) for the Primax PagePartner"
+      prompt "SANE backend (sane-p5) for the Primax PagePartner"
      
    config PACKAGE_sane-pie
-      tristate "SANE backend (sane-pie) for PIE Devcom and AdLib SCSI flatbed scanners"
+      prompt "SANE backend (sane-pie) for PIE Devcom and AdLib SCSI flatbed scanners"
      
    config PACKAGE_sane-pieusb
-      tristate "SANE backend (sane-pieusb) for PIE Devcom and AdLib SCSI flatbed scanners"
+      prompt "SANE backend (sane-pieusb) for PIE Devcom and AdLib SCSI flatbed scanners"
      
    config PACKAGE_sane-pixma
-      tristate "SANE backend (sane-pixma) for Canon Multi-Function Printers and CanoScan Scanners"
+      prompt "SANE backend (sane-pixma) for Canon Multi-Function Printers and CanoScan Scanners"
      
    config PACKAGE_sane-plustek
-      tristate "SANE backend (sane-plustek) for LM983[1/2/3] based USB flatbed scanners"
+      prompt "SANE backend (sane-plustek) for LM983[1/2/3] based USB flatbed scanners"
      
    config PACKAGE_sane-plustek_pp
-      tristate "SANE backend (sane-plustek_pp) for Plustek parallel port flatbed scanners"
+      prompt "SANE backend (sane-plustek_pp) for Plustek parallel port flatbed scanners"
      
    config PACKAGE_sane-qcam
-      tristate "SANE backend (sane-qcam) for Connectix QuickCam cameras"
+      prompt "SANE backend (sane-qcam) for Connectix QuickCam cameras"
       depends on (TARGET_x86||TARGET_x86_64)
      
    config PACKAGE_sane-ricoh
-      tristate "SANE backend (sane-ricoh) for Ricoh flatbed scanners"
-     
-   config PACKAGE_sane-ricoh2
-      tristate "SANE backend (sane-ricoh2) for Ricoh2 flatbed scanners"
+      prompt "SANE backend (sane-ricoh) for Ricoh flatbed scanners"
      
    config PACKAGE_sane-rts8891
-      tristate "SANE backend (sane-rts8891) for rts8891 based scanners"
+      prompt "SANE backend (sane-rts8891) for rts8891 based scanners"
      
    config PACKAGE_sane-s9036
-      tristate "SANE backend (sane-s9036) for Siemens 9036 flatbed scanners"
+      prompt "SANE backend (sane-s9036) for Siemens 9036 flatbed scanners"
      
    config PACKAGE_sane-sceptre
-      tristate "SANE backend (sane-sceptre) for SCEPTRE scanners"
+      prompt "SANE backend (sane-sceptre) for SCEPTRE scanners"
      
    config PACKAGE_sane-sharp
-      tristate "SANE backend (sane-sharp) for SHARP scanners"
+      prompt "SANE backend (sane-sharp) for SHARP scanners"
      
    config PACKAGE_sane-sm3600
-      tristate "SANE backend (sane-sm3600) for Microtek scanners with M011 USB chip"
+      prompt "SANE backend (sane-sm3600) for Microtek scanners with M011 USB chip"
      
    config PACKAGE_sane-sm3840
-      tristate "SANE backend (sane-sm3840) for Microtek scanners with SCAN08 USB chip"
+      prompt "SANE backend (sane-sm3840) for Microtek scanners with SCAN08 USB chip"
      
    config PACKAGE_sane-snapscan
-      tristate "SANE backend (sane-snapscan) for AGFA SnapScan flatbed scanners"
+      prompt "SANE backend (sane-snapscan) for AGFA SnapScan flatbed scanners"
      
    config PACKAGE_sane-sp15c
-      tristate "SANE backend (sane-sp15c) for Fujitsu ScanPartner 15C flatbed scanner"
+      prompt "SANE backend (sane-sp15c) for Fujitsu ScanPartner 15C flatbed scanner"
      
    config PACKAGE_sane-st400
-      tristate "SANE backend (sane-st400) for Siemens ST/Highscan flatbed scanners"
+      prompt "SANE backend (sane-st400) for Siemens ST/Highscan flatbed scanners"
      
    config PACKAGE_sane-stv680
-      tristate "SANE backend (sane-stv680) for STV680 cameras"
+      prompt "SANE backend (sane-stv680) for STV680 cameras"
      
    config PACKAGE_sane-tamarack
-      tristate "SANE backend (sane-tamarack) for Tamarack flatbed scanners"
+      prompt "SANE backend (sane-tamarack) for Tamarack flatbed scanners"
      
    config PACKAGE_sane-teco1
-      tristate "SANE backend (sane-teco1) for TECO / RELISYS scanners"
+      prompt "SANE backend (sane-teco1) for TECO / RELISYS scanners"
      
    config PACKAGE_sane-teco2
-      tristate "SANE backend (sane-teco2) for TECO / RELISYS scanners"
+      prompt "SANE backend (sane-teco2) for TECO / RELISYS scanners"
      
    config PACKAGE_sane-teco3
-      tristate "SANE backend (sane-teco3) for TECO / RELISYS scanners"
+      prompt "SANE backend (sane-teco3) for TECO / RELISYS scanners"
      
    config PACKAGE_sane-test
-      tristate "SANE backend (sane-test) for testing frontends"
+      prompt "SANE backend (sane-test) for testing frontends"
      
    config PACKAGE_sane-u12
-      tristate "SANE backend (sane-u12) for Plustek USB flatbed scanners based on older parport designs"
+      prompt "SANE backend (sane-u12) for Plustek USB flatbed scanners based on older parport designs"
      
    config PACKAGE_sane-umax
-      tristate "SANE backend (sane-umax) for UMAX scanners"
+      prompt "SANE backend (sane-umax) for UMAX scanners"
      
    config PACKAGE_sane-umax1220u
-      tristate "SANE backend (sane-umax1220u) for the UMAX Astra 1220U and similar scanners"
+      prompt "SANE backend (sane-umax1220u) for the UMAX Astra 1220U and similar scanners"
      
    config PACKAGE_sane-umax_pp
-      tristate "SANE backend (sane-umax_pp) for Umax Astra parallel port flatbed scanners"
+      prompt "SANE backend (sane-umax_pp) for Umax Astra parallel port flatbed scanners"
      
    config PACKAGE_sane-v4l
-      tristate "SANE backend (sane-v4l) for Video for Linux API"
+      prompt "SANE backend (sane-v4l) for Video for Linux API"
      
    config PACKAGE_sane-xerox_mfp
-      tristate "SANE backend (sane-xerox_mfp) for Xerox Phaser 3200MFP device"
+      prompt "SANE backend (sane-xerox_mfp) for Xerox Phaser 3200MFP device"
      
 
   endmenu
@@ -2292,8 +2239,8 @@ Config:
 @@
 
 Package: sane-backends-all
-Version: 1.0.29-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sane-abaton +sane-agfafocus +sane-apple +sane-artec +sane-artec_eplus48u +sane-as6e +sane-avision +sane-bh +sane-canon +sane-canon630u +sane-canon_dr +sane-cardscan +sane-coolscan +sane-coolscan2 +sane-coolscan3 +sane-dc210 +sane-dc240 +sane-dc25 +sane-dell1600n_net +sane-dmc +sane-epjitsu +sane-epson +sane-epsonds +sane-epson2 +sane-fujitsu +sane-genesys +sane-gphoto2 +sane-gt68xx +sane-hp +sane-hp3500 +sane-hp3900 +sane-hp4200 +sane-hp5400 +sane-hp5590 +sane-hpljm1005 +sane-hs2p +sane-ibm +sane-kodak +sane-kodakaio +sane-kvs1025 +sane-kvs20xx +sane-kvs40xx +sane-leo +sane-lexmark +sane-ma1509 +sane-magicolor +sane-matsushita +sane-microtek +sane-microtek2 +sane-mustek +sane-mustek_usb +sane-mustek_usb2 +sane-nec +sane-net +sane-niash +sane-p5 +sane-pie +sane-pieusb +sane-pixma +sane-plustek +sane-plustek_pp +((TARGET_x86||TARGET_x86_64)):sane-qcam +sane-ricoh +sane-ricoh2 +sane-rts8891 +sane-s9036 +sane-sceptre +sane-sharp +sane-sm3600 +sane-sm3840 +sane-snapscan +sane-sp15c +sane-st400 +sane-stv680 +sane-tamarack +sane-teco1 +sane-teco2 +sane-teco3 +sane-test +sane-u12 +sane-umax +sane-umax1220u +sane-umax_pp +sane-v4l +sane-xerox_mfp
+Version: 1.0.27-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sane-abaton +sane-agfafocus +sane-apple +sane-artec +sane-artec_eplus48u +sane-as6e +sane-avision +sane-bh +sane-canon +sane-canon630u +sane-canon_dr +sane-cardscan +sane-coolscan +sane-coolscan2 +sane-coolscan3 +sane-dc210 +sane-dc240 +sane-dc25 +sane-dell1600n_net +sane-dmc +sane-epjitsu +sane-epson +sane-epsonds +sane-epson2 +sane-fujitsu +sane-genesys +sane-gt68xx +sane-hp +sane-hp3500 +sane-hp3900 +sane-hp4200 +sane-hp5400 +sane-hp5590 +sane-hpljm1005 +sane-hs2p +sane-ibm +sane-kodak +sane-kodakaio +sane-kvs20xx +sane-kvs40xx +sane-kvs1025 +sane-leo +sane-lexmark +sane-ma1509 +sane-magicolor +sane-matsushita +sane-microtek +sane-microtek2 +sane-mustek +sane-mustek_usb +sane-mustek_usb2 +sane-nec +sane-net +sane-niash +sane-p5 +sane-pie +sane-pieusb +sane-pixma +sane-plustek +sane-plustek_pp +((TARGET_x86||TARGET_x86_64)):sane-qcam +sane-ricoh +sane-rts8891 +sane-s9036 +sane-sceptre +sane-sharp +sane-sm3600 +sane-sm3840 +sane-snapscan +sane-sp15c +sane-st400 +sane-stv680 +sane-tamarack +sane-teco1 +sane-teco2 +sane-teco3 +sane-test +sane-u12 +sane-umax +sane-umax1220u +sane-umax_pp +sane-v4l +sane-xerox_mfp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -2302,8 +2249,8 @@ Category: Utilities
 Repository: packages
 Title: Scanner Access Now Easy (all backends)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Hidden: 1
@@ -2315,7 +2262,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-frontends
-Version: 1.0.29-1
+Version: 1.0.27-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg +libpng
 Conflicts: 
 Menu-Depends: 
@@ -2325,8 +2272,8 @@ Category: Utilities
 Repository: packages
 Title: Scanner Access Now Easy (frontends)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: sane-backends-1.0.29.tar.gz
-License: GPL-2.0 GPL-2.0-or-later
+Source: sane-backends-1.0.27.tar.gz
+License: GPL-2.0 GPL-2.0+
 LicenseFiles: COPYING LICENSE
 Type: ipkg
 Description:  SANE (Scanner Access Now Easy) is a universal scanner interface.

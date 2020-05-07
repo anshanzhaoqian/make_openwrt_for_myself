@@ -1,7 +1,8 @@
 Source-Makefile: feeds/packages/net/cifs-utils/Makefile
+Build-Depends: libtool gettext libiconv
 
 Package: cifsmount
-Version: 6.10-1
+Version: 6.8-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fs-cifs
 Conflicts: 
 Menu-Depends: 
@@ -9,35 +10,15 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: CIFS mount
-Maintainer: 
-Source: cifs-utils-6.10.tar.bz2
-License: GPL-3.0-or-later
+Title: CIFS mount utilities
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Source: cifs-utils-6.8.tar.bz2
+License: GPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
-Description: CIFS mount
-https://wiki.samba.org/index.php/LinuxCIFS_utils
-
-@@
-
-Package: smbinfo
-Version: 6.10-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fs-cifs
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: SMB info
-Maintainer: 
-Source: cifs-utils-6.10.tar.bz2
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Type: ipkg
-Description: SMB info
-https://wiki.samba.org/index.php/LinuxCIFS_utils
-
+Description: CIFS mount utilities
+http://wiki.samba.org/index.php/LinuxCIFS_utils
+Florian Fainelli <florian@openwrt.org>
 @@
 
 

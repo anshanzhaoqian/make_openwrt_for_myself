@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/liboping/Makefile
 
 Package: liboping
-Version: 1.10.0-2
+Version: 1.9.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,16 +11,16 @@ Category: Libraries
 Repository: packages
 Title: C library to generate ICMP echo requests.
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: liboping-1.10.0.tar.bz2
-License: LGPL-2.1-or-later
+Source: liboping-1.9.0.tar.bz2
+License: LGPL-2.1+
 Type: ipkg
 Description: C library to generate ICMP echo requests.
-https://noping.cc
+http://verplant.org/liboping/
 Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: oping
-Version: 1.10.0-2
+Version: 1.9.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liboping
 Conflicts: 
 Menu-Depends: 
@@ -30,16 +30,16 @@ Category: Network
 Repository: packages
 Title: Send ICMP echo request to network hosts
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: liboping-1.10.0.tar.bz2
-License: LGPL-2.1-or-later
+Source: liboping-1.9.0.tar.bz2
+License: LGPL-2.1+
 Type: ipkg
 Description: Send ICMP echo request to network hosts
-https://noping.cc
+http://verplant.org/liboping/
 Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: noping
-Version: 1.10.0-2
+Version: 1.9.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liboping +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -49,11 +49,11 @@ Category: Network
 Repository: packages
 Title: Ncurses application to send ICMP echo request to network hosts
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: liboping-1.10.0.tar.bz2
-License: LGPL-2.1-or-later
+Source: liboping-1.9.0.tar.bz2
+License: LGPL-2.1+
 Type: ipkg
 Description: Ncurses application to send ICMP echo request to network hosts
-https://noping.cc
+http://verplant.org/liboping/
 Jo-Philipp Wich <jo@mein.io>
 @@
 

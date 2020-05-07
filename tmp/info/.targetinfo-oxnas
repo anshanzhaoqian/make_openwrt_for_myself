@@ -6,9 +6,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_xscale
 Target-Features: dt gpio ramdisk rtc squashfs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22,9 +22,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_arm926ej-s
 Target-Features: dt gpio ramdisk rtc source-only squashfs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=arm926ej-s
+Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -42,6 +42,8 @@ Target-Profile-Description:
 Target-Profile: DEVICE_wd-mbwe
 Target-Profile-Name: Western Digital My Book World Edition
 Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for Western Digital My Book World Edition
 @@
@@ -53,15 +55,15 @@ Target-Arch: arm
 Target-Arch-Packages: arm_mpcore
 Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs ubifs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=mpcore
+Target-Optimization: -Os -pipe
 CPU-Type: mpcore
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
     Oxford/PLXTECH OX820/NAS782x
 @@
-Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd uboot-oxnas-ox820 block-mount fdisk lsblk mdadm kmod-button-hotplug kmod-input-gpio-keys-polled kmod-ledtrig-timer kmod-leds-gpio uboot-envtools 
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd block-mount fdisk lsblk mdadm kmod-button-hotplug kmod-input-gpio-keys-polled kmod-ledtrig-timer kmod-leds-gpio uboot-envtools 
 Target-Profile: Default
 Target-Profile-Priority: 1
 Target-Profile-Name: Default Profile
@@ -70,37 +72,47 @@ Target-Profile-Description:
 	Default package set compatible with most boards.
 @@
 
-Target-Profile: DEVICE_akitio-mycloud
+Target-Profile: DEVICE_akitio_mycloud
 Target-Profile-Name: Akition myCloud (mini) / SilverStone DC01
-Target-Profile-Packages: kmod-usb2-oxnas kmod-ata-oxnas-sata kmod-ledtrig-usbdev kmod-i2c-gpio kmod-rtc-ds1307 
+Target-Profile-Packages: kmod-usb2-oxnas kmod-ata-oxnas-sata kmod-usb-ledtrig-usbport kmod-i2c-gpio kmod-rtc-ds1307 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: akitio,mycloud akitio
 Target-Profile-Description:
 Build firmware images for Akition myCloud (mini) / SilverStone DC01
 @@
 
-Target-Profile: DEVICE_cloudengines-pogoplug-pro
+Target-Profile: DEVICE_cloudengines_pogoplugpro
 Target-Profile-Name: Cloud Engines PogoPlug Pro (with mPCIe)
-Target-Profile-Packages: kmod-usb2-oxnas kmod-ledtrig-usbdev 
+Target-Profile-Packages: kmod-usb2-oxnas kmod-usb-ledtrig-usbport kmod-rt2800-pci wpad-basic iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cloudengines,pogoplugpro pogoplug-pro
 Target-Profile-Description:
 Build firmware images for Cloud Engines PogoPlug Pro (with mPCIe)
 @@
 
-Target-Profile: DEVICE_cloudengines-pogoplug-series-3
+Target-Profile: DEVICE_cloudengines_pogoplug-series-3
 Target-Profile-Name: Cloud Engines PogoPlug Series V3 (without mPCIe)
-Target-Profile-Packages: kmod-usb2-oxnas kmod-ledtrig-usbdev 
+Target-Profile-Packages: kmod-usb2-oxnas kmod-usb-ledtrig-usbport 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cloudengines,pogoplug-series-3 cloudengines,pogoplugv3 pogoplug-v3
 Target-Profile-Description:
 Build firmware images for Cloud Engines PogoPlug Series V3 (without mPCIe)
 @@
 
-Target-Profile: DEVICE_shuttle-kd20
+Target-Profile: DEVICE_shuttle_kd20
 Target-Profile-Name: Shuttle KD20
-Target-Profile-Packages: kmod-usb2-oxnas kmod-ata-oxnas-sata kmod-ledtrig-usbdev kmod-usb3 kmod-i2c-gpio kmod-rtc-pcf8563 kmod-gpio-beeper kmod-hwmon-core kmod-hwmon-gpiofan kmod-md-mod kmod-md-raid0 kmod-md-raid1 kmod-fs-ext4 kmod-fs-xfs 
+Target-Profile-Packages: kmod-usb2-oxnas kmod-ata-oxnas-sata kmod-usb-ledtrig-usbport kmod-usb3 kmod-i2c-gpio kmod-rtc-pcf8563 kmod-gpio-beeper kmod-hwmon-core kmod-hwmon-gpiofan kmod-md-mod kmod-md-raid0 kmod-md-raid1 kmod-fs-ext4 kmod-fs-xfs 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: shuttle,kd20 kd20
 Target-Profile-Description:
 Build firmware images for Shuttle KD20
 @@
 
-Target-Profile: DEVICE_mitrastar-stg212
+Target-Profile: DEVICE_mitrastar_stg-212
 Target-Profile-Name: MitraStar STG-212
-Target-Profile-Packages: kmod-usb2-oxnas kmod-ata-oxnas-sata kmod-ledtrig-usbdev 
+Target-Profile-Packages: kmod-usb2-oxnas kmod-ata-oxnas-sata kmod-fs-ext4 kmod-fs-xfs kmod-usb-ledtrig-usbport 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mitrastar,stg-212 stg212
 Target-Profile-Description:
 Build firmware images for MitraStar STG-212
 @@

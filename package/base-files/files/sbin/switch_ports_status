@@ -95,7 +95,8 @@ switch_ports_watch()
 						continue;
 					fi
 					ifconfig $iff.$vlan down 2>/dev/null && {
-						echo $iff.$vlan link status changed
+						test -n "$DEBUG" && echo $iff.$vlan link status changed
+						logger -t switch_port "$iff.$vlan link status changed"
 						ifconfig $iff.$vlan up
 					}
 				done

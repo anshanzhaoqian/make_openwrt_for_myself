@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/perl-net-telnet/Makefile
 
 Package: perl-net-telnet
 Submenu: Perl
-Version: 3.04+perl5.28-4
+Version: 3.04+perl5.28-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-socket +perlbase-symbol
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: packages
 Title: Telnet client
 Maintainer: Marcel Denia <naoir@gmx.net>
 Source: Net-Telnet-3.04.tar.gz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+License: GPL-1.0+ Artistic-1.0-Perl
 Type: ipkg
 Description: Telnet client
 http://search.cpan.org/dist/Net-Telnet/

@@ -6,9 +6,9 @@ Target-Arch: armeb
 Target-Arch-Packages: armeb_xscale
 Target-Features: gpio pci rtc squashfs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22,9 +22,9 @@ Target-Arch: armeb
 Target-Arch-Packages: armeb_xscale
 Target-Features: gpio pci rtc squashfs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -81,9 +81,9 @@ Target-Arch: armeb
 Target-Arch-Packages: armeb_xscale
 Target-Features: gpio pci rtc squashfs usb
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.9.152
+Linux-Version: 4.9.172
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

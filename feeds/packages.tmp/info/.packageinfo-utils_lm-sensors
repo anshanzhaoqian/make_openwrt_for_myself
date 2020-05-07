@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/lm-sensors/Makefile
 
 Package: lm-sensors
-Version: 3.6.0-1
+Version: 3.5.0-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sysfsutils +libsensors
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: lm-sensors
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: lm-sensors-3.6.0.tar.gz
+Source: lm-sensors-3.5.0.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 Type: ipkg
 Description:  utility to read hardware sensor data
@@ -20,7 +20,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: lm-sensors-detect
-Version: 3.6.0-1
+Version: 3.5.0-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sysfsutils +lm-sensors +PACKAGE_lm-sensors-detect:perl +PACKAGE_lm-sensors-detect:perlbase-essential +PACKAGE_lm-sensors-detect:perlbase-fcntl +PACKAGE_lm-sensors-detect:perlbase-file +PACKAGE_lm-sensors-detect:perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -30,7 +30,7 @@ Category: Utilities
 Repository: base
 Title: lm-sensors-detect
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: lm-sensors-3.6.0.tar.gz
+Source: lm-sensors-3.5.0.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 Type: ipkg
 Description:  script to autodetect sensor hardware
@@ -39,7 +39,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: libsensors
-Version: 3.6.0-1
+Version: 3.5.0-6
 ABIVersion: 5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sysfsutils
 Conflicts: 
@@ -50,7 +50,7 @@ Category: Libraries
 Repository: base
 Title: libsensors
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: lm-sensors-3.6.0.tar.gz
+Source: lm-sensors-3.5.0.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 Type: ipkg
 Description:  lm-sensors libraries

@@ -1,6 +1,6 @@
 Source-Makefile: package/firmware/ipq-wifi/Makefile
 
-Package: ipq-wifi-engenius_eap1300
+Package: ipq-wifi-alfa-network_ap120c-ac
 Submenu: ath10k IPQ4019 Boarddata
 Version: 1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
@@ -9,7 +9,90 @@ Menu-Depends:
 Provides: 
 Section: firmware
 Category: Firmware
-Repository: base
+Title: Board for ALFA Network AP120C-AC
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the ALFA Network AP120C-AC.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-asus_map-ac2200
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-rt-acrh17 ipq-wifi-alfa-network_ap120c-ac
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Board for ASUS MAP-AC2200
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the ASUS MAP-AC2200.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-avm_fritzbox-7530
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-rt-acrh17 ipq-wifi-alfa-network_ap120c-ac ipq-wifi-asus_map-ac2200 ipq-wifi-engenius_eap1300 ipq-wifi-engenius_ens620ext
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Board for AVM FRITZ!Box 7530
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the AVM FRITZ!Box 7530.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-avm_fritzrepeater-3000
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-rt-acrh17 ipq-wifi-alfa-network_ap120c-ac ipq-wifi-asus_map-ac2200 ipq-wifi-engenius_eap1300 ipq-wifi-engenius_ens620ext ipq-wifi-avm_fritzbox-7530
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Board for AVM FRITZ!Repeater 3000
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the AVM FRITZ!Repeater 3000.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-engenius_eap1300
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-rt-acrh17 ipq-wifi-alfa-network_ap120c-ac ipq-wifi-asus_map-ac2200
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
 Title: Board for EnGenius EAP1300
 Maintainer: 
 Source: 
@@ -18,6 +101,69 @@ Description: This device custom package board-2.bin overwrites the board-2.bin
 file which is supplied by the ath10k-firmware-qca4019 package.
 
 This is package is only necessary for the EnGenius EAP1300.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-engenius_ens620ext
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-rt-acrh17 ipq-wifi-alfa-network_ap120c-ac ipq-wifi-asus_map-ac2200 ipq-wifi-engenius_eap1300
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Board for EnGenius ENS620EXT
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the EnGenius ENS620EXT.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-linksys_ea6350v3
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-rt-acrh17 ipq-wifi-alfa-network_ap120c-ac ipq-wifi-asus_map-ac2200 ipq-wifi-engenius_eap1300 ipq-wifi-engenius_ens620ext ipq-wifi-avm_fritzbox-7530 ipq-wifi-avm_fritzrepeater-3000
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Board for Linksys EA6350v3
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the Linksys EA6350v3.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-qxwlan_e2600ac
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-rt-acrh17 ipq-wifi-alfa-network_ap120c-ac ipq-wifi-asus_map-ac2200 ipq-wifi-engenius_eap1300 ipq-wifi-engenius_ens620ext ipq-wifi-avm_fritzbox-7530 ipq-wifi-avm_fritzrepeater-3000 ipq-wifi-linksys_ea6350v3
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Board for Qxwlan E2600AC
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the Qxwlan E2600AC.
 Don't install it for any other device!
 
 @@
@@ -31,7 +177,6 @@ Menu-Depends:
 Provides: 
 Section: firmware
 Category: Firmware
-Repository: base
 Title: Board for ASUS RT-ACRH17/RT-AC82U/RT-AC42U
 Maintainer: 
 Source: 

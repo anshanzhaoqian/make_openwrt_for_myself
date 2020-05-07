@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/sound/mpd/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: mpd-full
-Version: 0.21.23-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +libexpat +libflac +libfaad2 +USE_UCLIBC:icu +libffmpeg +libid3tag +libvorbis +libmms +libupnp +libshout +pulseaudio-daemon +yajl
+Version: 0.20.9-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +boost-container +libexpat +libffmpeg +libid3tag +libmms +libupnp +libshout
 Conflicts: 
 Menu-Depends: 
 Provides: mpd
@@ -13,8 +13,8 @@ Category: Sound
 Repository: base
 Title: Music Player Daemon (full)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mpd-0.21.23.tar.xz
-License: GPL-2.0-or-later
+Source: mpd-0.20.9.tar.xz
+License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
@@ -23,13 +23,13 @@ Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
  gmpc (gnome), phpmp (php), etc...
  .
  This package contains a full-blown Music Player Daemon.
-https://www.musicpd.org/
+http://www.musicpd.org/
 Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mpd-mini
-Version: 0.21.23-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +libexpat +libflac +libfaad2 +USE_UCLIBC:icu +libmad +libvorbisidec
+Version: 0.20.9-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +boost-container +libexpat +libflac +libmpg123 +libvorbisidec
 Conflicts: 
 Menu-Depends: 
 Provides: mpd
@@ -39,8 +39,8 @@ Category: Sound
 Repository: base
 Title: Music Player Daemon (mini)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mpd-0.21.23.tar.xz
-License: GPL-2.0-or-later
+Source: mpd-0.20.9.tar.xz
+License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
@@ -49,14 +49,14 @@ Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
  gmpc (gnome), phpmp (php), etc...
  .
  This package contains a minimal Music Player Daemon, with support for
- only FLAC, AAC, MP3 & OGG media types & only file: & http: protocols.
-https://www.musicpd.org/
+ only Flac, MP3 & OGG media types & only file: & http: protocols.
+http://www.musicpd.org/
 Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mpd-avahi-service
-Version: 0.21.23-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +libexpat +libflac +libfaad2 +USE_UCLIBC:icu +avahi-daemon
+Version: 0.20.9-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +libstdcpp +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +boost +boost-container +libexpat +avahi-daemon
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65,8 +65,8 @@ Category: Sound
 Repository: base
 Title: Music Player Daemon (Avahi service)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mpd-0.21.23.tar.xz
-License: GPL-2.0-or-later
+Source: mpd-0.20.9.tar.xz
+License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
@@ -76,7 +76,7 @@ Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
  .
  This package contains the service definition for announcing the
  Music Player Daemon service via mDNS/DNS-SD.
-https://www.musicpd.org/
+http://www.musicpd.org/
 Ted Hess <thess@kitschensync.net>
 @@
 

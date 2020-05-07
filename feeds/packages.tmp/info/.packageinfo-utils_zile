@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/zile/Makefile
 
 Package: zile
 Submenu: Editors
-Version: 2.3.24-5
+Version: 2.3.24-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: base
 Title: very small emacs-like editor
 Maintainer: Ted Hess <thess@kitschensync.net>
 Source: zile-2.3.24.tar.gz
-License: GPL-3.0-or-later
+License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: 	Zile is a small Emacs clone. Zile is a customizable, self-documenting

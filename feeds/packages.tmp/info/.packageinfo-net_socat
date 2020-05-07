@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/socat/Makefile
 
 Package: socat
-Version: 1.7.3.4-1
+Version: 1.7.3.2-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +SOCAT_SSL:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -11,8 +11,8 @@ Category: Network
 Repository: base
 Title: A multipurpose relay (SOcket CAT)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: socat-1.7.3.4.tar.bz2
-License: GPL-2.0-or-later OpenSSL
+Source: socat-1.7.3.2.tar.bz2
+License: GPL-2.0 OpenSSL
 LicenseFiles: COPYING COPYING.OpenSSL
 Type: ipkg
 Description: 	SoCat (for SOcket CAT) establishes two bidirectional byte streams and

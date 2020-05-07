@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/pen/Makefile
 
 Package: pen
-Version: 0.34.1-3
+Version: 0.34.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -10,9 +10,9 @@ Section: net
 Category: Network
 Repository: base
 Title: Simple TCP load balancer
-Maintainer: 
-Source: pen-0.34.1.tar.gz
-License: GPL-2.0-or-later
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Source: pen-0.34.0.tar.gz
+License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: 	This is pen, a load balancer for "simple" TCP based protocols
@@ -20,8 +20,8 @@ Description: 	This is pen, a load balancer for "simple" TCP based protocols
 	one to the outside and automatically detects servers that are
 	down and distributes clients among the available servers.
 	This gives high availability and scalable performance.
-http://siag.nu/pen/
-
+http://morestuff.siag.nu/category/pen/
+Nicolas Thill <nico@openwrt.org>
 @@
 
 

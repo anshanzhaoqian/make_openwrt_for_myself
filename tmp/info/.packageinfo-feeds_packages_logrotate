@@ -1,9 +1,8 @@
 Source-Makefile: package/feeds/packages/logrotate/Makefile
 
 Package: logrotate
-Menu: 1
-Version: 3.15.0-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt +LOGROTATE_ACL:libacl
+Version: 3.10.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,9 +11,8 @@ Category: Utilities
 Repository: packages
 Title: rotates, compresses, and mails system logs
 Maintainer: Christian Beier <cb@shoutrlabs.com>
-Source: logrotate-3.15.0.tar.xz
-License: GPL-2.0-or-later
-LicenseFiles: COPYING
+Source: logrotate-3.10.0.tar.gz
+License: GPL-2.0
 Type: ipkg
 Description:  logrotate is designed to ease administration of systems that generate large
  numbers of log files. It allows auto-matic rotation, compression, removal and
@@ -22,14 +20,6 @@ Description:  logrotate is designed to ease administration of systems that gener
  when it grows too large.
 https://github.com/logrotate/logrotate
 Christian Beier <cb@shoutrlabs.com>
-@@
-Config:
-	if PACKAGE_logrotate
-		config LOGROTATE_ACL
-			bool
-			prompt "Enable ACL support"
-			default y if USE_FS_ACL_ATTR
-	endif
 @@
 
 

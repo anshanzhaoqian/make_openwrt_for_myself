@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/gitolite/Makefile
 
 Package: gitolite
 Submenu: Version Control Systems
-Version: 3.6.11-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +git +perlbase-essential +perlbase-data +perlbase-digest +perlbase-env +perlbase-findbin +perlbase-getopt +perlbase-mime +perlbase-storable +perlbase-sys +perlbase-text +perlbase-time +perlbase-utf8
+Version: 3.6.6-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +perlbase-essential +perlbase-sys +perlbase-data +perlbase-digest +perlbase-env +perlbase-time +git +perlbase-findbin +perlbase-storable +perlbase-text +perlbase-getopt +perlbase-utf8 +openssh-keygen +openssh-server +openssh-moduli perl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,17 +11,15 @@ Section: net
 Category: Network
 Repository: packages
 Title: Easy administration of git repositories
-Maintainer: 
+Maintainer: Daniel Dickinson <lede@cshore.thecshore.com>
 Require-User: git=382:git=382
-Source: gitolite-3.6.11.tar.gz
+Source: gitolite-v3.6.6.tar.xz
 Type: ipkg
-Description:   Gitolite is a system for managing access to git repositories.
-  See https://openwrt.org/docs/guide-user/services/gitolite for a guide
-  to installation.
-  NB: You will need an SSH server to use gitolite: dropbear is now sufficient
-  for gitolite purposes.
-http://gitolite.com/gitolite
-
+Description:   Gitolite is a system for managing access to git repositories.  Note you will need to make
+  sure dropbear does not interfere with OpenSSH as gitolite depends on feature not in
+  dropbear (to my knowledge).
+http://gitolite.com/gitlolite
+Daniel Dickinson <lede@cshore.thecshore.com>
 @@
 
 

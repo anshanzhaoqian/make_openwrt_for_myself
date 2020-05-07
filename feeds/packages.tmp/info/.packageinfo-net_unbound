@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/unbound/Makefile
 
 Package: unbound-daemon
 Submenu: IP Addresses and Names
-Version: 1.10.0-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +libunbound-light
+Version: 1.9.5-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +libunbound
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Repository: base
 Title: Recursive DNS Server (daemon, light traffic)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26,8 +26,8 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-daemon-heavy
 Submenu: IP Addresses and Names
-Version: 1.10.0-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +libunbound-heavy +libpthread +libevent2 +libevent2-pthreads +libmnl
+Version: 1.9.5-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +libunbound-heavy +libpthread +libevent2 +libevent2-pthreads
 Conflicts: 
 Menu-Depends: 
 Provides: unbound-daemon
@@ -38,24 +38,23 @@ Repository: base
 Title: Recursive DNS Server (daemon, heavy traffic)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   This package contains the Unbound daemon including 'libevent' and
   'libpthread' to better handle large networks with heavy query loads.
-  It also offers ipset support.
 https://nlnetlabs.nl/documentation/unbound/howto-optimise
 Eric Luehrsen <ericluehrsen@gmail.com>
 @@
 
-Package: libunbound-light
+Package: libunbound
 Submenu: Networking
-Version: 1.10.0-2
+Version: 1.9.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC
 Conflicts: 
 Menu-Depends: 
-Provides: libunbound
+Provides: 
 Build-Variant: light
 Default-Variant: light
 Section: libs
@@ -64,20 +63,20 @@ Repository: base
 Title: Recursive DNS Server (library, light traffic)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   This package contains the Unbound shared library with basic includes
-  necessary to meet the needs of UCI/LuCI configuration options.
+  necessary to meet the needs of UCI/LuCI configuration optoins.
 https://nlnetlabs.nl/projects/unbound/about
 Eric Luehrsen <ericluehrsen@gmail.com>
 @@
 
 Package: libunbound-heavy
 Submenu: Networking
-Version: 1.10.0-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +libpthread +libevent2 +libevent2-pthreads +libmnl
+Version: 1.9.5-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +libpthread +libevent2 +libevent2-pthreads
 Conflicts: 
 Menu-Depends: 
 Provides: libunbound
@@ -88,20 +87,19 @@ Repository: base
 Title: Recursive DNS Server (library, heavy traffic)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   This package contains the Unbound shared library including 'libevent' and
-  'libpthread' to better handle large networks with heavy query loads. It
-  also offers ipset support.
+  'libpthread' to better handle large networks with heavy query loads.
 https://nlnetlabs.nl/documentation/unbound/howto-optimise
 Eric Luehrsen <ericluehrsen@gmail.com>
 @@
 
 Package: unbound-anchor
 Submenu: IP Addresses and Names
-Version: 1.10.0-2
+Version: 1.9.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +unbound-daemon +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -112,7 +110,7 @@ Repository: base
 Title: Recursive DNS Server (root DSKEY)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -123,7 +121,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-checkconf
 Submenu: IP Addresses and Names
-Version: 1.10.0-2
+Version: 1.9.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +unbound-daemon
 Conflicts: 
 Menu-Depends: 
@@ -134,7 +132,7 @@ Repository: base
 Title: Recursive DNS Server (config checker)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -145,7 +143,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control
 Submenu: IP Addresses and Names
-Version: 1.10.0-2
+Version: 1.9.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +unbound-daemon
 Conflicts: 
 Menu-Depends: 
@@ -156,7 +154,7 @@ Repository: base
 Title: Recursive DNS Server (remote control)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -167,7 +165,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control-setup
 Submenu: IP Addresses and Names
-Version: 1.10.0-2
+Version: 1.9.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +unbound-control +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -178,7 +176,7 @@ Repository: base
 Title: Recursive DNS Server (control setup)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -189,7 +187,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-host
 Submenu: IP Addresses and Names
-Version: 1.10.0-2
+Version: 1.9.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +@OPENSSL_WITH_EC +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -200,7 +198,7 @@ Repository: base
 Title: Recursive DNS Server (DNS lookup)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
 Require-User: unbound:unbound
-Source: unbound-1.10.0.tar.gz
+Source: unbound-1.9.5.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

@@ -5,8 +5,8 @@ Build-Types: host
 Package: perl
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_GLIBC:libbsd +PERL_THREADS:libpthread @!arc
+Version: 5.28.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_GLIBC:libbsd +PERL_THREADS:libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15,8 +15,8 @@ Category: Languages
 Repository: packages
 Title: The Perl intepreter
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description:   Perl is a stable, cross platform programming language.
@@ -32,7 +32,7 @@ Config:
 Package: perlbase-anydbm-file
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -42,8 +42,8 @@ Category: Languages
 Repository: packages
 Title: AnyDBM_File perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: AnyDBM_File perl module
@@ -54,7 +54,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-app
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-autouse +perlbase-base +perlbase-config +perlbase-cpan +perlbase-essential +perlbase-file +perlbase-getopt +perlbase-if +perlbase-tap +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -64,8 +64,8 @@ Category: Languages
 Repository: packages
 Title: app perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: app perl module
@@ -76,7 +76,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-archive
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-cwd +perlbase-essential +perlbase-file +perlbase-io
 Conflicts: 
 Menu-Depends: 
@@ -86,8 +86,8 @@ Category: Languages
 Repository: packages
 Title: Archive perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Archive perl module
@@ -98,7 +98,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-arybase
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -108,8 +108,8 @@ Category: Languages
 Repository: packages
 Title: arybase perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: arybase perl module
@@ -120,7 +120,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-attribute
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -130,8 +130,8 @@ Category: Languages
 Repository: packages
 Title: Attribute perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Attribute perl module
@@ -142,7 +142,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-attributes
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -152,8 +152,8 @@ Category: Languages
 Repository: packages
 Title: attributes perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: attributes perl module
@@ -164,7 +164,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-autodie
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -174,8 +174,8 @@ Category: Languages
 Repository: packages
 Title: autodie perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: autodie perl module
@@ -186,7 +186,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-autoloader
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -196,8 +196,8 @@ Category: Languages
 Repository: packages
 Title: AutoLoader perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: AutoLoader perl module
@@ -208,7 +208,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-autosplit
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential +perlbase-file
 Conflicts: 
 Menu-Depends: 
@@ -218,8 +218,8 @@ Category: Languages
 Repository: packages
 Title: AutoSplit perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: AutoSplit perl module
@@ -230,7 +230,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-autouse
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -240,8 +240,8 @@ Category: Languages
 Repository: packages
 Title: autouse perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: autouse perl module
@@ -252,7 +252,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-b
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential +perlbase-feature
 Conflicts: 
 Menu-Depends: 
@@ -262,8 +262,8 @@ Category: Languages
 Repository: packages
 Title: B perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: B perl module
@@ -274,7 +274,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-base
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -284,8 +284,8 @@ Category: Languages
 Repository: packages
 Title: base perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: base perl module
@@ -296,7 +296,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-benchmark
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -306,8 +306,8 @@ Category: Languages
 Repository: packages
 Title: Benchmark perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Benchmark perl module
@@ -318,7 +318,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-bigint
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -328,8 +328,8 @@ Category: Languages
 Repository: packages
 Title: bigint perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: bigint perl module
@@ -340,7 +340,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-bignum
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-bigint +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -350,8 +350,8 @@ Category: Languages
 Repository: packages
 Title: bignum perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: bignum perl module
@@ -362,7 +362,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-blib
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-cwd +perlbase-essential +perlbase-file
 Conflicts: 
 Menu-Depends: 
@@ -372,8 +372,8 @@ Category: Languages
 Repository: packages
 Title: blib perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: blib perl module
@@ -384,7 +384,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-bytes
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -394,8 +394,8 @@ Category: Languages
 Repository: packages
 Title: bytes perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: bytes perl module
@@ -406,7 +406,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-charnames
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-bytes +perlbase-essential +perlbase-re +perlbase-unicore
 Conflicts: 
 Menu-Depends: 
@@ -416,8 +416,8 @@ Category: Languages
 Repository: packages
 Title: charnames perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: charnames perl module
@@ -428,7 +428,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-class
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -438,8 +438,8 @@ Category: Languages
 Repository: packages
 Title: Class perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Class perl module
@@ -450,7 +450,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-compress
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-bytes +perlbase-essential +perlbase-io +perlbase-scalar
 Conflicts: 
 Menu-Depends: 
@@ -460,8 +460,8 @@ Category: Languages
 Repository: packages
 Title: Compress perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Compress perl module
@@ -472,7 +472,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-config
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -482,8 +482,8 @@ Category: Languages
 Repository: packages
 Title: Config perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Config perl module
@@ -494,7 +494,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-cpan
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-b +perlbase-config +perlbase-cwd +perlbase-dirhandle +perlbase-essential +perlbase-extutils +perlbase-fcntl +perlbase-file +perlbase-filehandle +perlbase-http-tiny +perlbase-net +perlbase-safe +perlbase-scalar +perlbase-sys +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -504,8 +504,8 @@ Category: Languages
 Repository: packages
 Title: CPAN perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: CPAN perl module
@@ -516,7 +516,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-cwd
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -526,8 +526,8 @@ Category: Languages
 Repository: packages
 Title: Cwd perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Cwd perl module
@@ -538,7 +538,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-data
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-bytes +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -548,8 +548,8 @@ Category: Languages
 Repository: packages
 Title: Data perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Data perl module
@@ -560,7 +560,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-db
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +libdb47 +perlbase-essential +perlbase-meta-notation
 Conflicts: 
 Menu-Depends: 
@@ -570,8 +570,8 @@ Category: Languages
 Repository: packages
 Title: DB perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: DB perl module
@@ -582,7 +582,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-db-file
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +libdb47 +perlbase-essential +perlbase-tie
 Conflicts: 
 Menu-Depends: 
@@ -592,8 +592,8 @@ Category: Languages
 Repository: packages
 Title: DB_File perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: DB_File perl module
@@ -604,7 +604,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-dbm-filter
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -614,8 +614,8 @@ Category: Languages
 Repository: packages
 Title: DBM_Filter perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: DBM_Filter perl module
@@ -626,7 +626,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-devel
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-file +perlbase-selfloader +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -636,8 +636,8 @@ Category: Languages
 Repository: packages
 Title: Devel perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Devel perl module
@@ -648,7 +648,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-diagnostics
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -658,8 +658,8 @@ Category: Languages
 Repository: packages
 Title: diagnostics perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: diagnostics perl module
@@ -670,7 +670,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-digest
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-dynaloader +perlbase-essential +perlbase-fcntl +perlbase-integer
 Conflicts: 
 Menu-Depends: 
@@ -680,8 +680,8 @@ Category: Languages
 Repository: packages
 Title: Digest perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Digest perl module
@@ -692,7 +692,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-dirhandle
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-symbol
 Conflicts: 
 Menu-Depends: 
@@ -702,8 +702,8 @@ Category: Languages
 Repository: packages
 Title: DirHandle perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: DirHandle perl module
@@ -714,7 +714,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-dumpvalue
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -724,8 +724,8 @@ Category: Languages
 Repository: packages
 Title: Dumpvalue perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Dumpvalue perl module
@@ -736,7 +736,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-dumpvar
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -746,8 +746,8 @@ Category: Languages
 Repository: packages
 Title: dumpvar perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: dumpvar perl module
@@ -758,7 +758,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-dynaloader
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config
 Conflicts: 
 Menu-Depends: 
@@ -768,8 +768,8 @@ Category: Languages
 Repository: packages
 Title: DynaLoader perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: DynaLoader perl module
@@ -780,7 +780,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-encode
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-mime +perlbase-utf8 +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -790,8 +790,8 @@ Category: Languages
 Repository: packages
 Title: Encode perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Encode perl module
@@ -802,7 +802,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-encoding
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-encode +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -812,8 +812,8 @@ Category: Languages
 Repository: packages
 Title: encoding perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: encoding perl module
@@ -824,7 +824,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-english
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -834,8 +834,8 @@ Category: Languages
 Repository: packages
 Title: English perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: English perl module
@@ -846,7 +846,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-env
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-tie
 Conflicts: 
 Menu-Depends: 
@@ -856,8 +856,8 @@ Category: Languages
 Repository: packages
 Title: Env perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Env perl module
@@ -868,7 +868,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-errno
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -878,8 +878,8 @@ Category: Languages
 Repository: packages
 Title: Errno perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Errno perl module
@@ -890,7 +890,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-essential
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config
 Conflicts: 
 Menu-Depends: 
@@ -900,8 +900,8 @@ Category: Languages
 Repository: packages
 Title: essential perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: essential perl module
@@ -912,7 +912,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-experimental
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-feature +perlbase-version
 Conflicts: 
 Menu-Depends: 
@@ -922,8 +922,8 @@ Category: Languages
 Repository: packages
 Title: experimental perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: experimental perl module
@@ -934,7 +934,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-extutils
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-autosplit +perlbase-base +perlbase-config +perlbase-cwd +perlbase-dirhandle +perlbase-encode +perlbase-essential +perlbase-file +perlbase-io +perlbase-ipc +perlbase-ostype +perlbase-symbol +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -944,8 +944,8 @@ Category: Languages
 Repository: packages
 Title: ExtUtils perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: ExtUtils perl module
@@ -956,7 +956,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-fatal
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-autodie +perlbase-config +perlbase-essential +perlbase-scalar +perlbase-tie
 Conflicts: 
 Menu-Depends: 
@@ -966,8 +966,8 @@ Category: Languages
 Repository: packages
 Title: Fatal perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Fatal perl module
@@ -978,7 +978,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-fcntl
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -988,8 +988,8 @@ Category: Languages
 Repository: packages
 Title: Fcntl perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Fcntl perl module
@@ -1000,7 +1000,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-feature
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -1010,8 +1010,8 @@ Category: Languages
 Repository: packages
 Title: feature perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: feature perl module
@@ -1022,7 +1022,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-fields
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1032,8 +1032,8 @@ Category: Languages
 Repository: packages
 Title: fields perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: fields perl module
@@ -1044,7 +1044,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-file
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-class +perlbase-config +perlbase-cwd +perlbase-errno +perlbase-essential +perlbase-fcntl +perlbase-filehandle +perlbase-io +perlbase-locale +perlbase-params +perlbase-scalar +perlbase-symbol +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1054,8 +1054,8 @@ Category: Languages
 Repository: packages
 Title: File perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: File perl module
@@ -1066,7 +1066,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-filecache
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1076,8 +1076,8 @@ Category: Languages
 Repository: packages
 Title: FileCache perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: FileCache perl module
@@ -1088,7 +1088,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-filehandle
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-io
 Conflicts: 
 Menu-Depends: 
@@ -1098,8 +1098,8 @@ Category: Languages
 Repository: packages
 Title: FileHandle perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: FileHandle perl module
@@ -1110,7 +1110,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-filetest
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -1120,8 +1120,8 @@ Category: Languages
 Repository: packages
 Title: filetest perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: filetest perl module
@@ -1132,7 +1132,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-filter
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-dynaloader +perlbase-essential +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -1142,8 +1142,8 @@ Category: Languages
 Repository: packages
 Title: Filter perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Filter perl module
@@ -1154,7 +1154,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-findbin
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-cwd +perlbase-essential +perlbase-file
 Conflicts: 
 Menu-Depends: 
@@ -1164,8 +1164,8 @@ Category: Languages
 Repository: packages
 Title: FindBin perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: FindBin perl module
@@ -1176,7 +1176,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-gdbm-file
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +libgdbm +perlbase-essential +perlbase-tie +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1186,8 +1186,8 @@ Category: Languages
 Repository: packages
 Title: GDBM_File perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: GDBM_File perl module
@@ -1198,7 +1198,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-getopt
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1208,8 +1208,8 @@ Category: Languages
 Repository: packages
 Title: Getopt perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Getopt perl module
@@ -1220,7 +1220,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-hash
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-scalar +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1230,8 +1230,8 @@ Category: Languages
 Repository: packages
 Title: Hash perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Hash perl module
@@ -1242,7 +1242,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-http-tiny
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-errno +perlbase-essential +perlbase-io
 Conflicts: 
 Menu-Depends: 
@@ -1252,8 +1252,8 @@ Category: Languages
 Repository: packages
 Title: http-tiny perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: http-tiny perl module
@@ -1264,7 +1264,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-i18n
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-posix +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1274,8 +1274,8 @@ Category: Languages
 Repository: packages
 Title: I18N perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: I18N perl module
@@ -1286,7 +1286,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-if
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -1296,8 +1296,8 @@ Category: Languages
 Repository: packages
 Title: if perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: if perl module
@@ -1308,7 +1308,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-integer
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -1318,8 +1318,8 @@ Category: Languages
 Repository: packages
 Title: integer perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: integer perl module
@@ -1330,7 +1330,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-io
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-base +perlbase-bytes +perlbase-config +perlbase-errno +perlbase-essential +perlbase-fcntl +perlbase-list +perlbase-posix +perlbase-scalar +perlbase-selectsaver +perlbase-socket +perlbase-symbol +perlbase-tie +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1340,8 +1340,8 @@ Category: Languages
 Repository: packages
 Title: IO perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: IO perl module
@@ -1352,7 +1352,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-ipc
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential +perlbase-file +perlbase-locale +perlbase-params +perlbase-symbol +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -1362,8 +1362,8 @@ Category: Languages
 Repository: packages
 Title: IPC perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: IPC perl module
@@ -1374,7 +1374,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-json-pp
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-b +perlbase-base +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1384,8 +1384,8 @@ Category: Languages
 Repository: packages
 Title: json-pp perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: json-pp perl module
@@ -1396,7 +1396,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-less
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1406,8 +1406,8 @@ Category: Languages
 Repository: packages
 Title: less perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: less perl module
@@ -1418,7 +1418,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-list
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1428,8 +1428,8 @@ Category: Languages
 Repository: packages
 Title: List perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: List perl module
@@ -1440,7 +1440,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-locale
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-i18n +perlbase-integer +perlbase-utf8
 Conflicts: 
 Menu-Depends: 
@@ -1450,8 +1450,8 @@ Category: Languages
 Repository: packages
 Title: Locale perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Locale perl module
@@ -1462,7 +1462,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-math
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential +perlbase-scalar +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1472,8 +1472,8 @@ Category: Languages
 Repository: packages
 Title: Math perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Math perl module
@@ -1484,7 +1484,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-memoize
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential +perlbase-storable
 Conflicts: 
 Menu-Depends: 
@@ -1494,8 +1494,8 @@ Category: Languages
 Repository: packages
 Title: Memoize perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Memoize perl module
@@ -1506,7 +1506,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-meta-notation
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1516,8 +1516,8 @@ Category: Languages
 Repository: packages
 Title: meta_notation module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: meta_notation module
@@ -1528,7 +1528,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-mime
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1538,8 +1538,8 @@ Category: Languages
 Repository: packages
 Title: MIME perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: MIME perl module
@@ -1550,7 +1550,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-module
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-file +perlbase-filehandle +perlbase-locale +perlbase-params +perlbase-version
 Conflicts: 
 Menu-Depends: 
@@ -1560,8 +1560,8 @@ Category: Languages
 Repository: packages
 Title: Module perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Module perl module
@@ -1572,7 +1572,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-mro
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1582,8 +1582,8 @@ Category: Languages
 Repository: packages
 Title: mro perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: mro perl module
@@ -1594,7 +1594,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-net
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-class +perlbase-errno +perlbase-essential +perlbase-fcntl +perlbase-filehandle +perlbase-io +perlbase-posix +perlbase-socket +perlbase-symbol +perlbase-time
 Conflicts: 
 Menu-Depends: 
@@ -1604,8 +1604,8 @@ Category: Languages
 Repository: packages
 Title: Net perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Net perl module
@@ -1616,7 +1616,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-next
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1626,8 +1626,8 @@ Category: Languages
 Repository: packages
 Title: NEXT perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: NEXT perl module
@@ -1638,7 +1638,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-o
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-b +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1648,8 +1648,8 @@ Category: Languages
 Repository: packages
 Title: O perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: O perl module
@@ -1660,7 +1660,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-opcode
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1670,8 +1670,8 @@ Category: Languages
 Repository: packages
 Title: Opcode perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Opcode perl module
@@ -1682,7 +1682,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-open
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1692,8 +1692,8 @@ Category: Languages
 Repository: packages
 Title: open perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: open perl module
@@ -1704,7 +1704,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-ops
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-opcode
 Conflicts: 
 Menu-Depends: 
@@ -1714,8 +1714,8 @@ Category: Languages
 Repository: packages
 Title: ops perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: ops perl module
@@ -1726,7 +1726,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-ostype
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1736,8 +1736,8 @@ Category: Languages
 Repository: packages
 Title: OSType perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: OSType perl module
@@ -1748,7 +1748,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-params
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-locale
 Conflicts: 
 Menu-Depends: 
@@ -1758,8 +1758,8 @@ Category: Languages
 Repository: packages
 Title: Params perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Params perl module
@@ -1770,7 +1770,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-perl5db
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-cwd +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1780,8 +1780,8 @@ Category: Languages
 Repository: packages
 Title: perl5db perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: perl5db perl module
@@ -1792,7 +1792,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-perlio
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-mime +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1802,8 +1802,8 @@ Category: Languages
 Repository: packages
 Title: PerlIO perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: PerlIO perl module
@@ -1814,7 +1814,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-pod
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-cwd +perlbase-encode +perlbase-essential +perlbase-fcntl +perlbase-file +perlbase-getopt +perlbase-integer +perlbase-posix +perlbase-symbol +perlbase-term +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -1824,8 +1824,8 @@ Category: Languages
 Repository: packages
 Title: Pod perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Pod perl module
@@ -1836,7 +1836,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-posix
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-fcntl +perlbase-tie +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1846,8 +1846,8 @@ Category: Languages
 Repository: packages
 Title: POSIX perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: POSIX perl module
@@ -1858,7 +1858,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-re
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1868,8 +1868,8 @@ Category: Languages
 Repository: packages
 Title: re perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: re perl module
@@ -1880,7 +1880,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-safe
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-b +perlbase-essential +perlbase-opcode +perlbase-scalar +perlbase-utf8
 Conflicts: 
 Menu-Depends: 
@@ -1890,8 +1890,8 @@ Category: Languages
 Repository: packages
 Title: Safe perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Safe perl module
@@ -1902,7 +1902,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-scalar
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-list
 Conflicts: 
 Menu-Depends: 
@@ -1912,8 +1912,8 @@ Category: Languages
 Repository: packages
 Title: Scalar perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Scalar perl module
@@ -1924,7 +1924,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-sdbm-file
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-tie +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -1934,8 +1934,8 @@ Category: Languages
 Repository: packages
 Title: SDBM_File perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: SDBM_File perl module
@@ -1946,7 +1946,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-search
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -1956,8 +1956,8 @@ Category: Languages
 Repository: packages
 Title: Search perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Search perl module
@@ -1968,7 +1968,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-selectsaver
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-symbol
 Conflicts: 
 Menu-Depends: 
@@ -1978,8 +1978,8 @@ Category: Languages
 Repository: packages
 Title: SelectSaver perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: SelectSaver perl module
@@ -1990,7 +1990,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-selfloader
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-io
 Conflicts: 
 Menu-Depends: 
@@ -2000,8 +2000,8 @@ Category: Languages
 Repository: packages
 Title: SelfLoader perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: SelfLoader perl module
@@ -2012,7 +2012,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-sigtrap
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-meta-notation
 Conflicts: 
 Menu-Depends: 
@@ -2022,8 +2022,8 @@ Category: Languages
 Repository: packages
 Title: sigtrap perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: sigtrap perl module
@@ -2034,7 +2034,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-socket
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -2044,8 +2044,8 @@ Category: Languages
 Repository: packages
 Title: Socket perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Socket perl module
@@ -2056,7 +2056,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-sort
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -2066,8 +2066,8 @@ Category: Languages
 Repository: packages
 Title: sort perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: sort perl module
@@ -2078,7 +2078,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-storable
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -2088,8 +2088,8 @@ Category: Languages
 Repository: packages
 Title: Storable perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Storable perl module
@@ -2100,7 +2100,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-symbol
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -2110,8 +2110,8 @@ Category: Languages
 Repository: packages
 Title: Symbol perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Symbol perl module
@@ -2122,7 +2122,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-sys
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-file +perlbase-posix +perlbase-socket
 Conflicts: 
 Menu-Depends: 
@@ -2132,8 +2132,8 @@ Category: Languages
 Repository: packages
 Title: Sys perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Sys perl module
@@ -2144,7 +2144,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-tap
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-base +perlbase-benchmark +perlbase-config +perlbase-essential +perlbase-file +perlbase-io +perlbase-posix +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -2154,8 +2154,8 @@ Category: Languages
 Repository: packages
 Title: TAP perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: TAP perl module
@@ -2166,7 +2166,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-term
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -2176,8 +2176,8 @@ Category: Languages
 Repository: packages
 Title: Term perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Term perl module
@@ -2188,7 +2188,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-test
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-base +perlbase-config +perlbase-essential +perlbase-io +perlbase-symbol +perlbase-tap +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -2198,8 +2198,8 @@ Category: Languages
 Repository: packages
 Title: Test perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Test perl module
@@ -2210,7 +2210,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-text
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-selfloader
 Conflicts: 
 Menu-Depends: 
@@ -2220,8 +2220,8 @@ Category: Languages
 Repository: packages
 Title: Text perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Text perl module
@@ -2232,7 +2232,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-thread
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-scalar +perlbase-threads
 Conflicts: 
 Menu-Depends: 
@@ -2242,8 +2242,8 @@ Category: Languages
 Repository: packages
 Title: Thread perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Thread perl module
@@ -2254,7 +2254,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-threads
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential +perlbase-scalar +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -2264,8 +2264,8 @@ Category: Languages
 Repository: packages
 Title: threads perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: threads perl module
@@ -2276,7 +2276,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-tie
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-fcntl +perlbase-xsloader
 Conflicts: 
 Menu-Depends: 
@@ -2286,8 +2286,8 @@ Category: Languages
 Repository: packages
 Title: Tie perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Tie perl module
@@ -2298,7 +2298,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-time
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-class +perlbase-config +perlbase-dynaloader +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -2308,8 +2308,8 @@ Category: Languages
 Repository: packages
 Title: Time perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Time perl module
@@ -2320,7 +2320,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-unicode
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-base +perlbase-charnames +perlbase-dynaloader +perlbase-essential +perlbase-file
 Conflicts: 
 Menu-Depends: 
@@ -2330,8 +2330,8 @@ Category: Languages
 Repository: packages
 Title: Unicode perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Unicode perl module
@@ -2342,7 +2342,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-unicore
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -2352,8 +2352,8 @@ Category: Languages
 Repository: packages
 Title: unicore perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: unicore perl module
@@ -2364,7 +2364,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-universal
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -2374,8 +2374,8 @@ Category: Languages
 Repository: packages
 Title: UNIVERSAL perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: UNIVERSAL perl module
@@ -2386,7 +2386,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-user
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-class +perlbase-config +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -2396,8 +2396,8 @@ Category: Languages
 Repository: packages
 Title: User perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: User perl module
@@ -2408,7 +2408,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-utf8
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-essential +perlbase-re +perlbase-unicore
 Conflicts: 
 Menu-Depends: 
@@ -2418,8 +2418,8 @@ Category: Languages
 Repository: packages
 Title: utf8 perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: utf8 perl module
@@ -2430,7 +2430,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-version
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perlbase-config +perlbase-essential
 Conflicts: 
 Menu-Depends: 
@@ -2440,8 +2440,8 @@ Category: Languages
 Repository: packages
 Title: version perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: version perl module
@@ -2452,7 +2452,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perlbase-xsloader
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -2462,8 +2462,8 @@ Category: Languages
 Repository: packages
 Title: XSLoader perl module
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: XSLoader perl module
@@ -2474,7 +2474,7 @@ Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
 Package: perl-tests-common
 Submenu: Perl
 Prereq-Check: 1
-Version: 5.28.1-5
+Version: 5.28.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @PERL_TESTS
 Conflicts: 
 Menu-Depends: 
@@ -2484,8 +2484,8 @@ Category: Languages
 Repository: packages
 Title: Common test support files
 Maintainer: Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfish-solutions.com>
-Source: perl-5.28.1.tar.xz
-License: GPL-1.0-or-later Artistic-1.0-Perl
+Source: perl-5.28.0.tar.xz
+License: GPL-1.0+ Artistic-1.0-Perl
 LicenseFiles: Copying Artistic README
 Type: ipkg
 Description: Common test support files

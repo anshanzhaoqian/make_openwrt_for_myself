@@ -4,11 +4,12 @@ Target-Board: cns3xxx
 Target-Name: Cavium Networks Econa CNS3xxx
 Target-Arch: arm
 Target-Arch-Packages: arm_mpcore_vfp
-Target-Features: dt fpu gpio pci pcie rtc squashfs usb usbgadget
+Target-Features: dt fpu gpio pci pcie rtc squashfs testing-kernel usb usbgadget
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=mpcore -mfpu=vfp
+Target-Optimization: -Os -pipe
 CPU-Type: mpcore+vfp
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
+Linux-Testing-Version: 4.19.38
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

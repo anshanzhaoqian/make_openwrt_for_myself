@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/coreutils/Makefile
 
 Package: coreutils
 Menu: 1
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,7 @@ Category: Utilities
 Repository: base
 Title: The GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
  available, you should consider compiling that instead as Busybox applets are
@@ -23,28 +21,8 @@ http://www.gnu.org/software/coreutils/
 Jo-Philipp Wich <jo@mein.io>
 @@
 
-Package: coreutils-base32
-Version: 8.32-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Utility base32 from the GNU core utilities
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Type: ipkg
-Description:   Full version of standard GNU base32 utility.
-http://www.gnu.org/software/coreutils/
-Jo-Philipp Wich <jo@mein.io>
-@@
-
 Package: coreutils-base64
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -54,9 +32,7 @@ Category: Utilities
 Repository: base
 Title: Utility base64 from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU base64 utility.
 http://www.gnu.org/software/coreutils/
@@ -64,7 +40,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-basename
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -74,57 +50,15 @@ Category: Utilities
 Repository: base
 Title: Utility basename from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU basename utility.
 http://www.gnu.org/software/coreutils/
 Jo-Philipp Wich <jo@mein.io>
 @@
 
-Package: coreutils-basenc
-Version: 8.32-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Utility basenc from the GNU core utilities
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Type: ipkg
-Description:   Full version of standard GNU basenc utility.
-http://www.gnu.org/software/coreutils/
-Jo-Philipp Wich <jo@mein.io>
-@@
-
-Package: coreutils-b2sum
-Version: 8.32-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Utility b2sum from the GNU core utilities
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Type: ipkg
-Description:   Full version of standard GNU b2sum utility.
-http://www.gnu.org/software/coreutils/
-Jo-Philipp Wich <jo@mein.io>
-@@
-
 Package: coreutils-cat
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -134,9 +68,7 @@ Category: Utilities
 Repository: base
 Title: Utility cat from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU cat utility.
 http://www.gnu.org/software/coreutils/
@@ -144,7 +76,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-chcon
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -154,9 +86,7 @@ Category: Utilities
 Repository: base
 Title: Utility chcon from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU chcon utility.
 http://www.gnu.org/software/coreutils/
@@ -164,7 +94,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-chgrp
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -174,9 +104,7 @@ Category: Utilities
 Repository: base
 Title: Utility chgrp from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU chgrp utility.
 http://www.gnu.org/software/coreutils/
@@ -184,7 +112,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-chmod
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -194,9 +122,7 @@ Category: Utilities
 Repository: base
 Title: Utility chmod from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU chmod utility.
 http://www.gnu.org/software/coreutils/
@@ -204,7 +130,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-chown
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -214,9 +140,7 @@ Category: Utilities
 Repository: base
 Title: Utility chown from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU chown utility.
 http://www.gnu.org/software/coreutils/
@@ -224,7 +148,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-chroot
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -234,9 +158,7 @@ Category: Utilities
 Repository: base
 Title: Utility chroot from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU chroot utility.
 http://www.gnu.org/software/coreutils/
@@ -244,7 +166,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-cksum
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -254,9 +176,7 @@ Category: Utilities
 Repository: base
 Title: Utility cksum from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU cksum utility.
 http://www.gnu.org/software/coreutils/
@@ -264,7 +184,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-comm
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -274,9 +194,7 @@ Category: Utilities
 Repository: base
 Title: Utility comm from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU comm utility.
 http://www.gnu.org/software/coreutils/
@@ -284,7 +202,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-cp
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl
 Conflicts: 
 Menu-Depends: 
@@ -294,9 +212,7 @@ Category: Utilities
 Repository: base
 Title: Utility cp from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU cp utility.
 http://www.gnu.org/software/coreutils/
@@ -304,7 +220,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-csplit
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -314,9 +230,7 @@ Category: Utilities
 Repository: base
 Title: Utility csplit from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU csplit utility.
 http://www.gnu.org/software/coreutils/
@@ -324,7 +238,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-cut
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -334,9 +248,7 @@ Category: Utilities
 Repository: base
 Title: Utility cut from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU cut utility.
 http://www.gnu.org/software/coreutils/
@@ -344,7 +256,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-date
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -354,9 +266,7 @@ Category: Utilities
 Repository: base
 Title: Utility date from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU date utility.
 http://www.gnu.org/software/coreutils/
@@ -364,7 +274,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-dd
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -374,37 +284,15 @@ Category: Utilities
 Repository: base
 Title: Utility dd from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU dd utility.
 http://www.gnu.org/software/coreutils/
 Jo-Philipp Wich <jo@mein.io>
 @@
 
-Package: coreutils-df
-Version: 8.32-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Utility df from the GNU core utilities
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Type: ipkg
-Description:   Full version of standard GNU df utility.
-http://www.gnu.org/software/coreutils/
-Jo-Philipp Wich <jo@mein.io>
-@@
-
 Package: coreutils-dir
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl +libcap
 Conflicts: 
 Menu-Depends: 
@@ -414,9 +302,7 @@ Category: Utilities
 Repository: base
 Title: Utility dir from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU dir utility.
 http://www.gnu.org/software/coreutils/
@@ -424,7 +310,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-dircolors
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -434,9 +320,7 @@ Category: Utilities
 Repository: base
 Title: Utility dircolors from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU dircolors utility.
 http://www.gnu.org/software/coreutils/
@@ -444,7 +328,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-dirname
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -454,9 +338,7 @@ Category: Utilities
 Repository: base
 Title: Utility dirname from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU dirname utility.
 http://www.gnu.org/software/coreutils/
@@ -464,7 +346,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-du
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -474,9 +356,7 @@ Category: Utilities
 Repository: base
 Title: Utility du from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU du utility.
 http://www.gnu.org/software/coreutils/
@@ -484,7 +364,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-echo
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -494,9 +374,7 @@ Category: Utilities
 Repository: base
 Title: Utility echo from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU echo utility.
 http://www.gnu.org/software/coreutils/
@@ -504,7 +382,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-env
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -514,9 +392,7 @@ Category: Utilities
 Repository: base
 Title: Utility env from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU env utility.
 http://www.gnu.org/software/coreutils/
@@ -524,7 +400,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-expand
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -534,9 +410,7 @@ Category: Utilities
 Repository: base
 Title: Utility expand from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU expand utility.
 http://www.gnu.org/software/coreutils/
@@ -544,7 +418,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-expr
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libgmp
 Conflicts: 
 Menu-Depends: 
@@ -554,9 +428,7 @@ Category: Utilities
 Repository: base
 Title: Utility expr from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU expr utility.
 http://www.gnu.org/software/coreutils/
@@ -564,7 +436,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-factor
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libgmp
 Conflicts: 
 Menu-Depends: 
@@ -574,9 +446,7 @@ Category: Utilities
 Repository: base
 Title: Utility factor from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU factor utility.
 http://www.gnu.org/software/coreutils/
@@ -584,7 +454,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-false
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -594,9 +464,7 @@ Category: Utilities
 Repository: base
 Title: Utility false from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU false utility.
 http://www.gnu.org/software/coreutils/
@@ -604,7 +472,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-fmt
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -614,9 +482,7 @@ Category: Utilities
 Repository: base
 Title: Utility fmt from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU fmt utility.
 http://www.gnu.org/software/coreutils/
@@ -624,7 +490,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-fold
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -634,9 +500,7 @@ Category: Utilities
 Repository: base
 Title: Utility fold from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU fold utility.
 http://www.gnu.org/software/coreutils/
@@ -644,7 +508,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-groups
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -654,9 +518,7 @@ Category: Utilities
 Repository: base
 Title: Utility groups from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU groups utility.
 http://www.gnu.org/software/coreutils/
@@ -664,7 +526,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-head
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -674,9 +536,7 @@ Category: Utilities
 Repository: base
 Title: Utility head from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU head utility.
 http://www.gnu.org/software/coreutils/
@@ -684,7 +544,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-hostid
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -694,9 +554,7 @@ Category: Utilities
 Repository: base
 Title: Utility hostid from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU hostid utility.
 http://www.gnu.org/software/coreutils/
@@ -704,7 +562,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-id
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -714,9 +572,7 @@ Category: Utilities
 Repository: base
 Title: Utility id from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU id utility.
 http://www.gnu.org/software/coreutils/
@@ -724,7 +580,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-install
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl
 Conflicts: 
 Menu-Depends: 
@@ -734,9 +590,7 @@ Category: Utilities
 Repository: base
 Title: Utility install from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU install utility.
 http://www.gnu.org/software/coreutils/
@@ -744,7 +598,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-join
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -754,9 +608,7 @@ Category: Utilities
 Repository: base
 Title: Utility join from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU join utility.
 http://www.gnu.org/software/coreutils/
@@ -764,7 +616,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-kill
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -774,9 +626,7 @@ Category: Utilities
 Repository: base
 Title: Utility kill from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU kill utility.
 http://www.gnu.org/software/coreutils/
@@ -784,7 +634,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-link
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -794,9 +644,7 @@ Category: Utilities
 Repository: base
 Title: Utility link from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU link utility.
 http://www.gnu.org/software/coreutils/
@@ -804,7 +652,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-ln
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -814,9 +662,7 @@ Category: Utilities
 Repository: base
 Title: Utility ln from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU ln utility.
 http://www.gnu.org/software/coreutils/
@@ -824,7 +670,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-logname
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -834,9 +680,7 @@ Category: Utilities
 Repository: base
 Title: Utility logname from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU logname utility.
 http://www.gnu.org/software/coreutils/
@@ -844,7 +688,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-ls
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl +libcap
 Conflicts: 
 Menu-Depends: 
@@ -854,9 +698,7 @@ Category: Utilities
 Repository: base
 Title: Utility ls from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU ls utility.
 http://www.gnu.org/software/coreutils/
@@ -864,7 +706,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-md5sum
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -874,9 +716,7 @@ Category: Utilities
 Repository: base
 Title: Utility md5sum from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU md5sum utility.
 http://www.gnu.org/software/coreutils/
@@ -884,7 +724,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-mkdir
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -894,9 +734,7 @@ Category: Utilities
 Repository: base
 Title: Utility mkdir from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU mkdir utility.
 http://www.gnu.org/software/coreutils/
@@ -904,7 +742,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-mkfifo
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -914,9 +752,7 @@ Category: Utilities
 Repository: base
 Title: Utility mkfifo from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU mkfifo utility.
 http://www.gnu.org/software/coreutils/
@@ -924,7 +760,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-mknod
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -934,9 +770,7 @@ Category: Utilities
 Repository: base
 Title: Utility mknod from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU mknod utility.
 http://www.gnu.org/software/coreutils/
@@ -944,7 +778,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-mktemp
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -954,9 +788,7 @@ Category: Utilities
 Repository: base
 Title: Utility mktemp from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU mktemp utility.
 http://www.gnu.org/software/coreutils/
@@ -964,7 +796,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-mv
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl
 Conflicts: 
 Menu-Depends: 
@@ -974,9 +806,7 @@ Category: Utilities
 Repository: base
 Title: Utility mv from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU mv utility.
 http://www.gnu.org/software/coreutils/
@@ -984,7 +814,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-nice
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -994,9 +824,7 @@ Category: Utilities
 Repository: base
 Title: Utility nice from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU nice utility.
 http://www.gnu.org/software/coreutils/
@@ -1004,7 +832,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-nl
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1014,9 +842,7 @@ Category: Utilities
 Repository: base
 Title: Utility nl from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU nl utility.
 http://www.gnu.org/software/coreutils/
@@ -1024,7 +850,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-nohup
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1034,9 +860,7 @@ Category: Utilities
 Repository: base
 Title: Utility nohup from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU nohup utility.
 http://www.gnu.org/software/coreutils/
@@ -1044,7 +868,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-nproc
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1054,37 +878,15 @@ Category: Utilities
 Repository: base
 Title: Utility nproc from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU nproc utility.
 http://www.gnu.org/software/coreutils/
 Jo-Philipp Wich <jo@mein.io>
 @@
 
-Package: coreutils-numfmt
-Version: 8.32-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Utility numfmt from the GNU core utilities
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Type: ipkg
-Description:   Full version of standard GNU numfmt utility.
-http://www.gnu.org/software/coreutils/
-Jo-Philipp Wich <jo@mein.io>
-@@
-
 Package: coreutils-od
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1094,9 +896,7 @@ Category: Utilities
 Repository: base
 Title: Utility od from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU od utility.
 http://www.gnu.org/software/coreutils/
@@ -1104,7 +904,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-paste
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1114,9 +914,7 @@ Category: Utilities
 Repository: base
 Title: Utility paste from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU paste utility.
 http://www.gnu.org/software/coreutils/
@@ -1124,7 +922,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-pathchk
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1134,9 +932,7 @@ Category: Utilities
 Repository: base
 Title: Utility pathchk from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU pathchk utility.
 http://www.gnu.org/software/coreutils/
@@ -1144,7 +940,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-pinky
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1154,9 +950,7 @@ Category: Utilities
 Repository: base
 Title: Utility pinky from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU pinky utility.
 http://www.gnu.org/software/coreutils/
@@ -1164,7 +958,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-pr
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1174,9 +968,7 @@ Category: Utilities
 Repository: base
 Title: Utility pr from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU pr utility.
 http://www.gnu.org/software/coreutils/
@@ -1184,7 +976,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-printenv
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1194,9 +986,7 @@ Category: Utilities
 Repository: base
 Title: Utility printenv from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU printenv utility.
 http://www.gnu.org/software/coreutils/
@@ -1204,7 +994,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-printf
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1214,9 +1004,7 @@ Category: Utilities
 Repository: base
 Title: Utility printf from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU printf utility.
 http://www.gnu.org/software/coreutils/
@@ -1224,7 +1012,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-ptx
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1234,9 +1022,7 @@ Category: Utilities
 Repository: base
 Title: Utility ptx from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU ptx utility.
 http://www.gnu.org/software/coreutils/
@@ -1244,7 +1030,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-pwd
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1254,9 +1040,7 @@ Category: Utilities
 Repository: base
 Title: Utility pwd from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU pwd utility.
 http://www.gnu.org/software/coreutils/
@@ -1264,7 +1048,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-readlink
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1274,9 +1058,7 @@ Category: Utilities
 Repository: base
 Title: Utility readlink from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU readlink utility.
 http://www.gnu.org/software/coreutils/
@@ -1284,7 +1066,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-realpath
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1294,9 +1076,7 @@ Category: Utilities
 Repository: base
 Title: Utility realpath from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU realpath utility.
 http://www.gnu.org/software/coreutils/
@@ -1304,7 +1084,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-rm
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1314,9 +1094,7 @@ Category: Utilities
 Repository: base
 Title: Utility rm from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU rm utility.
 http://www.gnu.org/software/coreutils/
@@ -1324,7 +1102,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-rmdir
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1334,9 +1112,7 @@ Category: Utilities
 Repository: base
 Title: Utility rmdir from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU rmdir utility.
 http://www.gnu.org/software/coreutils/
@@ -1344,7 +1120,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-runcon
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1354,9 +1130,7 @@ Category: Utilities
 Repository: base
 Title: Utility runcon from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU runcon utility.
 http://www.gnu.org/software/coreutils/
@@ -1364,7 +1138,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-seq
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1374,9 +1148,7 @@ Category: Utilities
 Repository: base
 Title: Utility seq from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU seq utility.
 http://www.gnu.org/software/coreutils/
@@ -1384,7 +1156,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sha1sum
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1394,9 +1166,7 @@ Category: Utilities
 Repository: base
 Title: Utility sha1sum from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sha1sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1404,7 +1174,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sha224sum
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1414,9 +1184,7 @@ Category: Utilities
 Repository: base
 Title: Utility sha224sum from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sha224sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1424,7 +1192,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sha256sum
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1434,9 +1202,7 @@ Category: Utilities
 Repository: base
 Title: Utility sha256sum from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sha256sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1444,7 +1210,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sha384sum
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1454,9 +1220,7 @@ Category: Utilities
 Repository: base
 Title: Utility sha384sum from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sha384sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1464,7 +1228,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sha512sum
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1474,9 +1238,7 @@ Category: Utilities
 Repository: base
 Title: Utility sha512sum from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sha512sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1484,7 +1246,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-shred
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1494,9 +1256,7 @@ Category: Utilities
 Repository: base
 Title: Utility shred from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU shred utility.
 http://www.gnu.org/software/coreutils/
@@ -1504,7 +1264,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-shuf
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1514,9 +1274,7 @@ Category: Utilities
 Repository: base
 Title: Utility shuf from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU shuf utility.
 http://www.gnu.org/software/coreutils/
@@ -1524,7 +1282,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sleep
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1534,9 +1292,7 @@ Category: Utilities
 Repository: base
 Title: Utility sleep from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sleep utility.
 http://www.gnu.org/software/coreutils/
@@ -1544,7 +1300,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sort
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -1554,9 +1310,7 @@ Category: Utilities
 Repository: base
 Title: Utility sort from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sort utility.
 http://www.gnu.org/software/coreutils/
@@ -1564,7 +1318,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-split
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1574,9 +1328,7 @@ Category: Utilities
 Repository: base
 Title: Utility split from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU split utility.
 http://www.gnu.org/software/coreutils/
@@ -1584,7 +1336,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-stat
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1594,9 +1346,7 @@ Category: Utilities
 Repository: base
 Title: Utility stat from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU stat utility.
 http://www.gnu.org/software/coreutils/
@@ -1604,7 +1354,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-stdbuf
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1614,9 +1364,7 @@ Category: Utilities
 Repository: base
 Title: Utility stdbuf from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU stdbuf utility.
 http://www.gnu.org/software/coreutils/
@@ -1624,7 +1372,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-stty
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1634,9 +1382,7 @@ Category: Utilities
 Repository: base
 Title: Utility stty from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU stty utility.
 http://www.gnu.org/software/coreutils/
@@ -1644,7 +1390,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sum
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1654,9 +1400,7 @@ Category: Utilities
 Repository: base
 Title: Utility sum from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1664,7 +1408,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-sync
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1674,9 +1418,7 @@ Category: Utilities
 Repository: base
 Title: Utility sync from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU sync utility.
 http://www.gnu.org/software/coreutils/
@@ -1684,7 +1426,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-tac
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1694,9 +1436,7 @@ Category: Utilities
 Repository: base
 Title: Utility tac from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU tac utility.
 http://www.gnu.org/software/coreutils/
@@ -1704,7 +1444,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-tail
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1714,9 +1454,7 @@ Category: Utilities
 Repository: base
 Title: Utility tail from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU tail utility.
 http://www.gnu.org/software/coreutils/
@@ -1724,7 +1462,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-tee
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1734,9 +1472,7 @@ Category: Utilities
 Repository: base
 Title: Utility tee from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU tee utility.
 http://www.gnu.org/software/coreutils/
@@ -1744,7 +1480,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-test
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1754,9 +1490,7 @@ Category: Utilities
 Repository: base
 Title: Utility test from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU test utility.
 http://www.gnu.org/software/coreutils/
@@ -1764,7 +1498,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-timeout
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +librt
 Conflicts: 
 Menu-Depends: 
@@ -1774,9 +1508,7 @@ Category: Utilities
 Repository: base
 Title: Utility timeout from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU timeout utility.
 http://www.gnu.org/software/coreutils/
@@ -1784,7 +1516,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-touch
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1794,9 +1526,7 @@ Category: Utilities
 Repository: base
 Title: Utility touch from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU touch utility.
 http://www.gnu.org/software/coreutils/
@@ -1804,7 +1534,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-tr
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1814,9 +1544,7 @@ Category: Utilities
 Repository: base
 Title: Utility tr from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU tr utility.
 http://www.gnu.org/software/coreutils/
@@ -1824,7 +1552,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-true
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1834,9 +1562,7 @@ Category: Utilities
 Repository: base
 Title: Utility true from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU true utility.
 http://www.gnu.org/software/coreutils/
@@ -1844,7 +1570,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-truncate
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1854,9 +1580,7 @@ Category: Utilities
 Repository: base
 Title: Utility truncate from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU truncate utility.
 http://www.gnu.org/software/coreutils/
@@ -1864,7 +1588,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-tsort
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1874,9 +1598,7 @@ Category: Utilities
 Repository: base
 Title: Utility tsort from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU tsort utility.
 http://www.gnu.org/software/coreutils/
@@ -1884,7 +1606,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-tty
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1894,9 +1616,7 @@ Category: Utilities
 Repository: base
 Title: Utility tty from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU tty utility.
 http://www.gnu.org/software/coreutils/
@@ -1904,7 +1624,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-uname
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1914,9 +1634,7 @@ Category: Utilities
 Repository: base
 Title: Utility uname from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU uname utility.
 http://www.gnu.org/software/coreutils/
@@ -1924,7 +1642,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-unexpand
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1934,9 +1652,7 @@ Category: Utilities
 Repository: base
 Title: Utility unexpand from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU unexpand utility.
 http://www.gnu.org/software/coreutils/
@@ -1944,7 +1660,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-uniq
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1954,9 +1670,7 @@ Category: Utilities
 Repository: base
 Title: Utility uniq from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU uniq utility.
 http://www.gnu.org/software/coreutils/
@@ -1964,7 +1678,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-unlink
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1974,9 +1688,7 @@ Category: Utilities
 Repository: base
 Title: Utility unlink from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU unlink utility.
 http://www.gnu.org/software/coreutils/
@@ -1984,7 +1696,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-uptime
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -1994,9 +1706,7 @@ Category: Utilities
 Repository: base
 Title: Utility uptime from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU uptime utility.
 http://www.gnu.org/software/coreutils/
@@ -2004,7 +1714,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-users
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -2014,9 +1724,7 @@ Category: Utilities
 Repository: base
 Title: Utility users from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU users utility.
 http://www.gnu.org/software/coreutils/
@@ -2024,7 +1732,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-vdir
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils +libacl +libcap
 Conflicts: 
 Menu-Depends: 
@@ -2034,9 +1742,7 @@ Category: Utilities
 Repository: base
 Title: Utility vdir from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU vdir utility.
 http://www.gnu.org/software/coreutils/
@@ -2044,7 +1750,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-wc
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -2054,9 +1760,7 @@ Category: Utilities
 Repository: base
 Title: Utility wc from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU wc utility.
 http://www.gnu.org/software/coreutils/
@@ -2064,7 +1768,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-who
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -2074,9 +1778,7 @@ Category: Utilities
 Repository: base
 Title: Utility who from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU who utility.
 http://www.gnu.org/software/coreutils/
@@ -2084,7 +1786,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-whoami
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -2094,9 +1796,7 @@ Category: Utilities
 Repository: base
 Title: Utility whoami from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU whoami utility.
 http://www.gnu.org/software/coreutils/
@@ -2104,7 +1804,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: coreutils-yes
-Version: 8.32-1
+Version: 8.23-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread coreutils
 Conflicts: 
 Menu-Depends: 
@@ -2114,9 +1814,7 @@ Category: Utilities
 Repository: base
 Title: Utility yes from the GNU core utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: coreutils-8.32.tar.xz
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+Source: coreutils-8.23.tar.xz
 Type: ipkg
 Description:   Full version of standard GNU yes utility.
 http://www.gnu.org/software/coreutils/

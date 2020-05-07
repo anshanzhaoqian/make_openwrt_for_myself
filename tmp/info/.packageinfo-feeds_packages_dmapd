@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/dmapd/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: dmapd
-Version: 0.0.84-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdmapsharing +libdb47 +vips +libgst1pbutils
+Version: 0.0.73-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdmapsharing +libdb47 +vips
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,11 +13,11 @@ Repository: packages
 Title: dmapd
 Maintainer: W. Michael Petullo <mike@flyn.org>
 Require-User: dmapd=56:dmapd=56
-Source: dmapd-0.0.84.tar.gz
-License: GPL-2.0-or-later
+Source: dmapd-0.0.73.tar.gz
+License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
-Description: 	Dmapd is a DMAP server
+Description: dmapd
 http://www.flyn.org/projects/dmapd/
 W. Michael Petullo <mike@flyn.org>
 @@

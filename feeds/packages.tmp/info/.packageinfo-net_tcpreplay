@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/tcpreplay/Makefile
 Build-Depends: libtool gettext libiconv
 
 Package: tcpbridge
-Submenu: Tcpreplay
-Version: 4.3.2-1
+Submenu: tcprelay
+Version: 4.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: Bridge network traffic across two interfaces
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: tcpreplay-4.3.2.tar.xz
+Source: tcpreplay-4.2.5.tar.gz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
 Type: ipkg
@@ -24,8 +24,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: tcpcapinfo
-Submenu: Tcpreplay
-Version: 4.3.2-1
+Submenu: tcprelay
+Version: 4.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Network
 Repository: base
 Title: Pcap file dissector for debugging broken pcap files
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: tcpreplay-4.3.2.tar.xz
+Source: tcpreplay-4.2.5.tar.gz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
 Type: ipkg
@@ -47,8 +47,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: tcpliveplay
-Submenu: Tcpreplay
-Version: 4.3.2-1
+Submenu: tcprelay
+Version: 4.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -58,7 +58,7 @@ Category: Network
 Repository: base
 Title: Replays network traffic stored in a pcap file on live networks using new TCP connections
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: tcpreplay-4.3.2.tar.xz
+Source: tcpreplay-4.2.5.tar.gz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
 Type: ipkg
@@ -70,8 +70,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: tcpprep
-Submenu: Tcpreplay
-Version: 4.3.2-1
+Submenu: tcprelay
+Version: 4.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -81,7 +81,7 @@ Category: Network
 Repository: base
 Title: Create a tcpreplay cache file from a pcap file
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: tcpreplay-4.3.2.tar.xz
+Source: tcpreplay-4.2.5.tar.gz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
 Type: ipkg
@@ -93,8 +93,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: tcpreplay
-Submenu: Tcpreplay
-Version: 4.3.2-1
+Submenu: tcprelay
+Version: 4.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -104,7 +104,7 @@ Category: Network
 Repository: base
 Title: Replay network traffic stored in pcap files
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: tcpreplay-4.3.2.tar.xz
+Source: tcpreplay-4.2.5.tar.gz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
 Type: ipkg
@@ -115,8 +115,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: tcpreplay-edit
-Submenu: Tcpreplay
-Version: 4.3.2-1
+Submenu: tcprelay
+Version: 4.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -126,7 +126,7 @@ Category: Network
 Repository: base
 Title: Replay network traffic stored in pcap files
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: tcpreplay-4.3.2.tar.xz
+Source: tcpreplay-4.2.5.tar.gz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
 Type: ipkg
@@ -137,8 +137,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: tcprewrite
-Submenu: Tcpreplay
-Version: 4.3.2-1
+Submenu: tcprelay
+Version: 4.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -148,7 +148,7 @@ Category: Network
 Repository: base
 Title: Rewrite the packets in a pcap file
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: tcpreplay-4.3.2.tar.xz
+Source: tcpreplay-4.2.5.tar.gz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
 Type: ipkg
@@ -158,8 +158,8 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: tcpreplay-all
-Submenu: Tcpreplay
-Version: 4.3.2-1
+Submenu: tcprelay
+Version: 4.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +tcpbridge +tcpcapinfo +tcpliveplay +tcpprep +tcpreplay +tcpreplay-edit +tcprewrite
 Conflicts: 
 Menu-Depends: 
@@ -169,7 +169,7 @@ Category: Network
 Repository: base
 Title: Pcap editing and replaying utilities
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: tcpreplay-4.3.2.tar.xz
+Source: tcpreplay-4.2.5.tar.gz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
 Type: ipkg

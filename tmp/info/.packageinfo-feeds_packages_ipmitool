@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/ipmitool/Makefile
 
 Package: ipmitool
-Version: 1.8.18-3
+Version: 1.8.18-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -16,7 +16,7 @@ License: BSD-3-clause
 LicenseFiles: COPYING
 Type: ipkg
 Description: Command-line interface to IPMI-enabled devices
-https://github.com/ipmitool/ipmitool
+http://sourceforge.net/projects/ipmitool/
 Alexander Couzens <lynxis@fe80.eu>
 @@
 

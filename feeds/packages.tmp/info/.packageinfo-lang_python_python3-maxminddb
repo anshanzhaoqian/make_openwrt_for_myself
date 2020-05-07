@@ -2,11 +2,12 @@ Source-Makefile: feeds/packages/lang/python/python3-maxminddb/Makefile
 
 Package: python3-maxminddb
 Submenu: Python
-Version: 1.5.2-2
+Version: 1.5.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +libmaxminddb
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: base
@@ -23,11 +24,12 @@ Jan Pavlinec <jan.pavlinec@nic.cz>
 
 Package: python3-maxminddb-src
 Submenu: Python
-Version: 1.5.2-2
+Version: 1.5.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: base
@@ -37,14 +39,10 @@ Source: maxminddb-1.5.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
-Description:       Module for reading MaxMind DB files
-
-    This package contains the Python source files for python3-maxminddb.
+Description:       Module for reading MaxMind DB files.
+    (Contains the Python3 sources for this package).
 https://dev.maxmind.com/
 Jan Pavlinec <jan.pavlinec@nic.cz>
-@@
-Config:
-    depends on PACKAGE_python3-maxminddb
 @@
 
 

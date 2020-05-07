@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/evtest/Makefile
 
 Package: evtest
-Version: 1.34-3
+Version: 1.33-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,12 +11,11 @@ Category: Utilities
 Repository: base
 Title: Event Test Program
 Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
-Source: evtest-1.34.tar.xz
-License: GPL-2.0-or-later
+Source: evtest-1.33.tar.gz
+License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description:   Utility to test event driven devices such as keyboards and mice
-https://gitlab.freedesktop.org/libevdev/evtest
 Pushpal Sidhu <psidhu.devel@gmail.com>
 @@
 

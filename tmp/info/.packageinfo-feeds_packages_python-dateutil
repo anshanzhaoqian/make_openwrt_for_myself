@@ -1,12 +1,13 @@
 Source-Makefile: package/feeds/packages/python-dateutil/Makefile
 
-Package: python3-dateutil
+Package: python-dateutil
 Submenu: Python
-Version: 2.8.1-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-six
+Version: 2.8.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python-dateutil:python +PACKAGE_python-dateutil:python-six
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python
 Section: lang
 Category: Languages
 Repository: packages
@@ -20,13 +21,59 @@ https://dateutil.readthedocs.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
-Package: python3-dateutil-src
+Package: python-dateutil-src
 Submenu: Python
-Version: 2.8.1-2
+Version: 2.8.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python
+Section: lang
+Category: Languages
+Repository: packages
+Title: Extensions to the standard Python datetime module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: python-dateutil-2.8.1.tar.gz
+License: BSD-2-Clause
+Type: ipkg
+Description:       Extensions to the standard Python datetime module.
+    (Contains the Python sources for this package).
+https://dateutil.readthedocs.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-dateutil
+Submenu: Python
+Version: 2.8.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python3-dateutil:python3 +PACKAGE_python3-dateutil:python3-six
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Section: lang
+Category: Languages
+Repository: packages
+Title: Extensions to the standard Python datetime module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: python-dateutil-2.8.1.tar.gz
+License: BSD-2-Clause
+Type: ipkg
+Description:   Extensions to the standard Python datetime module
+.
+(Variant for Python3)
+https://dateutil.readthedocs.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-dateutil-src
+Submenu: Python
+Version: 2.8.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -36,13 +83,11 @@ Source: python-dateutil-2.8.1.tar.gz
 License: BSD-2-Clause
 Type: ipkg
 Description:       Extensions to the standard Python datetime module
-
-    This package contains the Python source files for python3-dateutil.
+.
+(Variant for Python3).
+    (Contains the Python3 sources for this package).
 https://dateutil.readthedocs.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-Config:
-    depends on PACKAGE_python3-dateutil
 @@
 
 

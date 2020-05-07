@@ -90,6 +90,24 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: radeon-firmware
+Version: 2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Radeon Video Driver firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0.tar.xz
+Type: ipkg
+Description: Radeon Video Driver firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: edgeport-firmware
 Version: 2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -936,6 +954,24 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: amdgpu-firmware
+Version: 2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: AMDGPU Video Driver firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0.tar.xz
+Type: ipkg
+Description: AMDGPU Video Driver firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: mwl8k-firmware
 Version: 2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -1274,6 +1310,24 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0.tar.xz
 Type: ipkg
 Description: Broadcom BCM43430 FullMac SDIO firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-43430a0-sdio
+Version: 2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43430a0 FullMac SDIO firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-2018-12-16-211de1679a68b8ab0f841a8058df35e13e3963f0.tar.xz
+Type: ipkg
+Description: Broadcom BCM43430a0 FullMac SDIO firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@

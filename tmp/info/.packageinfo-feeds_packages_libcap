@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/libcap/Makefile
 
 Package: libcap
-Version: 2.33-2
+Version: 2.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -9,45 +9,32 @@ Provides:
 Section: libs
 Category: Libraries
 Repository: packages
-Title: Linux capabilities library library
+Title: Linux capabilities library
 Maintainer: Paul Wassi <p.wassi@gmx.at>
-Source: libcap-2.33.tar.xz
-License: GPL-2.0-only
+Source: libcap-2.26.tar.xz
+License: GPL-2.0
 LicenseFiles: License
 Type: ipkg
-Description: Linux capabilities library library
-https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/
-Paul Wassi <p.wassi@gmx.at>
-@@
-
-Package: libcap-bin
-Version: 2.33-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread libcap
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: packages
-Title: Linux capabilities library binaries
-Maintainer: Paul Wassi <p.wassi@gmx.at>
-Source: libcap-2.33.tar.xz
-License: GPL-2.0-only
-LicenseFiles: License
-Type: ipkg
-Description:     Linux capabilities
-  .
-  This package contains the libcap utilities.
+Description: Linux capabilities library
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/
 Paul Wassi <p.wassi@gmx.at>
 @@
 Config:
-  if PACKAGE_libcap-bin
+  if PACKAGE_libcap
+
+  config PACKAGE_libcap-bin
+    bool "install libcap executables"
+    help
+      Install capsh, getcap, getpcaps, setcap into the target image.
+    default n
+
   config PACKAGE_libcap-bin-capsh-shell
     string "capsh shell"
+    depends on PACKAGE_libcap-bin
     help
       Set the capsh shell.
     default "/bin/sh"
+
   endif
 @@
 

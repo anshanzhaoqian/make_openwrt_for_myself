@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/luasql/Makefile
 
 Package: luasql-mysql
 Submenu: Lua
-Version: 2.4.0-1
+Version: 2.3.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +libmysqlclient
 Conflicts: 
 Menu-Depends: 
@@ -12,21 +12,21 @@ Section: lang
 Category: Languages
 Repository: packages
 Title: Lua SQL binding for MySQL
-Maintainer: 
-Source: luasql-2.4.0.tar.gz
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Source: luasql-2.3.0.tar.xz
 License: MIT
 LicenseFiles: docs/us/license.html
 Type: ipkg
 Description:  LuaSQL is a simple interface from Lua to a DBMS.
  .
  This package contains the MySQL binding.
-https://keplerproject.github.io/luasql/
-
+http://keplerproject.github.io/luasql/
+Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: luasql-pgsql
 Submenu: Lua
-Version: 2.4.0-1
+Version: 2.3.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +libpq
 Conflicts: 
 Menu-Depends: 
@@ -36,21 +36,21 @@ Section: lang
 Category: Languages
 Repository: packages
 Title: Lua SQL binding for PostgreSQL
-Maintainer: 
-Source: luasql-2.4.0.tar.gz
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Source: luasql-2.3.0.tar.xz
 License: MIT
 LicenseFiles: docs/us/license.html
 Type: ipkg
 Description:  LuaSQL is a simple interface from Lua to a DBMS.
  .
  This package contains the PostgreSQL binding.
-https://keplerproject.github.io/luasql/
-
+http://keplerproject.github.io/luasql/
+Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: luasql-sqlite3
 Submenu: Lua
-Version: 2.4.0-1
+Version: 2.3.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -60,16 +60,16 @@ Section: lang
 Category: Languages
 Repository: packages
 Title: Lua SQL binding for SQLite 3
-Maintainer: 
-Source: luasql-2.4.0.tar.gz
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Source: luasql-2.3.0.tar.xz
 License: MIT
 LicenseFiles: docs/us/license.html
 Type: ipkg
 Description:  LuaSQL is a simple interface from Lua to a DBMS.
  .
  This package contains the SQLite 3 binding.
-https://keplerproject.github.io/luasql/
-
+http://keplerproject.github.io/luasql/
+Nicolas Thill <nico@openwrt.org>
 @@
 
 

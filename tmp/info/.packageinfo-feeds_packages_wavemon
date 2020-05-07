@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/wavemon/Makefile
 
 Package: wavemon
-Submenu: Wireless
-Version: 0.9.1-1
+Submenu: wireless
+Version: 0.8.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libpthread +libnl-genl
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Category: Network
 Repository: packages
 Title: N-curses based wireless network devices monitor
 Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
-Source: wavemon-0.9.1.tar.gz
-License: GPL-2.0-or-later
+Source: wavemon-0.8.2.tar.xz
+License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:   wavemon is a ncurses-based monitoring application for wireless network

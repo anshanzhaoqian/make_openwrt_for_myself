@@ -1,12 +1,13 @@
 Source-Makefile: package/feeds/packages/python-awscli/Makefile
 
-Package: python3-awscli
+Package: python-awscli
 Submenu: Python
-Version: 1.16.75-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3 +python3-yaml +python3-pyasn1 +python3-botocore +python3-rsa +python3-colorama +python3-docutils +python3-s3transfer
+Version: 1.16.75-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python-awscli:python +PACKAGE_python-awscli:python-yaml +PACKAGE_python-awscli:python-pyasn1 +PACKAGE_python-awscli:python-botocore +PACKAGE_python-awscli:python-rsa +PACKAGE_python-awscli:python-colorama +PACKAGE_python-awscli:python-docutils +PACKAGE_python-awscli:python-s3transfer
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python
 Section: lang
 Category: Languages
 Repository: packages
@@ -20,13 +21,59 @@ https://github.com/aws/aws-cli
 Daniel Danzberger <daniel@dd-wrt.com>
 @@
 
-Package: python3-awscli-src
+Package: python-awscli-src
 Submenu: Python
-Version: 1.16.75-2
+Version: 1.16.75-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python
+Section: lang
+Category: Languages
+Repository: packages
+Title: awscli (sources)
+Maintainer: Daniel Danzberger <daniel@dd-wrt.com>
+Source: awscli-1.16.75.tar.gz
+License: MIT
+Type: ipkg
+Description:     This package provides a unified command line interface to Amazon Web Services..
+    (Contains the Python sources for this package).
+https://github.com/aws/aws-cli
+Daniel Danzberger <daniel@dd-wrt.com>
+@@
+
+Package: python3-awscli
+Submenu: Python
+Version: 1.16.75-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python3-awscli:python3 +PACKAGE_python3-awscli:python3-yaml +PACKAGE_python3-awscli:python3-pyasn1 +PACKAGE_python3-awscli:python3-botocore +PACKAGE_python3-awscli:python3-rsa +PACKAGE_python3-awscli:python3-colorama +PACKAGE_python3-awscli:python3-docutils +PACKAGE_python3-awscli:python3-s3transfer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Section: lang
+Category: Languages
+Repository: packages
+Title: awscli
+Maintainer: Daniel Danzberger <daniel@dd-wrt.com>
+Source: awscli-1.16.75.tar.gz
+License: MIT
+Type: ipkg
+Description: This package provides a unified command line interface to Amazon Web Services.
+.
+(Variant for Python3)
+https://github.com/aws/aws-cli
+Daniel Danzberger <daniel@dd-wrt.com>
+@@
+
+Package: python3-awscli-src
+Submenu: Python
+Version: 1.16.75-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -36,13 +83,11 @@ Source: awscli-1.16.75.tar.gz
 License: MIT
 Type: ipkg
 Description:     This package provides a unified command line interface to Amazon Web Services.
-
-    This package contains the Python source files for python3-awscli.
+.
+(Variant for Python3).
+    (Contains the Python3 sources for this package).
 https://github.com/aws/aws-cli
 Daniel Danzberger <daniel@dd-wrt.com>
-@@
-Config:
-    depends on PACKAGE_python3-awscli
 @@
 
 

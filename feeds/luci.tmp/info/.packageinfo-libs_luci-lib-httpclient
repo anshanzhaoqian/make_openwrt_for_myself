@@ -1,10 +1,10 @@
 Source-Makefile: feeds/luci/libs/luci-lib-httpclient/Makefile
-Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+Build-Depends: lua/host luci-base/host 
 
 Package: luci-lib-httpclient
 Submenu: 6. Libraries
-Version: x
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-base +luci-lib-nixio +luci-lib-httpprotoutils
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-base +luci-lib-nixio
 Conflicts: 
 Menu-Depends: 
 Provides: 

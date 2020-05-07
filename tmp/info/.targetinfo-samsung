@@ -6,9 +6,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_xscale
 Target-Features: 
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=xscale
+Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22,9 +22,9 @@ Target-Arch: arm
 Target-Arch-Packages: arm_cortex-a8_neon
 Target-Features: arm_v7 dt fpu gpio
 Target-Depends: 
-Target-Optimization: -Os -pipe -mcpu=cortex-a8 -mfpu=neon
+Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+neon
-Linux-Version: 4.14.95
+Linux-Version: 4.14.115
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -42,6 +42,8 @@ Target-Profile-Description:
 Target-Profile: DEVICE_tq210
 Target-Profile-Name: TQ210
 Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: 
 Target-Profile-Description:
 Build firmware images for TQ210
 @@

@@ -2,11 +2,12 @@ Source-Makefile: package/feeds/packages/python3-unidecode/Makefile
 
 Package: python3-unidecode
 Submenu: Python
-Version: 1.1.1-2
+Version: 1.1.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -23,11 +24,12 @@ Josef Schlehofer <josef.schlehofer@nic.cz>
 
 Package: python3-unidecode-src
 Submenu: Python
-Version: 1.1.1-2
+Version: 1.1.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
 Provides: 
+Build-Variant: python3
 Section: lang
 Category: Languages
 Repository: packages
@@ -37,14 +39,10 @@ Source: Unidecode-1.1.1.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
-Description:     	ASCII transliterations of Unicode text
-
-    This package contains the Python source files for python3-unidecode.
+Description:     .
+    (Contains the Python3 sources for this package).
 https://github.com/avian2/unidecode
 Josef Schlehofer <josef.schlehofer@nic.cz>
-@@
-Config:
-    depends on PACKAGE_python3-unidecode
 @@
 
 
