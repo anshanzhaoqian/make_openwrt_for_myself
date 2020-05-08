@@ -11,8 +11,7 @@ name: CI
 
 on:
   push:
-    tags:
-      - '*'
+    branches: [ master ]
 
 jobs:
 
