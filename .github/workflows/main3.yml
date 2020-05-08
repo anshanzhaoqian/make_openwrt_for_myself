@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: CI
+name: CI3
 
 on:
   push:
@@ -40,7 +40,14 @@ jobs:
 
           df -h
 
+      - name: Update feeds
+        run: |
+          sed -i 's/\"#src-git\"/\"src-git\"/g' ./feeds.conf.default
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
 
+      - name: Generate configuration file
+        run: make defconfig
 
       - name: Make download
         run: |
